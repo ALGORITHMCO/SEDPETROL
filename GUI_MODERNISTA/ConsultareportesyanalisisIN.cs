@@ -45,8 +45,9 @@ namespace GUI_MODERNISTA
             dataGridView1.DataSource = Registroo.analisisyreportes(datos);
         }
 
-      
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-        
+        }
     }
 }
