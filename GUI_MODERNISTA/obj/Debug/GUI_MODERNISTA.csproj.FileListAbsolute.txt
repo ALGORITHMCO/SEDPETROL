@@ -51,3 +51,26 @@ C:\Users\anita\Desktop\aplicacion\GUI_MODERNISTA II\GUI_MODERNISTA\obj\Debug\GUI
 C:\Users\anita\Desktop\aplicacion\GUI_MODERNISTA II\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.ConsultareportesyanalisisIN.resources
 C:\Users\anita\Desktop\aplicacion\GUI_MODERNISTA II\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.portaladministrador.resources
 C:\Users\anita\Desktop\aplicacion\GUI_MODERNISTA II\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.reportesyanalisisIN.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csprojResolveAssemblyReference.cache
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.ConsultaAlimentacion.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.ConsultaFacturaPropietario.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.Consultamedidor.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.inicio.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.inicioadministrador.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.portaladministrador.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.reportesyanalisisIN.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.RegistroIn.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.Loginn.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.Inicioo.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.portausuarios.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.consulta.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.Properties.Resources.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.ConsultareportesyanalisisIN.resources
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.GenerateResource.Cache
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.CoreCompileInputs.cache
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.exe
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.pdb
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.exe.config
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.exe
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.pdb
+C:\Users\anita\Source\Repos\Valvulas\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.graficaanalisisyreportes.resources

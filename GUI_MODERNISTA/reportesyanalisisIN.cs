@@ -12,22 +12,23 @@ namespace GUI_MODERNISTA
 {
     public partial class reportesyanalisisIN : Form
     {
-
+        int vContadorDatos; 
         Panel panel;
-        public reportesyanalisisIN(Panel p)
+        public reportesyanalisisIN()
         {
             InitializeComponent();
-            panel = p;
+           
         }
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            
         }
 
        
 
-        private void button1_Click_1(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)
         {
             ConsultareportesyanalisisIN reportes = new ConsultareportesyanalisisIN(panel);
             reportes.fechainicio = textfechainicio.Text;
@@ -44,8 +45,31 @@ namespace GUI_MODERNISTA
 
             // reportes.Show();
 
-            panel.Controls.Clear();
-            panel.Controls.Add(reportes);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(reportes);
+
+            graficaanalisisyreportes reportes1 = new graficaanalisisyreportes();
+            reportes1.fechainicio = textfechainicio.Text;
+            reportes1.fechafin = textfechafin.Text;
+            reportes1.variable = textvariable.Text;
+            reportes1.departamento = textdepartamento.Text;
+            reportes1.ciudad = textciudad.Text;
+            reportes1.zona = textzona.Text;
+            reportes1.localidad = textlocalidad.Text;
+            reportes1.barrio = textbarrio.Text;
+            reportes1.idmedidor = textidmedidor.Text;
+
+            //portal.con.Text = textcontrato.Text;
+
+            // reportes.Show();
+
+            panel3.Controls.Clear();
+            panel3.Controls.Add(reportes1);
+
+
+            // Sacamos un numero aleatorio del 0 al 100
+
+
         }
     }
 }

@@ -59,21 +59,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(112, 118);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 20);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(560, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(358, 279);
             this.dataGridView1.TabIndex = 21;
             // 
             // ConsultareportesyanalisisIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cuenta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ConsultareportesyanalisisIN";
-            this.Size = new System.Drawing.Size(931, 596);
+            this.Size = new System.Drawing.Size(524, 388);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

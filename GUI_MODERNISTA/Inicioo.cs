@@ -106,7 +106,7 @@ namespace GUI_MODERNISTA
 
         private void btnproductos_Click_1(object sender, EventArgs e)
         {
-            portaladministrador formaSiguiente = new portaladministrador();
+            inicioadministrador formaSiguiente = new inicioadministrador();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }

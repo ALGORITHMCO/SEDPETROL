@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,12 @@
     <Compile Include="Consultamedidor.Designer.cs">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
     </Compile>
+    <Compile Include="greficaanalisisyreportes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="greficaanalisisyreportes.Designer.cs">
+      <DependentUpon>greficaanalisisyreportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatosRegis.cs" />
     <Compile Include="Consultareportesyanalisis.cs" />
     <Compile Include="inicio.cs">
@@ -73,12 +80,23 @@
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="FacturaPropietario.cs" />
+    <Compile Include="inicioadministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicioadministrador.Designer.cs">
+      <DependentUpon>inicioadministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Medidor.cs" />
     <Compile Include="portaladministrador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="portaladministrador.Designer.cs">
       <DependentUpon>portaladministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="reportesyanalisisIN.cs">
       <SubType>Form</SubType>
@@ -134,8 +152,14 @@
     <EmbeddedResource Include="Consultamedidor.resx">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="greficaanalisisyreportes.resx">
+      <DependentUpon>greficaanalisisyreportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicioadministrador.resx">
+      <DependentUpon>inicioadministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="portaladministrador.resx">
       <DependentUpon>portaladministrador.cs</DependentUpon>
@@ -160,14 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ConsultareportesyanalisisIN.resx">
       <DependentUpon>ConsultareportesyanalisisIN.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,43 +207,19 @@
     <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FamiliaEstrategia_destacado_tcm1245-658049.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fondo_login2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fondo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\fondoo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shutterstock_99031757.jpg" />
+    <None Include="Resources\loginadministrador.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\login1.png" />
+    <None Include="Resources\fondo1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\login2.png" />
+    <None Include="Resources\fondo11.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_ingresar_log1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inision_sesion.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\padlock-10-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\botob.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nn_edited.jpg" />
+    <None Include="Resources\loginadministrador1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

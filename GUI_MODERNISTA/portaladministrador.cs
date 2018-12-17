@@ -100,14 +100,14 @@ namespace GUI_MODERNISTA
        
         private void btnproductos_Click(object sender, EventArgs e)
         {
-           AbrirFormHija(new reportesyanalisisIN(panelContenedor));
+           AbrirFormHija(new reportesyanalisisIN());
             
         }
 
         private void btninicio_Click(object sender, EventArgs e)
         {
             
-            AbrirFormHija(new reportesyanalisisIN(panelContenedor));
+            AbrirFormHija(new reportesyanalisisIN());
         }
 
         private void BTNventas_Click(object sender, EventArgs e)
