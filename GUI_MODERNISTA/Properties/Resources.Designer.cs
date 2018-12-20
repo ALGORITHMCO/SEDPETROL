@@ -63,9 +63,9 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap botob {
+        internal static System.Drawing.Bitmap botoninicio {
             get {
-                object obj = ResourceManager.GetObject("botob", resourceCulture);
+                object obj = ResourceManager.GetObject("botoninicio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FamiliaEstrategia_destacado_tcm1245_658049 {
+        internal static System.Drawing.Bitmap calendario {
             get {
-                object obj = ResourceManager.GetObject("FamiliaEstrategia_destacado_tcm1245-658049", resourceCulture);
+                object obj = ResourceManager.GetObject("calendario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Fondo {
+        internal static System.Drawing.Bitmap calendario1 {
             get {
-                object obj = ResourceManager.GetObject("Fondo", resourceCulture);
+                object obj = ResourceManager.GetObject("calendario1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,49 +93,9 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fondo1 {
+        internal static System.Drawing.Bitmap fondo_azul_04 {
             get {
-                object obj = ResourceManager.GetObject("fondo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fondo11 {
-            get {
-                object obj = ResourceManager.GetObject("fondo11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fondoo {
-            get {
-                object obj = ResourceManager.GetObject("fondoo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap inision_sesion {
-            get {
-                object obj = ResourceManager.GetObject("inision_sesion", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap login {
-            get {
-                object obj = ResourceManager.GetObject("login", resourceCulture);
+                object obj = ResourceManager.GetObject("fondo azul-04", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,29 +123,9 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nn_edited {
+        internal static System.Drawing.Bitmap loginadministrador11 {
             get {
-                object obj = ResourceManager.GetObject("nn_edited", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap padlock_10_512 {
-            get {
-                object obj = ResourceManager.GetObject("padlock-10-512", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap shutterstock_99031757 {
-            get {
-                object obj = ResourceManager.GetObject("shutterstock_99031757", resourceCulture);
+                object obj = ResourceManager.GetObject("loginadministrador11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

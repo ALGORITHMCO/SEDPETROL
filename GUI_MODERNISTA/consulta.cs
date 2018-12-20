@@ -19,11 +19,17 @@ namespace GUI_MODERNISTA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            portausuarios portal= new portausuarios();
-            this.Hide(); //oculta la forma actual
-            portal.cuenta = textcontrato.Text;
-            //portal.con.Text = textcontrato.Text;
-            portal.Show(); // muestra la forma2
+            if (textcontrato.Text == "")
+            {
+                MessageBox.Show("INGRESE NUMERO DE CONTRATO", "DATOS FALTANTES", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                portausuarios portal = new portausuarios();
+                portal.cuenta = textcontrato.Text;
+                //portal.con.Text = textcontrato.Text;
+                portal.Show(); // muestra la forma2
+            }
 
             
         }

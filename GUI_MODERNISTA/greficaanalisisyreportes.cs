@@ -45,29 +45,32 @@ namespace GUI_MODERNISTA
             datos.barrio = barrio;
             datos.ID_MEDIDOR = idmedidor;
 
+           
+            
             using (SqlConnection conexi = conexion.conectarbd())
             {
+
                 SqlCommand comando = new SqlCommand(string.Format(
-                    "Select ID_MEDIDOR, FECHA, HORA, " + datos.variableaconsultar + " from VARIABLES where ID_MEDIDOR ='" + datos.ID_MEDIDOR + "'"), conexi);
+                    "SELECT  "+variable+" FROM  VARIABLES   WHERE ID_MEDIDOR = '" + datos.ID_MEDIDOR+ "' AND FECHA >= '" + datos.FechaInicio + "' and FECHA <= '" + datos.FechaFin + "'"), conexi);
 
                 SqlDataReader reader = comando.ExecuteReader();
 
                 int con = 0;
                 double VARIA = 0.0;
 
-                
-                chart1.Series["Series1"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+
                 while (reader.Read())
                 {
                     con++;
-                    VARIA = Convert.ToDouble(reader.GetString(3));
+                    VARIA = Convert.ToDouble(reader.GetString(0));
 
 
                     chart1.Series[0].Points.AddXY(con, VARIA);
 
+
                 }
                 conexion.cerrarbd();
-
+                
             }
 
 

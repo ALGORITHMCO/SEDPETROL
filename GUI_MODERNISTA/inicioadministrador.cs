@@ -83,7 +83,7 @@ namespace GUI_MODERNISTA
 
         private void btninicio_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new inicio());
+            
         }
 
         private void bousuarios_Click(object sender, EventArgs e)
@@ -104,9 +104,17 @@ namespace GUI_MODERNISTA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            portaladministrador formaSiguiente = new portaladministrador();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+            if (TextBox1.Text != "admi1" && TextBox2.Text != "admi1")
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                portaladministrador formaSiguiente = new portaladministrador();
+                this.Hide(); //oculta la forma actual
+                formaSiguiente.Show();
+            }// muestra la forma2
         }
     }
 }

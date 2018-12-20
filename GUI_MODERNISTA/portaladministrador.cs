@@ -100,27 +100,34 @@ namespace GUI_MODERNISTA
        
         private void btnproductos_Click(object sender, EventArgs e)
         {
-           AbrirFormHija(new reportesyanalisisIN());
+           AbrirFormHija(new reportesyanalisisINID());
             
         }
 
         private void btninicio_Click(object sender, EventArgs e)
         {
             
-            AbrirFormHija(new reportesyanalisisIN());
+            AbrirFormHija(new reportesyanalisisINID());
         }
 
         private void BTNventas_Click(object sender, EventArgs e)
         {
 
             
-            AbrirFormHija(new ConsultaAlimentacion());
+            AbrirFormHija(new reportesyanalisisINzonas());
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new ConsultaFacturaPropietario());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Inicioo formaSiguiente = new Inicioo();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
     }
 }

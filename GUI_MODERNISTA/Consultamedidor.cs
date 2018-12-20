@@ -13,13 +13,13 @@ namespace GUI_MODERNISTA
     public partial class Consultamedidor : Form
     {
 
-        public string nucue; 
+        public string nucue;
         public Consultamedidor()
         {
             InitializeComponent();
         }
 
-      
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -48,7 +48,16 @@ namespace GUI_MODERNISTA
 
         private void Consultamedidor_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Registroo.Buscar(portausuarios.cuen);
+            if (Registroo.Buscar(portausuarios.cuen) == null)
+            {
+                MessageBox.Show("NO SE ENCONTRO NUMERO DE CONTRATO", "VUELVA A INTENTAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               
+            }
+            else
+            {
+                dataGridView1.DataSource = Registroo.Buscar(portausuarios.cuen);
+            }
+            }
+        
         }
     }
-}
