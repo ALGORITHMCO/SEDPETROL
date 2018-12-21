@@ -17,12 +17,11 @@ namespace GUI_MODERNISTA
 
             using (SqlConnection cone = conexion.conectarbd())
             {
-
                 SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM Usuarios WHERE usuario ='" + datos.usuario + "'OR correo ='" + datos.correo + "'"), cone);
                 SqlDataReader dr = consul.ExecuteReader();
 
                 if (dr.Read())
-                {
+                { 
                     return retorno = -1;
                 }
                 else
@@ -34,12 +33,11 @@ namespace GUI_MODERNISTA
                         return retorno1 = comando.ExecuteNonQuery();
                     }
                 }
-
             }
-
-            
-
         }
+        public static int
+        
+
 
 
         public static List<Medidor> Buscar(String pcuenta)

@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlimentacionHistorica.cs" />
+    <Compile Include="AgregarNovedades.cs" />
+    <Compile Include="CodeFile1.cs" />
     <Compile Include="conexion.cs" />
     <Compile Include="ConsultaAlimentacion.cs">
       <SubType>Form</SubType>
@@ -64,6 +66,12 @@
     </Compile>
     <Compile Include="Consultamedidor.Designer.cs">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="greficaanalisisyreportes.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultamedidor.resx">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="greficaanalisisyreportes.resx">
       <DependentUpon>greficaanalisisyreportes.cs</DependentUpon>
