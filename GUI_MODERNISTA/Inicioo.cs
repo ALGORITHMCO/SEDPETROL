@@ -83,7 +83,7 @@ namespace GUI_MODERNISTA
 
         private void btninicio_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new inicio());
+           // AbrirFormHija(new inicio());
         }
 
         private void bousuarios_Click(object sender, EventArgs e)
@@ -109,6 +109,16 @@ namespace GUI_MODERNISTA
             inicioadministrador formaSiguiente = new inicioadministrador();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

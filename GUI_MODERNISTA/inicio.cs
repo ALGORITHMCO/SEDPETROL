@@ -12,9 +12,12 @@ namespace GUI_MODERNISTA
 {
     public partial class inicio : Form
     {
-        public inicio()
+
+        Panel panel; 
+        public inicio(Panel p)
         {
             InitializeComponent();
+            panel = p; 
         }
 
        
@@ -34,11 +37,41 @@ namespace GUI_MODERNISTA
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+       
+        private void button2_Click(object sender, EventArgs e)
         {
-            consulta formaSiguiente = new consulta();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+
+            DatosRegis datos = new DatosRegis();
+            datos.usuario =alphaBlendTextBox1.Text;
+            datos.contraseña = alphaBlendTextBox2.Text;
+
+            int resul = Registroo.login(datos);
+
+            if (resul == 1)
+            {
+                AbrirFormHija(new consulta());
+            }
+            else
+            {
+               
+                    MessageBox.Show("Usuario o contraseña incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
+           
         }
+        private void AbrirFormHija(object formhija)
+        {
+            if (this.panel.Controls.Count > 0)
+                this.panel.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel.Controls.Add(fh);
+            this.panel.Tag = fh;
+            fh.Show();
+
+        }
+
+
     }
 }

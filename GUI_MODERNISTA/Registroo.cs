@@ -10,6 +10,33 @@ namespace GUI_MODERNISTA
     class Registroo
     {
 
+        public static int login(DatosRegis datos)
+        {
+            int retorno = 0;
+            int retorno1 = 0;
+
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+
+                SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM Usuarios WHERE usuario ='" + datos.usuario + "'OR contraseña ='" + datos.contraseña + "'"), cone);
+                SqlDataReader dr = consul.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return retorno = 1;
+                }
+                else
+                {
+                    return retorno = -1;
+                }
+                
+
+            }
+            
+
+
+
+        }
         public static int agregar(DatosRegis datos)
         {
             int retorno = 0;
@@ -162,24 +189,31 @@ namespace GUI_MODERNISTA
         }
 
 
-        public static List<AlimentacionHistorica> analisisyreportes (Consultareportesyanalisis datos)
+        public static List<analisisyreportesID> analisisyreportes (Consultareportesyanalisis datos)
         {
 
-            List<AlimentacionHistorica> Lista = new List<AlimentacionHistorica>();
+            List<analisisyreportesID> Lista = new List<analisisyreportesID>();
             using (SqlConnection conexi = conexion.conectarbd())
             {
+               
                 SqlCommand comando = new SqlCommand(string.Format(
-                    "Select ID_MEDIDOR, FECHA, HORA, " + datos.variableaconsultar + " from VARIABLES where ID_MEDIDOR ='" + datos.ID_MEDIDOR + "'"), conexi);
+                    "SELECT t1.ID_VARIABLES,t1.ID_CONTROL,t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1." + datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE M.ID_MEDIDOR = '" + datos.ID_MEDIDOR + "'  AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
 
                 SqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    AlimentacionHistorica palimentacion = new AlimentacionHistorica();
-                    palimentacion.ID_INFENTRADA = Convert.ToString(reader.GetInt32(0));
-                    palimentacion.ID_MEDIDOR = reader.GetString(1);
-                    palimentacion.REVISIONES_INTERNAS = reader.GetString(2);
-                    palimentacion.CORTES_SERVICIO = reader.GetString(3);
+                    analisisyreportesID palimentacion = new analisisyreportesID();
+                    palimentacion.ID_VARIABLES = Convert.ToString(reader.GetInt32(0));
+                    palimentacion.ID_CONTROL = Convert.ToString(reader.GetInt32(1));
+                    palimentacion.ID_MEDIDOR = Convert.ToString(reader.GetInt32(2));
+                    palimentacion.FECHA = reader.GetString(3);
+                    palimentacion.HORA = reader.GetString(4);
+                    palimentacion.VARIABLE = reader.GetString(5);
+                    palimentacion.DEPARTAMENTO = reader.GetString(6);
+                    palimentacion.ZONA = reader.GetString(7);
+                    palimentacion.DIRECION = reader.GetString(8);
+                    palimentacion.ESTRATO = reader.GetString(9);
 
 
                     Lista.Add(palimentacion);
@@ -192,6 +226,80 @@ namespace GUI_MODERNISTA
 
         }
 
-        
+        public static List<analisisyreportesID> analisisyreporteszonas(Consultareportesyanalisis datos)
+        {
+
+            List<analisisyreportesID> Lista = new List<analisisyreportesID>();
+            using (SqlConnection conexi = conexion.conectarbd())
+            {
+                SqlCommand comando = new SqlCommand(); 
+                if (datos.ciudad != "" && datos.departamento != "" && datos.zona != "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad != "" && datos.departamento == "" && datos.zona== "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO ='" + datos.ciudad + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad == "" && datos.departamento != "" && datos.zona== "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad == "" && datos.departamento == "" && datos.zona !="")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.ZONA = '" + datos.zona + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad == "" && datos.departamento != "" && datos.zona != "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad != "" && datos.departamento == "" && datos.zona != "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO = '" + datos.ciudad + "' AND t2.ZONA = '" + datos.zona + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
+                {
+                    comando = new SqlCommand(string.Format(
+                        "SELECT t1.ID_VARIABLES,t1.ID_CONTROL, t1.ID_MEDIDOR, t1.FECHA, t1.HORA, t1."+datos.variableaconsultar + ", t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.ESTRATO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO = '" + datos.ciudad + "' AND t2.DEPARTAMENTO = '" + datos.departamento + "' AND t1.FECHA >= '" + datos.FechaInicio + "' and t1.FECHA <= '" + datos.FechaFin + "'"), conexi);
+                }
+                SqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    analisisyreportesID palimentacion = new analisisyreportesID();
+                    palimentacion.ID_VARIABLES = Convert.ToString(reader.GetInt32(0));
+                    palimentacion.ID_CONTROL = Convert.ToString(reader.GetInt32(1));
+                    palimentacion.ID_MEDIDOR= Convert.ToString(reader.GetInt32(2));
+                    palimentacion.FECHA = reader.GetString(3);
+                    palimentacion.HORA = reader.GetString(4);
+                    palimentacion.VARIABLE = reader.GetString(5);
+                    palimentacion.DEPARTAMENTO = reader.GetString(6);
+                    palimentacion.ZONA = reader.GetString(7);
+                    palimentacion.DIRECION = reader.GetString(8);
+                    palimentacion.ESTRATO = reader.GetString(9);
+
+
+                    Lista.Add(palimentacion);
+
+                }
+                conexion.cerrarbd();
+                return Lista;
+
+            }
+
+        }
+
+
     }
 }

@@ -229,7 +229,7 @@
             this.btnrptpagos.Name = "btnrptpagos";
             this.btnrptpagos.Size = new System.Drawing.Size(176, 28);
             this.btnrptpagos.TabIndex = 18;
-            this.btnrptpagos.Text = "Reporte Pagos";
+            this.btnrptpagos.Text = "Inicio Portal";
             this.btnrptpagos.UseVisualStyleBackColor = false;
             this.btnrptpagos.Click += new System.EventHandler(this.btnrptpagos_Click);
             // 
@@ -246,7 +246,7 @@
             this.btnrptcompra.Name = "btnrptcompra";
             this.btnrptcompra.Size = new System.Drawing.Size(176, 28);
             this.btnrptcompra.TabIndex = 18;
-            this.btnrptcompra.Text = "Reporte Compras";
+            this.btnrptcompra.Text = "Inicio Cliente";
             this.btnrptcompra.UseVisualStyleBackColor = false;
             this.btnrptcompra.Click += new System.EventHandler(this.btnrptcompra_Click);
             // 
@@ -271,7 +271,7 @@
             this.btnrptventa.Name = "btnrptventa";
             this.btnrptventa.Size = new System.Drawing.Size(176, 28);
             this.btnrptventa.TabIndex = 16;
-            this.btnrptventa.Text = "Reporte Ventas";
+            this.btnrptventa.Text = "Nueva Consulta";
             this.btnrptventa.UseVisualStyleBackColor = false;
             this.btnrptventa.Click += new System.EventHandler(this.btnrptventa_Click);
             // 
@@ -316,7 +316,7 @@
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(217, 40);
             this.btnReportes.TabIndex = 13;
-            this.btnReportes.Text = "Reportes";
+            this.btnReportes.Text = "REGRESAR";
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 

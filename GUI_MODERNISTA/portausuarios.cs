@@ -68,16 +68,25 @@ namespace GUI_MODERNISTA
         private void btnrptventa_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = false;
+            consulta formaSiguiente = new consulta();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
 
         private void btnrptcompra_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = false;
+            Loginn formaSiguiente = new Loginn();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
 
         private void btnrptpagos_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = false;
+            Inicioo formaSiguiente = new Inicioo();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -101,7 +110,8 @@ namespace GUI_MODERNISTA
         private void btnproductos_Click(object sender, EventArgs e)
         {
            AbrirFormHija(new Consultamedidor());
-            
+          
+
         }
 
         private void btninicio_Click(object sender, EventArgs e)
