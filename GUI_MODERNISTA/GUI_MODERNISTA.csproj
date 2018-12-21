@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="analisisyreportesID.cs" />
     <Compile Include="AlimentacionHistorica.cs" />
+    <Compile Include="AgregarNovedades.cs" />
+    <Compile Include="CodeFile1.cs" />
     <Compile Include="conexion.cs" />
     <Compile Include="ConsultaAlimentacion.cs">
       <SubType>Form</SubType>
@@ -79,30 +81,6 @@
     </Compile>
     <Compile Include="Consultamedidor.Designer.cs">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mapazonas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="mapazonas.Designer.cs">
-      <DependentUpon>mapazonas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mapa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="mapa.Designer.cs">
-      <DependentUpon>mapa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConsultareportesyanalisisINzonas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ConsultareportesyanalisisINzonas.Designer.cs">
-      <DependentUpon>ConsultareportesyanalisisINzonas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="greficaanalisisyreporteszonas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="greficaanalisisyreporteszonas.Designer.cs">
-      <DependentUpon>greficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
     <Compile Include="greficaanalisisyreportes.cs">
       <SubType>UserControl</SubType>
@@ -197,18 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultamedidor.resx">
       <DependentUpon>Consultamedidor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mapazonas.resx">
-      <DependentUpon>mapazonas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mapa.resx">
-      <DependentUpon>mapa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConsultareportesyanalisisINzonas.resx">
-      <DependentUpon>ConsultareportesyanalisisINzonas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="greficaanalisisyreporteszonas.resx">
-      <DependentUpon>greficaanalisisyreporteszonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="greficaanalisisyreportes.resx">
       <DependentUpon>greficaanalisisyreportes.cs</DependentUpon>
