@@ -1,0 +1,1454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AlphaBlendTextBox.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.AlphaBlendTextBoxDelegates">
+            <summary>Contiene delegados personalizados usados para los stubs y shims de AlphaBlendTextBox</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.ShimAlphaBlendTextBox">
+            <summary>Tipo de correcciones de compatibilidad (shim) de ZBobb.AlphaBlendTextBox</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.#ctor(ZBobb.AlphaBlendTextBox)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BackAlphaGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BackAlpha()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BackAlphaSetInt32">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BackAlpha(Int32 value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BackColorGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BackColor()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BackColorSetColor">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BorderStyleGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BorderStyle()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.BorderStyleSetBorderStyle">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BorderStyle(BorderStyle value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.DisposeBoolean">
+            <summary>Establecer el shim de AlphaBlendTextBox.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.GetBitmaps">
+            <summary>Establecer el shim de AlphaBlendTextBox.GetBitmaps()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.GetFontHeight">
+            <summary>Establecer el shim de AlphaBlendTextBox.GetFontHeight()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.InitializeComponent">
+            <summary>Establecer el shim de AlphaBlendTextBox.InitializeComponent()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.MultilineGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_Multiline()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.MultilineSetBoolean">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_Multiline(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnChangeUICuesUICuesEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnFontChangedEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnGotFocusEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnKeyDownKeyEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnKeyPressKeyPressEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnKeyUpKeyEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnLostFocusEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnMouseLeaveEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnMouseUpMouseEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnResizeEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.OnTextChangedEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.WndProcMessageRef">
+            <summary>Establecer el shim de AlphaBlendTextBox.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.findCaret">
+            <summary>Establecer el shim de AlphaBlendTextBox.findCaret()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.AllInstances.myTimer1_TickObjectEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.myTimer1_Tick(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BackAlphaGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BackAlpha()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BackAlphaSetInt32">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BackAlpha(Int32 value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BackColorGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BackColor()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BackColorSetColor">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BackColor(Color value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.ComponentModel.IComponent)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.ComponentModel.ISynchronizeInvoke)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.Windows.Forms.IBindableComponent)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.Windows.Forms.IDropTarget)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.Windows.Forms.IWin32Window)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.ShimAlphaBlendTextBox.Bind(System.IDisposable)">
+            <summary>Asocia los miembros de la interfaz a las correcciones de compatibilidad (shim).</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BorderStyleGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_BorderStyle()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.BorderStyleSetBorderStyle">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_BorderStyle(BorderStyle value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.Constructor">
+            <summary>Establecer el shim de AlphaBlendTextBox.AlphaBlendTextBox()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.DisposeBoolean">
+            <summary>Establecer el shim de AlphaBlendTextBox.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.GetBitmaps">
+            <summary>Establecer el shim de AlphaBlendTextBox.GetBitmaps()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.GetFontHeight">
+            <summary>Establecer el shim de AlphaBlendTextBox.GetFontHeight()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.InitializeComponent">
+            <summary>Establecer el shim de AlphaBlendTextBox.InitializeComponent()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.MultilineGet">
+            <summary>Establecer el shim de AlphaBlendTextBox.get_Multiline()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.MultilineSetBoolean">
+            <summary>Establecer el shim de AlphaBlendTextBox.set_Multiline(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnChangeUICuesUICuesEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnFontChangedEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnGotFocusEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnKeyDownKeyEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnKeyPressKeyPressEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnKeyUpKeyEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnLostFocusEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnMouseLeaveEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnMouseUpMouseEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnResizeEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.OnTextChangedEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.WndProcMessageRef">
+            <summary>Establecer el shim de AlphaBlendTextBox.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.findCaret">
+            <summary>Establecer el shim de AlphaBlendTextBox.findCaret()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.ShimAlphaBlendTextBox.myTimer1_TickObjectEventArgs">
+            <summary>Establecer el shim de AlphaBlendTextBox.myTimer1_Tick(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.Shimwin32">
+            <summary>Tipo de correcciones de compatibilidad (shim) de ZBobb.win32</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Shimwin32.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Shimwin32.#ctor(ZBobb.win32)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.Shimwin32.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Shimwin32.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Shimwin32.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Shimwin32.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Shimwin32.CaptureWindowControlBitmapRef">
+            <summary>Establecer el shim de win32.CaptureWindow(Control control, Bitmap&amp; bitmap)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Shimwin32.Constructor">
+            <summary>Establecer el shim de win32.win32()</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.StubAlphaBlendTextBox">
+            <summary>Tipo stub de ZBobb.AlphaBlendTextBox</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.#ctor">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.AllowDrop">
+            <summary>Establecer el stub de Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AllowDropGet">
+            <summary>Establecer el stub de Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AllowDropSetBoolean">
+            <summary>Establecer el stub de Control.set_AllowDrop(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Anchor">
+            <summary>Establecer el stub de Control.get_Anchor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AnchorGet">
+            <summary>Establecer el stub de Control.get_Anchor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AnchorSetAnchorStyles">
+            <summary>Establecer el stub de Control.set_Anchor(AnchorStyles value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToAllowDrop">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.AllowDrop como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToAnchor">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Anchor como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToAutoScrollOffset">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.AutoScrollOffset como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToAutoSize">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.AutoSize como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToBackgroundImage">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.BackgroundImage como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToBackgroundImageLayout">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.BackgroundImageLayout como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToBindingContext">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.BindingContext como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToContextMenu">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.ContextMenu como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToContextMenuStrip">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.ContextMenuStrip como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToCursor">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Cursor como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToDock">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Dock como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToDoubleBuffered">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.DoubleBuffered como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToFont">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Font como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToForeColor">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.ForeColor como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToImeModeBase">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.ImeModeBase como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToMaxLength">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.MaxLength como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToMaximumSize">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.MaximumSize como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToMinimumSize">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.MinimumSize como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToMultiline">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Multiline como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToRightToLeft">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.RightToLeft como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToSelectedText">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.SelectedText como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToSelectionLength">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.SelectionLength como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToShortcutsEnabled">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.ShortcutsEnabled como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToSite">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Site como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.AttachBackingFieldToText">
+            <summary>Asocia delegados para emular StubAlphaBlendTextBox.Text como una propiedad con un campo de respaldo.</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.AutoScrollOffset">
+            <summary>Establecer el stub de Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AutoScrollOffsetGet">
+            <summary>Establecer el stub de Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AutoScrollOffsetSetPoint">
+            <summary>Establecer el stub de Control.set_AutoScrollOffset(Point value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.AutoSize">
+            <summary>Establecer el stub de TextBoxBase.get_AutoSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AutoSizeGet">
+            <summary>Establecer el stub de TextBoxBase.get_AutoSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.AutoSizeSetBoolean">
+            <summary>Establecer el stub de TextBoxBase.set_AutoSize(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImage">
+            <summary>Establecer el stub de TextBoxBase.get_BackgroundImage()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImageGet">
+            <summary>Establecer el stub de TextBoxBase.get_BackgroundImage()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImageLayout">
+            <summary>Establecer el stub de TextBoxBase.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImageLayoutGet">
+            <summary>Establecer el stub de TextBoxBase.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImageLayoutSetImageLayout">
+            <summary>Establecer el stub de TextBoxBase.set_BackgroundImageLayout(ImageLayout value)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BackgroundImageSetImage">
+            <summary>Establecer el stub de TextBoxBase.set_BackgroundImage(Image value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.BindingContext">
+            <summary>Establecer el stub de Control.get_BindingContext()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BindingContextGet">
+            <summary>Establecer el stub de Control.get_BindingContext()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.BindingContextSetBindingContext">
+            <summary>Establecer el stub de Control.set_BindingContext(BindingContext value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.CanEnableIme">
+            <summary>Establecer el stub de TextBoxBase.get_CanEnableIme()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CanEnableImeGet">
+            <summary>Establecer el stub de TextBoxBase.get_CanEnableIme()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.CanRaiseEvents">
+            <summary>Establecer el stub de Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CanRaiseEventsGet">
+            <summary>Establecer el stub de Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenu">
+            <summary>Establecer el stub de Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenuGet">
+            <summary>Establecer el stub de Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenuSetContextMenu">
+            <summary>Establecer el stub de Control.set_ContextMenu(ContextMenu value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenuStrip">
+            <summary>Establecer el stub de Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenuStripGet">
+            <summary>Establecer el stub de Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ContextMenuStripSetContextMenuStrip">
+            <summary>Establecer el stub de Control.set_ContextMenuStrip(ContextMenuStrip value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.CreateAccessibilityInstance">
+            <summary>Establecer el stub de Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CreateAccessibilityInstance01">
+            <summary>Establecer el stub de Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.CreateControlsInstance">
+            <summary>Establecer el stub de Control.CreateControlsInstance()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CreateControlsInstance01">
+            <summary>Establecer el stub de Control.CreateControlsInstance()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.CreateHandle">
+            <summary>Establecer el stub de TextBoxBase.CreateHandle()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CreateHandle01">
+            <summary>Establecer el stub de TextBoxBase.CreateHandle()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.CreateParams">
+            <summary>Establecer el stub de TextBox.get_CreateParams()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CreateParamsGet">
+            <summary>Establecer el stub de TextBox.get_CreateParams()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Cursor">
+            <summary>Establecer el stub de Control.get_Cursor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CursorGet">
+            <summary>Establecer el stub de Control.get_Cursor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.CursorSetCursor">
+            <summary>Establecer el stub de Control.set_Cursor(Cursor value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.DefWndProc(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de Control.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefWndProcMessageRef">
+            <summary>Establecer el stub de Control.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultCursor">
+            <summary>Establecer el stub de TextBoxBase.get_DefaultCursor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultCursorGet">
+            <summary>Establecer el stub de TextBoxBase.get_DefaultCursor()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultImeMode">
+            <summary>Establecer el stub de Control.get_DefaultImeMode()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultImeModeGet">
+            <summary>Establecer el stub de Control.get_DefaultImeMode()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMargin">
+            <summary>Establecer el stub de Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMarginGet">
+            <summary>Establecer el stub de Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMaximumSize">
+            <summary>Establecer el stub de Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMaximumSizeGet">
+            <summary>Establecer el stub de Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMinimumSize">
+            <summary>Establecer el stub de Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultMinimumSizeGet">
+            <summary>Establecer el stub de Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultPadding">
+            <summary>Establecer el stub de Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultPaddingGet">
+            <summary>Establecer el stub de Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultSize">
+            <summary>Establecer el stub de TextBoxBase.get_DefaultSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DefaultSizeGet">
+            <summary>Establecer el stub de TextBoxBase.get_DefaultSize()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.DestroyHandle">
+            <summary>Establecer el stub de Control.DestroyHandle()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DestroyHandle01">
+            <summary>Establecer el stub de Control.DestroyHandle()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DisplayRectangle">
+            <summary>Establecer el stub de Control.get_DisplayRectangle()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DisplayRectangleGet">
+            <summary>Establecer el stub de Control.get_DisplayRectangle()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.Dispose(System.Boolean)">
+            <summary>Establecer el stub de AlphaBlendTextBox.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DisposeBoolean">
+            <summary>Establecer el stub de AlphaBlendTextBox.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Dock">
+            <summary>Establecer el stub de Control.get_Dock()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DockGet">
+            <summary>Establecer el stub de Control.get_Dock()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DockSetDockStyle">
+            <summary>Establecer el stub de Control.set_Dock(DockStyle value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.DoubleBuffered">
+            <summary>Establecer el stub de TextBoxBase.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DoubleBufferedGet">
+            <summary>Establecer el stub de TextBoxBase.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.DoubleBufferedSetBoolean">
+            <summary>Establecer el stub de TextBoxBase.set_DoubleBuffered(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Focused">
+            <summary>Establecer el stub de Control.get_Focused()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.FocusedGet">
+            <summary>Establecer el stub de Control.get_Focused()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Font">
+            <summary>Establecer el stub de Control.get_Font()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.FontGet">
+            <summary>Establecer el stub de Control.get_Font()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.FontSetFont">
+            <summary>Establecer el stub de Control.set_Font(Font value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ForeColor">
+            <summary>Establecer el stub de TextBoxBase.get_ForeColor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ForeColorGet">
+            <summary>Establecer el stub de TextBoxBase.get_ForeColor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ForeColorSetColor">
+            <summary>Establecer el stub de TextBoxBase.set_ForeColor(Color value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetAccessibilityObjectById(System.Int32)">
+            <summary>Establecer el stub de Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetAccessibilityObjectByIdInt32">
+            <summary>Establecer el stub de Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetCharFromPosition(System.Drawing.Point)">
+            <summary>Establecer el stub de TextBoxBase.GetCharFromPosition(Point pt)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetCharFromPositionPoint">
+            <summary>Establecer el stub de TextBoxBase.GetCharFromPosition(Point pt)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetCharIndexFromPosition(System.Drawing.Point)">
+            <summary>Establecer el stub de TextBoxBase.GetCharIndexFromPosition(Point pt)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetCharIndexFromPositionPoint">
+            <summary>Establecer el stub de TextBoxBase.GetCharIndexFromPosition(Point pt)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetLineFromCharIndex(System.Int32)">
+            <summary>Establecer el stub de TextBoxBase.GetLineFromCharIndex(Int32 index)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetLineFromCharIndexInt32">
+            <summary>Establecer el stub de TextBoxBase.GetLineFromCharIndex(Int32 index)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetPositionFromCharIndex(System.Int32)">
+            <summary>Establecer el stub de TextBoxBase.GetPositionFromCharIndex(Int32 index)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetPositionFromCharIndexInt32">
+            <summary>Establecer el stub de TextBoxBase.GetPositionFromCharIndex(Int32 index)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetPreferredSize(System.Drawing.Size)">
+            <summary>Establecer el stub de Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetPreferredSizeSize">
+            <summary>Establecer el stub de Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Establecer el stub de Control.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetScaledBoundsRectangleSizeFBoundsSpecified">
+            <summary>Establecer el stub de Control.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.GetService(System.Type)">
+            <summary>Establecer el stub de Component.GetService(Type service)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.GetServiceType">
+            <summary>Establecer el stub de Component.GetService(Type service)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ImeModeBase">
+            <summary>Establecer el stub de TextBoxBase.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ImeModeBaseGet">
+            <summary>Establecer el stub de TextBoxBase.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ImeModeBaseSetImeMode">
+            <summary>Establecer el stub de TextBoxBase.set_ImeModeBase(ImeMode value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.InitLayout">
+            <summary>Establecer el stub de Control.InitLayout()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.InitLayout01">
+            <summary>Establecer el stub de Control.InitLayout()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.InitializeStub">
+            <summary>Inicializa una nueva instancia de type StubAlphaBlendTextBox</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.IsInputChar(System.Char)">
+            <summary>Establecer el stub de Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.IsInputCharChar">
+            <summary>Establecer el stub de Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>Establecer el stub de TextBox.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.IsInputKeyKeys">
+            <summary>Establecer el stub de TextBox.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.LayoutEngine">
+            <summary>Establecer el stub de Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.LayoutEngineGet">
+            <summary>Establecer el stub de Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.MaxLength">
+            <summary>Establecer el stub de TextBoxBase.get_MaxLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MaxLengthGet">
+            <summary>Establecer el stub de TextBoxBase.get_MaxLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MaxLengthSetInt32">
+            <summary>Establecer el stub de TextBoxBase.set_MaxLength(Int32 value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.MaximumSize">
+            <summary>Establecer el stub de Control.get_MaximumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MaximumSizeGet">
+            <summary>Establecer el stub de Control.get_MaximumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MaximumSizeSetSize">
+            <summary>Establecer el stub de Control.set_MaximumSize(Size value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.MinimumSize">
+            <summary>Establecer el stub de Control.get_MinimumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MinimumSizeGet">
+            <summary>Establecer el stub de Control.get_MinimumSize()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MinimumSizeSetSize">
+            <summary>Establecer el stub de Control.set_MinimumSize(Size value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Multiline">
+            <summary>Establecer el stub de AlphaBlendTextBox.get_Multiline()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MultilineGet">
+            <summary>Establecer el stub de AlphaBlendTextBox.get_Multiline()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.MultilineSetBoolean">
+            <summary>Establecer el stub de AlphaBlendTextBox.set_Multiline(Boolean value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.NotifyInvalidate(System.Drawing.Rectangle)">
+            <summary>Establecer el stub de Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.NotifyInvalidateRectangle">
+            <summary>Establecer el stub de Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnAcceptsTabChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnAcceptsTabChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnAcceptsTabChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnAcceptsTabChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnAutoSizeChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnAutoSizeChangedEventArgs">
+            <summary>Establecer el stub de Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackColorChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBox.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackColorChangedEventArgs">
+            <summary>Establecer el stub de TextBox.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackgroundImageChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackgroundImageChangedEventArgs">
+            <summary>Establecer el stub de Control.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackgroundImageLayoutChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnBackgroundImageLayoutChangedEventArgs">
+            <summary>Establecer el stub de Control.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnBindingContextChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnBindingContextChangedEventArgs">
+            <summary>Establecer el stub de Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnBorderStyleChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnBorderStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnBorderStyleChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnBorderStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnCausesValidationChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnCausesValidationChangedEventArgs">
+            <summary>Establecer el stub de Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnChangeUICuesUICuesEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnClick(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnClickEventArgs">
+            <summary>Establecer el stub de Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnClientSizeChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnClientSizeChangedEventArgs">
+            <summary>Establecer el stub de Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnContextMenuChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnContextMenuChangedEventArgs">
+            <summary>Establecer el stub de Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnContextMenuStripChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnContextMenuStripChangedEventArgs">
+            <summary>Establecer el stub de Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnControlAdded(System.Windows.Forms.ControlEventArgs)">
+            <summary>Establecer el stub de Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnControlAddedControlEventArgs">
+            <summary>Establecer el stub de Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnControlRemoved(System.Windows.Forms.ControlEventArgs)">
+            <summary>Establecer el stub de Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnControlRemovedControlEventArgs">
+            <summary>Establecer el stub de Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnCreateControl">
+            <summary>Establecer el stub de Control.OnCreateControl()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnCreateControl01">
+            <summary>Establecer el stub de Control.OnCreateControl()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnCursorChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnCursorChangedEventArgs">
+            <summary>Establecer el stub de Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDockChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDockChangedEventArgs">
+            <summary>Establecer el stub de Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDoubleClick(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDoubleClickEventArgs">
+            <summary>Establecer el stub de Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragDrop(System.Windows.Forms.DragEventArgs)">
+            <summary>Establecer el stub de Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragDropDragEventArgs">
+            <summary>Establecer el stub de Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragEnter(System.Windows.Forms.DragEventArgs)">
+            <summary>Establecer el stub de Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragEnterDragEventArgs">
+            <summary>Establecer el stub de Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragLeave(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragLeaveEventArgs">
+            <summary>Establecer el stub de Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragOver(System.Windows.Forms.DragEventArgs)">
+            <summary>Establecer el stub de Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnDragOverDragEventArgs">
+            <summary>Establecer el stub de Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnEnabledChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnEnabledChangedEventArgs">
+            <summary>Establecer el stub de Control.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnEnter(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnEnterEventArgs">
+            <summary>Establecer el stub de Control.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnFontChanged(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnFontChangedEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnForeColorChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnForeColorChangedEventArgs">
+            <summary>Establecer el stub de Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnGotFocus(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnGotFocusEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnHandleCreated(System.EventArgs)">
+            <summary>Establecer el stub de TextBox.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnHandleCreatedEventArgs">
+            <summary>Establecer el stub de TextBox.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnHandleDestroyed(System.EventArgs)">
+            <summary>Establecer el stub de TextBox.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnHandleDestroyedEventArgs">
+            <summary>Establecer el stub de TextBox.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnHelpRequested(System.Windows.Forms.HelpEventArgs)">
+            <summary>Establecer el stub de Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnHelpRequestedHelpEventArgs">
+            <summary>Establecer el stub de Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnHideSelectionChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnHideSelectionChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnHideSelectionChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnHideSelectionChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnImeModeChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnImeModeChangedEventArgs">
+            <summary>Establecer el stub de Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)">
+            <summary>Establecer el stub de Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnInvalidatedInvalidateEventArgs">
+            <summary>Establecer el stub de Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyDownKeyEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyPressKeyPressEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnKeyUpKeyEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>Establecer el stub de Control.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnLayoutLayoutEventArgs">
+            <summary>Establecer el stub de Control.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnLeave(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnLeaveEventArgs">
+            <summary>Establecer el stub de Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnLocationChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnLocationChangedEventArgs">
+            <summary>Establecer el stub de Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnLostFocus(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnLostFocusEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMarginChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMarginChangedEventArgs">
+            <summary>Establecer el stub de Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnModifiedChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnModifiedChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnModifiedChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnModifiedChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseCaptureChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseCaptureChangedEventArgs">
+            <summary>Establecer el stub de Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseClickMouseEventArgs">
+            <summary>Establecer el stub de Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseDoubleClickMouseEventArgs">
+            <summary>Establecer el stub de Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de Control.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseDownMouseEventArgs">
+            <summary>Establecer el stub de Control.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseEnter(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseEnterEventArgs">
+            <summary>Establecer el stub de Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseHover(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseHoverEventArgs">
+            <summary>Establecer el stub de Control.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseLeave(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseLeaveEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseMoveMouseEventArgs">
+            <summary>Establecer el stub de Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseUpMouseEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>Establecer el stub de Control.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMouseWheelMouseEventArgs">
+            <summary>Establecer el stub de Control.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMove(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMoveEventArgs">
+            <summary>Establecer el stub de Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnMultilineChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnMultilineChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnMultilineChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnMultilineChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnNotifyMessage(System.Windows.Forms.Message)">
+            <summary>Establecer el stub de Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnNotifyMessageMessage">
+            <summary>Establecer el stub de Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaddingChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaddingChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Establecer el stub de Control.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>Establecer el stub de Control.OnPaintBackground(PaintEventArgs pevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaintBackgroundPaintEventArgs">
+            <summary>Establecer el stub de Control.OnPaintBackground(PaintEventArgs pevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnPaintPaintEventArgs">
+            <summary>Establecer el stub de Control.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBackColorChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBackColorChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBackgroundImageChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBackgroundImageChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBindingContextChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentBindingContextChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentCursorChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentCursorChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentEnabledChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentEnabledChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentFontChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentFontChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentForeColorChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentForeColorChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentRightToLeftChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentRightToLeftChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentVisibleChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnParentVisibleChangedEventArgs">
+            <summary>Establecer el stub de Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnPreviewKeyDown(System.Windows.Forms.PreviewKeyDownEventArgs)">
+            <summary>Establecer el stub de Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnPreviewKeyDownPreviewKeyDownEventArgs">
+            <summary>Establecer el stub de Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnPrint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Establecer el stub de Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnPrintPaintEventArgs">
+            <summary>Establecer el stub de Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>Establecer el stub de Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Establecer el stub de Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnReadOnlyChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBoxBase.OnReadOnlyChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnReadOnlyChangedEventArgs">
+            <summary>Establecer el stub de TextBoxBase.OnReadOnlyChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnRegionChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnRegionChangedEventArgs">
+            <summary>Establecer el stub de Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnResize(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnResizeEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnRightToLeftChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnRightToLeftChangedEventArgs">
+            <summary>Establecer el stub de Control.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnSizeChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnSizeChangedEventArgs">
+            <summary>Establecer el stub de Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnStyleChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnStyleChangedEventArgs">
+            <summary>Establecer el stub de Control.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnSystemColorsChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnSystemColorsChangedEventArgs">
+            <summary>Establecer el stub de Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnTabIndexChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnTabIndexChangedEventArgs">
+            <summary>Establecer el stub de Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnTabStopChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnTabStopChangedEventArgs">
+            <summary>Establecer el stub de Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnTextAlignChanged(System.EventArgs)">
+            <summary>Establecer el stub de TextBox.OnTextAlignChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnTextAlignChangedEventArgs">
+            <summary>Establecer el stub de TextBox.OnTextAlignChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnTextChanged(System.EventArgs)">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnTextChangedEventArgs">
+            <summary>Establecer el stub de AlphaBlendTextBox.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnValidated(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnValidatedEventArgs">
+            <summary>Establecer el stub de Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnValidating(System.ComponentModel.CancelEventArgs)">
+            <summary>Establecer el stub de Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnValidatingCancelEventArgs">
+            <summary>Establecer el stub de Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.OnVisibleChanged(System.EventArgs)">
+            <summary>Establecer el stub de Control.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.OnVisibleChangedEventArgs">
+            <summary>Establecer el stub de Control.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.PreProcessMessage(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.PreProcessMessageMessageRef">
+            <summary>Establecer el stub de Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>Establecer el stub de TextBoxBase.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessCmdKeyMessageRefKeys">
+            <summary>Establecer el stub de TextBoxBase.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessDialogChar(System.Char)">
+            <summary>Establecer el stub de Control.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessDialogCharChar">
+            <summary>Establecer el stub de Control.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>Establecer el stub de TextBoxBase.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessDialogKeyKeys">
+            <summary>Establecer el stub de TextBoxBase.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyEventArgs(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyEventArgsMessageRef">
+            <summary>Establecer el stub de Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyMessage(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyMessageMessageRef">
+            <summary>Establecer el stub de Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de Control.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessKeyPreviewMessageRef">
+            <summary>Establecer el stub de Control.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessMnemonic(System.Char)">
+            <summary>Establecer el stub de Control.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ProcessMnemonicChar">
+            <summary>Establecer el stub de Control.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.Refresh">
+            <summary>Establecer el stub de Control.Refresh()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.Refresh01">
+            <summary>Establecer el stub de Control.Refresh()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetBackColor">
+            <summary>Establecer el stub de Control.ResetBackColor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetBackColor01">
+            <summary>Establecer el stub de Control.ResetBackColor()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetCursor">
+            <summary>Establecer el stub de Control.ResetCursor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetCursor01">
+            <summary>Establecer el stub de Control.ResetCursor()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetFont">
+            <summary>Establecer el stub de Control.ResetFont()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetFont01">
+            <summary>Establecer el stub de Control.ResetFont()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetForeColor">
+            <summary>Establecer el stub de Control.ResetForeColor()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetForeColor01">
+            <summary>Establecer el stub de Control.ResetForeColor()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetRightToLeft">
+            <summary>Establecer el stub de Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetRightToLeft01">
+            <summary>Establecer el stub de Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ResetText">
+            <summary>Establecer el stub de Control.ResetText()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ResetText01">
+            <summary>Establecer el stub de Control.ResetText()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.RightToLeft">
+            <summary>Establecer el stub de Control.get_RightToLeft()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.RightToLeftGet">
+            <summary>Establecer el stub de Control.get_RightToLeft()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.RightToLeftSetRightToLeft">
+            <summary>Establecer el stub de Control.set_RightToLeft(RightToLeft value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleChildren">
+            <summary>Establecer el stub de Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleChildrenGet">
+            <summary>Establecer el stub de Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Establecer el stub de Control.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleControlSizeFBoundsSpecified">
+            <summary>Establecer el stub de Control.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleCore(System.Single,System.Single)">
+            <summary>Establecer el stub de Control.ScaleCore(Single dx, Single dy)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ScaleCoreSingleSingle">
+            <summary>Establecer el stub de Control.ScaleCore(Single dx, Single dy)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.Select(System.Boolean,System.Boolean)">
+            <summary>Establecer el stub de Control.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SelectBooleanBoolean">
+            <summary>Establecer el stub de Control.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.SelectedText">
+            <summary>Establecer el stub de TextBoxBase.get_SelectedText()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SelectedTextGet">
+            <summary>Establecer el stub de TextBoxBase.get_SelectedText()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SelectedTextSetString">
+            <summary>Establecer el stub de TextBoxBase.set_SelectedText(String value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.SelectionLength">
+            <summary>Establecer el stub de TextBoxBase.get_SelectionLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SelectionLengthGet">
+            <summary>Establecer el stub de TextBoxBase.get_SelectionLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SelectionLengthSetInt32">
+            <summary>Establecer el stub de TextBoxBase.set_SelectionLength(Int32 value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>Establecer el stub de TextBoxBase.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SetBoundsCoreInt32Int32Int32Int32BoundsSpecified">
+            <summary>Establecer el stub de TextBoxBase.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.SetClientSizeCore(System.Int32,System.Int32)">
+            <summary>Establecer el stub de Control.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SetClientSizeCoreInt32Int32">
+            <summary>Establecer el stub de Control.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.SetVisibleCore(System.Boolean)">
+            <summary>Establecer el stub de Control.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SetVisibleCoreBoolean">
+            <summary>Establecer el stub de Control.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ShortcutsEnabled">
+            <summary>Establecer el stub de TextBoxBase.get_ShortcutsEnabled()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ShortcutsEnabledGet">
+            <summary>Establecer el stub de TextBoxBase.get_ShortcutsEnabled()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ShortcutsEnabledSetBoolean">
+            <summary>Establecer el stub de TextBoxBase.set_ShortcutsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ShowFocusCues">
+            <summary>Establecer el stub de Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ShowFocusCuesGet">
+            <summary>Establecer el stub de Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.ShowKeyboardCues">
+            <summary>Establecer el stub de Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ShowKeyboardCuesGet">
+            <summary>Establecer el stub de Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Site">
+            <summary>Establecer el stub de Control.get_Site()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SiteGet">
+            <summary>Establecer el stub de Control.get_Site()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SiteSetISite">
+            <summary>Establecer el stub de Control.set_Site(ISite value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.SizeFromClientSize(System.Drawing.Size)">
+            <summary>Establecer el stub de Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.SizeFromClientSizeSize">
+            <summary>Establecer el stub de Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.Text">
+            <summary>Establecer el stub de TextBox.get_Text()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.TextGet">
+            <summary>Establecer el stub de TextBox.get_Text()</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.StubAlphaBlendTextBox.TextLength">
+            <summary>Establecer el stub de TextBoxBase.get_TextLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.TextLengthGet">
+            <summary>Establecer el stub de TextBoxBase.get_TextLength()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.TextSetString">
+            <summary>Establecer el stub de TextBox.set_Text(String value)</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.ToString">
+            <summary>Establecer el stub de TextBoxBase.ToString()</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.ToString01">
+            <summary>Establecer el stub de TextBoxBase.ToString()</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.StubAlphaBlendTextBox.WndProc(System.Windows.Forms.Message@)">
+            <summary>Establecer el stub de AlphaBlendTextBox.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:ZBobb.Fakes.StubAlphaBlendTextBox.WndProcMessageRef">
+            <summary>Establecer el stub de AlphaBlendTextBox.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="T:ZBobb.Fakes.Stubwin32">
+            <summary>Tipo stub de ZBobb.win32</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Stubwin32.#ctor">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Stubwin32.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="M:ZBobb.Fakes.Stubwin32.InitializeStub">
+            <summary>Inicializa una nueva instancia de type Stubwin32</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Stubwin32.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:ZBobb.Fakes.Stubwin32.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+    </members>
+</doc>
