@@ -49,8 +49,19 @@ namespace GUI_MODERNISTA
             using (SqlConnection conexi = conexion.conectarbd())
             {
 
-                SqlCommand comando = new SqlCommand(string.Format(
-                    "SELECT SUM(VARIABLES." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES WHERE  VARIABLES.ID_MEDIDOR= " + datos.ID_MEDIDOR+ " AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA)"), conexi);
+                SqlCommand comando;
+                if (datos.variableaconsultar == "VOLUMENM3")
+                {
+                    comando = new SqlCommand(string.Format(
+                     "SELECT SUM(VARIABLES." + datos.variableaconsultar + "), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES WHERE VARIABLES.ID_MEDIDOR= " + datos.ID_MEDIDOR + " AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA)"), conexi);
+                }
+                else
+                {
+                    comando = new SqlCommand(string.Format(
+                       "SELECT SUM(VARIABLES." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES WHERE VARIABLES.ID_MEDIDOR= " + datos.ID_MEDIDOR + " AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA)"), conexi);
+                }
+
+
                 SqlDataReader reader = comando.ExecuteReader();
                 int con = 0;
                 double VARIA = 0.0;
@@ -75,7 +86,7 @@ namespace GUI_MODERNISTA
                 while (reader.Read())
                 {
 
-                    VARIA = Convert.ToDouble(reader.GetInt32(0)) + VARIA;
+                    VARIA = Convert.ToDouble(reader.GetInt32(0));
                     chart1.Series[0].Points.AddXY(con, VARIA);
                     chart1.Series[0].Points[con].AxisLabel = Convert.ToString(reader.GetInt32(1));
                     

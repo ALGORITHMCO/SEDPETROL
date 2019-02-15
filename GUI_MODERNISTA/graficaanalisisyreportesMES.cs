@@ -49,9 +49,17 @@ namespace GUI_MODERNISTA
             using (SqlConnection conexi = conexion.conectarbd())
             {
 
-                SqlCommand comando = new SqlCommand(string.Format(
-                     "SELECT SUM(t1." + datos.variableaconsultar + ")/count(*), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)   FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  M.ID_MEDIDOR = " + datos.ID_MEDIDOR + "  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)"), conexi);
-
+                SqlCommand comando;
+                if (datos.variableaconsultar == "VOLUMENM3")
+                {
+                    comando = new SqlCommand(string.Format(
+                    "SELECT ROUND(SUM(t1." + datos.variableaconsultar + "),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)   FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  M.ID_MEDIDOR = " + datos.ID_MEDIDOR + "  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)"), conexi);
+                }
+                else
+                {
+                    comando = new SqlCommand(string.Format(
+                     "SELECT ROUND(SUM(t1." + datos.variableaconsultar + ")/count(*),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)   FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  M.ID_MEDIDOR = " + datos.ID_MEDIDOR + "  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)"), conexi);
+                }
 
                 SqlDataReader reader = comando.ExecuteReader();
 
