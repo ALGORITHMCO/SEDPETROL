@@ -1070,6 +1070,86 @@ namespace GUI_MODERNISTA
 
         }
 
+
+        public static String[] DaconsultaNUMEDIDOR(string NUMEDIDOR)
+        {
+
+            String[] Lista = new String[10] { "", "", "", "", "", "", "", "", "", "" };
+            using (SqlConnection conexi = conexion.conectarbd())
+            {
+
+                SqlCommand comando = new SqlCommand(string.Format(
+                    "SELECT  t2.DEPARTAMENTO , t2.MUNICIPIO, t2.ZONA, t2.LOCALIDAD, t2.BARRIO, t2.CLASE_USO, M.MARCA, M.TIPO, M.DIAMETRO, M.ID_MEDIDOR  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO  WHERE M.NU_MEDIDOR = '" + NUMEDIDOR + "'"), conexi);
+
+                SqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Lista[0] = reader.GetString(0);
+                    Lista[1] = reader.GetString(1);
+                    Lista[2] = reader.GetString(2);
+                    Lista[3] = reader.GetString(3);
+                    Lista[4] = reader.GetString(4);
+                    Lista[5] = reader.GetString(5);
+                    Lista[6] = reader.GetString(6);
+                    Lista[7] = reader.GetString(7);
+                    Lista[8] = reader.GetString(8);
+                    Lista[9] = Convert.ToString(reader.GetInt32(9));
+                }
+
+                return Lista;
+
+
+                conexion.cerrarbd();
+
+            }
+        }
+
+
+
+        public static int agregaralertasaguas(alertasaguacl datos)
+        {
+
+            using (SqlConnection conee = conexion.conectarbd())
+            {
+                SqlCommand comando = new SqlCommand(String.Format("Insert into ANC (ID_MEDIDOR,FECHAINGRESO, HORAINGRESO, VOLUMENINGRESADO, SUMATORIACONSUMOLEGAL, DIFERENCIA, PERDIDASTECNICAS, PERDIDASCOMERCIALES, ACCIONESFRAUDULENTAS, MEDIDORESMANIPULADOS, MICROMEDICION, CLASE_DE_USO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}','{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
+                 datos.ID_MEDIDOR, datos.FECHAINGRESO, datos.HORAINGRESO, datos.VOLUMENINGRESADO, datos.SUMATORIACONSUMOLEGAL, datos.DIFERENCIA, datos.PERDIDASTECNICAS,
+                datos.PERDIDASCOMERCIALES, datos.ACCIONESFRAUDULENTAS, datos.MEDIDORESMANIPULADOS, datos.MICROMEDICION, datos.CLASE_DE_USO, datos.CAMPO1,
+                datos.CAMPO2, datos.CAMPO3, datos.CAMPO4, datos.CAMPO5), conee);
+                return comando.ExecuteNonQuery();
+            }
+
+
+        }
+
+
+        public static List<String> vaconsultaNUIDMEDIDOR()
+        {
+
+            List<String> Lista = new List<String>();
+            using (SqlConnection conexi = conexion.conectarbd())
+            {
+
+                SqlCommand comando = new SqlCommand(string.Format(
+                    "Select NU_MEDIDOR from MEDIDOR"), conexi);
+
+                SqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    Lista.Add(reader.GetString(0));
+
+                }
+
+                conexion.cerrarbd();
+                return Lista;
+
+            }
+
+        }
+
+
     }
 
     }

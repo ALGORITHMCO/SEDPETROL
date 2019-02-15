@@ -62,7 +62,9 @@ namespace GUI_MODERNISTA
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            SubmenuReportes.Visible = true;
+            AbrirFormHija(new alertasaguasno());
+            submenu2.Visible = false;
+            SubmenuReportes.Visible = false;
         }
 
         private void btnrptventa_Click(object sender, EventArgs e)

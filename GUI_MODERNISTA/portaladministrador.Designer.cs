@@ -397,11 +397,11 @@
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(3, 410);
+            this.btnReportes.Location = new System.Drawing.Point(7, 364);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(217, 40);
+            this.btnReportes.Size = new System.Drawing.Size(213, 40);
             this.btnReportes.TabIndex = 13;
-            this.btnReportes.Text = "Reportes";
+            this.btnReportes.Text = "Alertas aguas ";
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
@@ -422,7 +422,7 @@
             this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 364);
+            this.button6.Location = new System.Drawing.Point(3, 410);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(217, 40);
             this.button6.TabIndex = 11;

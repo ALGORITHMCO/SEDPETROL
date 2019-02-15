@@ -601,3 +601,4 @@ C:\Users\anita\Documents\GitHub\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNIST
 C:\Users\anita\Documents\GitHub\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.CoreCompileInputs.cache
 C:\Users\anita\Documents\GitHub\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.exe
 C:\Users\anita\Documents\GitHub\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.pdb
+C:\Users\anita\Documents\GitHub\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.alertasaguasno.resources
