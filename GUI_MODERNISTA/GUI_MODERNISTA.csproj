@@ -78,9 +78,17 @@
     <Compile Include="AgregarNovedad.Designer.cs">
       <DependentUpon>AgregarNovedad.cs</DependentUpon>
     </Compile>
+    <Compile Include="alertasaguacl.cs" />
     <Compile Include="analisisyreportesID.cs" />
     <Compile Include="AlimentacionHistorica.cs" />
     <Compile Include="AgregarNovedades.cs" />
+    <Compile Include="alertasaguascl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>alertasaguascl.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CodeFile1.cs" />
     <Compile Include="conexion.cs" />
     <Compile Include="ConsultaAlimentacion.cs">
@@ -327,6 +335,9 @@
     </Compile>
     <EmbeddedResource Include="AgregarNovedad.resx">
       <DependentUpon>AgregarNovedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alertasaguascl.resx">
+      <DependentUpon>alertasaguascl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaAlimentacion.resx">
       <DependentUpon>ConsultaAlimentacion.cs</DependentUpon>
