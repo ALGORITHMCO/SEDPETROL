@@ -95,6 +95,70 @@ namespace GUI_MODERNISTA
             }
         }
 
+        public static int agregarPQRS(AgregarPQRS PQRS)
+        {
+            int retorno = 0;
+            int retorno1 = 0;
+
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+                SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM PQRS WHERE ID_PQRS ='" + PQRS.idPQRS + "'"), cone);
+                SqlDataReader dr = consul.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return retorno = -1;
+                }
+                else
+                {
+                    using (SqlConnection conee = conexion.conectarbd())
+                    {
+                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_INFENTRADA, ID_MEDIDOR, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, RECLAMACIONES, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
+                        //novedades.idnovedad, novedades.idmedidor, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
+
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into PQRS (ID_MEDIDOR, FECHA_INGRESO_PQRS, HORA_INGRESO_PQRS, DESCRIPCION_PQRS, TIPOS_DE_SOLICITUD, CONSULTA_ESTADO_PQRS, DANO_PRESENTADO_EN, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}')",
+                        PQRS.idmedidor, PQRS.fechaingreso, PQRS.horaingreso, PQRS.descripciónPQRS, PQRS.tipodesolicitud, PQRS.consultaestadoPQRS, PQRS.dañopresentado, PQRS.campo1, PQRS.campo2, PQRS.campo3, PQRS.campo4, PQRS.campo5), conee);
+
+                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION) values ('{0}', '{1}', '{2}', '{3}')",
+                        // novedades.fechaingreso, novedades.horaingresonovedad, novedades.idmedidor, novedades.departamento), conee);
+                        return retorno1 = comando.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
+        public static int ingresarMedidor(IngresoDatosMedidor medidor)
+        {
+            int retorno = 0;
+            int retorno1 = 0;
+
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+                SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM MEDIDOR WHERE ID_MEDIDOR ='" + medidor.idmedidor + "'"), cone);
+                SqlDataReader dr = consul.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return retorno = -1;
+                }
+                else
+                {
+                    using (SqlConnection conee = conexion.conectarbd())
+                    {
+                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_INFENTRADA, ID_MEDIDOR, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, RECLAMACIONES, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
+                        //novedades.idnovedad, novedades.idmedidor, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
+
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into MEDIDOR (CUENTA_CONTRATO, NU_MEDIDOR, MARCA, TIPO, ULTIMA_LECTURA, LECTURA_ANTERIOR, CONSUMOM3, DIAMETRO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')",
+                        medidor.cuentacontrato, medidor.numeromedidor, medidor.marca, medidor.tipo, medidor.ultimalectura, medidor.lecturaanterior, medidor.consumom3, medidor.diametro, medidor.campo1, medidor.campo2, medidor.campo3, medidor.campo4, medidor.campo5), conee);
+
+                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION) values ('{0}', '{1}', '{2}', '{3}')",
+                        // novedades.fechaingreso, novedades.horaingresonovedad, novedades.idmedidor, novedades.departamento), conee);
+                        return retorno1 = comando.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
 
         //public static int agregarN(AgregarNovedades novedades)    
         //{
