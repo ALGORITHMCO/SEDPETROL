@@ -78,6 +78,7 @@
     <Compile Include="AgregarNovedad.Designer.cs">
       <DependentUpon>AgregarNovedad.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarPQRS.cs" />
     <Compile Include="alertasaguacl.cs" />
     <Compile Include="analisisyreportesID.cs" />
     <Compile Include="AlimentacionHistorica.cs" />
@@ -88,6 +89,18 @@
     <Compile Include=".Designer.cs">
       <DependentUpon>alertasaguascl.cs</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aNovedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aNovedad.Designer.cs">
+      <DependentUpon>aNovedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aPQRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aPQRS.Designer.cs">
+      <DependentUpon>aPQRS.cs</DependentUpon>
     </Compile>
     <Compile Include="CodeFile1.cs" />
     <Compile Include="conexion.cs" />
@@ -202,6 +215,13 @@
     <Compile Include="graficaanalisisyreporteszonas.Designer.cs">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDatosMedidor.cs" />
+    <Compile Include="ingresoDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDM.Designer.cs">
+      <DependentUpon>ingresoDM.cs</DependentUpon>
+    </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,12 +258,6 @@
     </Compile>
     <Compile Include="mapazonas.Designer.cs">
       <DependentUpon>mapazonas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="aNovedad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="aNovedad.Designer.cs">
-      <DependentUpon>aNovedad.cs</DependentUpon>
     </Compile>
     <Compile Include="reportesyanalisisINIDaño.cs">
       <SubType>Form</SubType>
@@ -339,6 +353,12 @@
     <EmbeddedResource Include="alertasaguascl.resx">
       <DependentUpon>alertasaguascl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="aNovedad.resx">
+      <DependentUpon>aNovedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aPQRS.resx">
+      <DependentUpon>aPQRS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaAlimentacion.resx">
       <DependentUpon>ConsultaAlimentacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -391,6 +411,9 @@
     <EmbeddedResource Include="graficaanalisisyreporteszonas.resx">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDM.resx">
+      <DependentUpon>ingresoDM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -411,9 +434,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="portaladministrador.resx">
       <DependentUpon>portaladministrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="aNovedad.resx">
-      <DependentUpon>aNovedad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportesyanalisisINIDaño.resx">
       <DependentUpon>reportesyanalisisINIDaño.cs</DependentUpon>
