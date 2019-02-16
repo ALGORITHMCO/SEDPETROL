@@ -324,6 +324,7 @@ namespace GUI_MODERNISTA
 
             if (resul == 1)
             {
+                ////hola
                 MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
