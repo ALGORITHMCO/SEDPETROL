@@ -193,5 +193,15 @@ namespace GUI_MODERNISTA
             AbrirFormHija(new reportesyanalisisINzonasmes());
             submenu2.Visible = false;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new aPQRS());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new ingresoDM());
+        }
     }
 }
