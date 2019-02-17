@@ -52,7 +52,7 @@ namespace GUI_MODERNISTA
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            IDANC.Text = Registroo.vaconsultaIDANC(); 
             comboBox1.DataSource = Registroo.vaconsultaNUIDMEDIDOR();
 
 
@@ -154,32 +154,35 @@ namespace GUI_MODERNISTA
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-            comboBox5.Visible = false;
-            comboBox4.Visible = false;
+            
         }
 
         private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (comboBox3.Text == "Acciones Fraudulentas")
             {
-                comboBox4.Visible = true;
-                comboBox6.Visible = false;
+                comboBox4.Enabled = true;
+                comboBox6.Enabled = false;
+                comboBox6.Text="";
             }
             else
             {
                 if (comboBox3.Text == "Micromedición")
                 {
-                    comboBox6.Visible = true;
-                    comboBox4.Visible = false;
-                    comboBox5.Visible = false;
+                    comboBox6.Enabled = true;
+                    comboBox4.Enabled = false;
+                    comboBox5.Enabled = false;
+                    comboBox4.Text = "";
+                    comboBox5.Text = "";
                 }
                 else
                 {
-                    comboBox6.Visible = false;
-                    comboBox4.Visible = false;
-                    comboBox5.Visible = false;
+                    comboBox6.Enabled = false;
+                    comboBox4.Enabled = false;
+                    comboBox5.Enabled = false;
+                    comboBox6.Text = "";
+                    comboBox4.Text = "";
+                    comboBox5.Text = "";
                 }
             }
         }
@@ -188,11 +191,11 @@ namespace GUI_MODERNISTA
         {
             if (comboBox4.Text == "Medidores Manipulados")
             {
-                comboBox5.Visible = true;
+                comboBox5.Enabled = true;
             }
             else
             {
-                comboBox5.Visible = false;
+                comboBox5.Enabled = false;
             }
         }
 
@@ -332,6 +335,8 @@ namespace GUI_MODERNISTA
             {
                 MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+            IDANC.Text = Registroo.vaconsultaIDANC();
         }
     }
 }

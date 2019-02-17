@@ -1213,6 +1213,32 @@ namespace GUI_MODERNISTA
 
         }
 
+        public static String vaconsultaIDANC()
+        {
+
+            String Lista = "";
+            using (SqlConnection conexi = conexion.conectarbd())
+            {
+
+                SqlCommand comando = new SqlCommand(string.Format(
+                    "SELECT ID_ANC FROM ANC WHERE ID_ANC = (SELECT MAX(ID_ANC) FROM ANC)"), conexi);
+
+                SqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    Lista =Convert.ToString(reader.GetInt32(0)+1);
+
+                }
+
+                conexion.cerrarbd();
+                return Lista;
+
+            }
+
+        }
+
 
     }
 

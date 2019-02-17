@@ -74,6 +74,8 @@
             this.lidmedidor = new System.Windows.Forms.Label();
             this.lhoraingreso = new System.Windows.Forms.Label();
             this.lfechaingreso = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.IDANC = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label7
@@ -114,21 +116,21 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.Enabled = false;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(735, 237);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(197, 21);
             this.comboBox6.TabIndex = 181;
-            this.comboBox6.Visible = false;
             // 
             // comboBox5
             // 
+            this.comboBox5.Enabled = false;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(735, 208);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(197, 21);
             this.comboBox5.TabIndex = 180;
-            this.comboBox5.Visible = false;
             // 
             // comboBox3
             // 
@@ -141,12 +143,12 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(735, 181);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(197, 21);
             this.comboBox4.TabIndex = 178;
-            this.comboBox4.Visible = false;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged_1);
             // 
             // comboBox2
@@ -240,7 +242,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 185);
+            this.comboBox1.Location = new System.Drawing.Point(287, 204);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(197, 21);
             this.comboBox1.TabIndex = 168;
@@ -389,7 +391,7 @@
             // 
             this.lbarrio.AutoSize = true;
             this.lbarrio.BackColor = System.Drawing.Color.Transparent;
-            this.lbarrio.Location = new System.Drawing.Point(99, 332);
+            this.lbarrio.Location = new System.Drawing.Point(99, 351);
             this.lbarrio.Name = "lbarrio";
             this.lbarrio.Size = new System.Drawing.Size(34, 13);
             this.lbarrio.TabIndex = 151;
@@ -397,7 +399,7 @@
             // 
             // barrio
             // 
-            this.barrio.Location = new System.Drawing.Point(287, 321);
+            this.barrio.Location = new System.Drawing.Point(287, 340);
             this.barrio.Name = "barrio";
             this.barrio.Size = new System.Drawing.Size(197, 20);
             this.barrio.TabIndex = 150;
@@ -406,7 +408,7 @@
             // 
             this.llocalidad.AutoSize = true;
             this.llocalidad.BackColor = System.Drawing.Color.Transparent;
-            this.llocalidad.Location = new System.Drawing.Point(99, 304);
+            this.llocalidad.Location = new System.Drawing.Point(99, 323);
             this.llocalidad.Name = "llocalidad";
             this.llocalidad.Size = new System.Drawing.Size(53, 13);
             this.llocalidad.TabIndex = 149;
@@ -414,7 +416,7 @@
             // 
             // localidad
             // 
-            this.localidad.Location = new System.Drawing.Point(287, 295);
+            this.localidad.Location = new System.Drawing.Point(287, 314);
             this.localidad.Name = "localidad";
             this.localidad.Size = new System.Drawing.Size(197, 20);
             this.localidad.TabIndex = 148;
@@ -423,7 +425,7 @@
             // 
             this.lzona.AutoSize = true;
             this.lzona.BackColor = System.Drawing.Color.Transparent;
-            this.lzona.Location = new System.Drawing.Point(99, 276);
+            this.lzona.Location = new System.Drawing.Point(99, 295);
             this.lzona.Name = "lzona";
             this.lzona.Size = new System.Drawing.Size(32, 13);
             this.lzona.TabIndex = 147;
@@ -431,7 +433,7 @@
             // 
             // zona
             // 
-            this.zona.Location = new System.Drawing.Point(287, 269);
+            this.zona.Location = new System.Drawing.Point(287, 288);
             this.zona.Name = "zona";
             this.zona.Size = new System.Drawing.Size(197, 20);
             this.zona.TabIndex = 146;
@@ -440,7 +442,7 @@
             // 
             this.lciudad.AutoSize = true;
             this.lciudad.BackColor = System.Drawing.Color.Transparent;
-            this.lciudad.Location = new System.Drawing.Point(99, 245);
+            this.lciudad.Location = new System.Drawing.Point(99, 264);
             this.lciudad.Name = "lciudad";
             this.lciudad.Size = new System.Drawing.Size(40, 13);
             this.lciudad.TabIndex = 145;
@@ -448,7 +450,7 @@
             // 
             // ciudad
             // 
-            this.ciudad.Location = new System.Drawing.Point(287, 242);
+            this.ciudad.Location = new System.Drawing.Point(287, 261);
             this.ciudad.Name = "ciudad";
             this.ciudad.Size = new System.Drawing.Size(197, 20);
             this.ciudad.TabIndex = 144;
@@ -457,7 +459,7 @@
             // 
             this.ldepartamento.AutoSize = true;
             this.ldepartamento.BackColor = System.Drawing.Color.Transparent;
-            this.ldepartamento.Location = new System.Drawing.Point(99, 217);
+            this.ldepartamento.Location = new System.Drawing.Point(99, 236);
             this.ldepartamento.Name = "ldepartamento";
             this.ldepartamento.Size = new System.Drawing.Size(74, 13);
             this.ldepartamento.TabIndex = 143;
@@ -465,7 +467,7 @@
             // 
             // departamento
             // 
-            this.departamento.Location = new System.Drawing.Point(287, 214);
+            this.departamento.Location = new System.Drawing.Point(287, 233);
             this.departamento.Name = "departamento";
             this.departamento.Size = new System.Drawing.Size(197, 20);
             this.departamento.TabIndex = 142;
@@ -474,7 +476,7 @@
             // 
             this.lidmedidor.AutoSize = true;
             this.lidmedidor.BackColor = System.Drawing.Color.Transparent;
-            this.lidmedidor.Location = new System.Drawing.Point(99, 189);
+            this.lidmedidor.Location = new System.Drawing.Point(99, 208);
             this.lidmedidor.Name = "lidmedidor";
             this.lidmedidor.Size = new System.Drawing.Size(57, 13);
             this.lidmedidor.TabIndex = 141;
@@ -500,6 +502,26 @@
             this.lfechaingreso.TabIndex = 139;
             this.lfechaingreso.Text = "Fecha Ingreso";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(99, 181);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 185;
+            this.label8.Text = "Id ANC";
+            // 
+            // IDANC
+            // 
+            this.IDANC.AutoSize = true;
+            this.IDANC.BackColor = System.Drawing.Color.Transparent;
+            this.IDANC.Location = new System.Drawing.Point(284, 181);
+            this.IDANC.Name = "IDANC";
+            this.IDANC.Size = new System.Drawing.Size(75, 13);
+            this.IDANC.TabIndex = 186;
+            this.IDANC.Text = "Fecha Ingreso";
+            // 
             // alertasaguasno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,6 +529,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(990, 587);
+            this.Controls.Add(this.IDANC);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox7);
@@ -610,5 +634,7 @@
         private System.Windows.Forms.Label lidmedidor;
         private System.Windows.Forms.Label lhoraingreso;
         private System.Windows.Forms.Label lfechaingreso;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label IDANC;
     }
 }
