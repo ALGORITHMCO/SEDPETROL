@@ -123,29 +123,7 @@ namespace GUI_MODERNISTA
 
         }
 
-        private void fraudefluido_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-        private void cortes_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-        
-
-        
+       
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -199,9 +177,9 @@ namespace GUI_MODERNISTA
             }
         }
 
-        private void fraudefluido_TextChanged_1(object sender, EventArgs e)
+        private void fraudefluido_TextChanged_1(object sender, EventArgs en)
         {
-            if (cortes.Text == "")
+            if (cortes.Text == "" && fraudefluido.Text != "")
             {
                 NU1 = Convert.ToDouble(fraudefluido.Text);
                 NU2 = 0.0;
@@ -211,7 +189,7 @@ namespace GUI_MODERNISTA
             }
             else
             {
-                if (fraudefluido.Text == "")
+                if (fraudefluido.Text == "" && cortes.Text != "")
                 {
                     NU1 = 0.0;
                     NU2 = Convert.ToDouble(cortes.Text);
@@ -241,11 +219,11 @@ namespace GUI_MODERNISTA
 
                 }
             }
-            }
+        }
 
         private void cortes_TextChanged_1(object sender, EventArgs e)
         {
-            if (cortes.Text == "")
+            if (cortes.Text == "" && fraudefluido.Text != "")
             {
                 NU1 = Convert.ToDouble(fraudefluido.Text);
                 NU2 = 0.0;
@@ -255,7 +233,7 @@ namespace GUI_MODERNISTA
             }
             else
             {
-                if (fraudefluido.Text == "")
+                if (fraudefluido.Text == "" && cortes.Text != "")
                 {
                     NU1 = 0.0;
                     NU2 = Convert.ToDouble(cortes.Text);
@@ -337,6 +315,79 @@ namespace GUI_MODERNISTA
             }
 
             IDANC.Text = Registroo.vaconsultaIDANC();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (cortes.Text == "")
+            {
+                NU1 = Convert.ToDouble(fraudefluido.Text);
+                NU2 = 0.0;
+
+                TOTAL = NU1 - NU2;
+                Diferencia.Text = Convert.ToString(TOTAL);
+            }
+            else
+            {
+                if (fraudefluido.Text == "")
+                {
+                    NU1 = 0.0;
+                    NU2 = Convert.ToDouble(cortes.Text);
+
+                    TOTAL = NU1 - NU2;
+                    Diferencia.Text = Convert.ToString(TOTAL);
+                }
+                else
+                {
+                    if (fraudefluido.Text == "" && cortes.Text == "")
+                    {
+                        NU1 = 0.0;
+                        NU2 = 0.0;
+
+                        TOTAL = NU1 - NU2;
+                        Diferencia.Text = Convert.ToString(TOTAL);
+                    }
+                    else
+                    {
+
+                        NU1 = Convert.ToDouble(fraudefluido.Text);
+                        NU2 = Convert.ToDouble(cortes.Text);
+
+                        TOTAL = NU1 - NU2;
+                        Diferencia.Text = Convert.ToString(TOTAL);
+                    }
+
+                }
+            }
+        }
+
+        private void fraudefluido_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (fraudefluido.Text == ",")
+            {
+
+            }
+            else
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                {
+                    MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    e.Handled = true;
+                    return;
+                }
+            }
+            
+        }
+
+        private void cortes_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

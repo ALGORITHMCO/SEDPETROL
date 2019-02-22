@@ -76,6 +76,7 @@
             this.lfechaingreso = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.IDANC = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label7
@@ -368,6 +369,7 @@
             this.cortes.Size = new System.Drawing.Size(197, 20);
             this.cortes.TabIndex = 154;
             this.cortes.TextChanged += new System.EventHandler(this.cortes_TextChanged_1);
+            this.cortes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cortes_KeyPress_1);
             // 
             // lfraudefluido
             // 
@@ -386,6 +388,7 @@
             this.fraudefluido.Size = new System.Drawing.Size(197, 20);
             this.fraudefluido.TabIndex = 152;
             this.fraudefluido.TextChanged += new System.EventHandler(this.fraudefluido_TextChanged_1);
+            this.fraudefluido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.fraudefluido_KeyPress_1);
             // 
             // lbarrio
             // 
@@ -522,6 +525,16 @@
             this.IDANC.TabIndex = 186;
             this.IDANC.Text = "Fecha Ingreso";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(409, 475);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 187;
+            this.button2.Text = "Calcular";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // alertasaguasno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,6 +542,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(990, 587);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.IDANC);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -636,5 +650,6 @@
         private System.Windows.Forms.Label lfechaingreso;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label IDANC;
+        private System.Windows.Forms.Button button2;
     }
 }
