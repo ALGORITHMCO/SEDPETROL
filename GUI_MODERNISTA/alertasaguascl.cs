@@ -364,7 +364,8 @@ namespace GUI_MODERNISTA
 
         private void fraudefluido_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            if (fraudefluido.Text == ",")
+            char SignoDecimal = '.';
+            if (e.KeyChar != SignoDecimal)
             {
 
             }
@@ -382,11 +383,19 @@ namespace GUI_MODERNISTA
 
         private void cortes_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            char SignoDecimal = '.';
+            if (e.KeyChar != SignoDecimal)
             {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
+
+            }
+            else
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                {
+                    MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    e.Handled = true;
+                    return;
+                }
             }
         }
     }
