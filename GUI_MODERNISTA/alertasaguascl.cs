@@ -52,7 +52,7 @@ namespace GUI_MODERNISTA
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            IDANC.Text = Registroo.vaconsultaIDANC(); 
             comboBox1.DataSource = Registroo.vaconsultaNUIDMEDIDOR();
 
 
@@ -123,29 +123,7 @@ namespace GUI_MODERNISTA
 
         }
 
-        private void fraudefluido_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-        private void cortes_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-        
-
-        
+       
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -154,32 +132,35 @@ namespace GUI_MODERNISTA
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-            comboBox5.Visible = false;
-            comboBox4.Visible = false;
+            
         }
 
         private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (comboBox3.Text == "Acciones Fraudulentas")
             {
-                comboBox4.Visible = true;
-                comboBox6.Visible = false;
+                comboBox4.Enabled = true;
+                comboBox6.Enabled = false;
+                comboBox6.Text="";
             }
             else
             {
                 if (comboBox3.Text == "Micromedición")
                 {
-                    comboBox6.Visible = true;
-                    comboBox4.Visible = false;
-                    comboBox5.Visible = false;
+                    comboBox6.Enabled = true;
+                    comboBox4.Enabled = false;
+                    comboBox5.Enabled = false;
+                    comboBox4.Text = "";
+                    comboBox5.Text = "";
                 }
                 else
                 {
-                    comboBox6.Visible = false;
-                    comboBox4.Visible = false;
-                    comboBox5.Visible = false;
+                    comboBox6.Enabled = false;
+                    comboBox4.Enabled = false;
+                    comboBox5.Enabled = false;
+                    comboBox6.Text = "";
+                    comboBox4.Text = "";
+                    comboBox5.Text = "";
                 }
             }
         }
@@ -188,17 +169,17 @@ namespace GUI_MODERNISTA
         {
             if (comboBox4.Text == "Medidores Manipulados")
             {
-                comboBox5.Visible = true;
+                comboBox5.Enabled = true;
             }
             else
             {
-                comboBox5.Visible = false;
+                comboBox5.Enabled = false;
             }
         }
 
-        private void fraudefluido_TextChanged_1(object sender, EventArgs e)
+        private void fraudefluido_TextChanged_1(object sender, EventArgs en)
         {
-            if (cortes.Text == "")
+            if (cortes.Text == "" && fraudefluido.Text != "")
             {
                 NU1 = Convert.ToDouble(fraudefluido.Text);
                 NU2 = 0.0;
@@ -208,7 +189,7 @@ namespace GUI_MODERNISTA
             }
             else
             {
-                if (fraudefluido.Text == "")
+                if (fraudefluido.Text == "" && cortes.Text != "")
                 {
                     NU1 = 0.0;
                     NU2 = Convert.ToDouble(cortes.Text);
@@ -238,11 +219,11 @@ namespace GUI_MODERNISTA
 
                 }
             }
-            }
+        }
 
         private void cortes_TextChanged_1(object sender, EventArgs e)
         {
-            if (cortes.Text == "")
+            if (cortes.Text == "" && fraudefluido.Text != "")
             {
                 NU1 = Convert.ToDouble(fraudefluido.Text);
                 NU2 = 0.0;
@@ -252,7 +233,7 @@ namespace GUI_MODERNISTA
             }
             else
             {
-                if (fraudefluido.Text == "")
+                if (fraudefluido.Text == "" && cortes.Text != "")
                 {
                     NU1 = 0.0;
                     NU2 = Convert.ToDouble(cortes.Text);
@@ -331,6 +312,90 @@ namespace GUI_MODERNISTA
             else
             {
                 MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            IDANC.Text = Registroo.vaconsultaIDANC();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (cortes.Text == "")
+            {
+                NU1 = Convert.ToDouble(fraudefluido.Text);
+                NU2 = 0.0;
+
+                TOTAL = NU1 - NU2;
+                Diferencia.Text = Convert.ToString(TOTAL);
+            }
+            else
+            {
+                if (fraudefluido.Text == "")
+                {
+                    NU1 = 0.0;
+                    NU2 = Convert.ToDouble(cortes.Text);
+
+                    TOTAL = NU1 - NU2;
+                    Diferencia.Text = Convert.ToString(TOTAL);
+                }
+                else
+                {
+                    if (fraudefluido.Text == "" && cortes.Text == "")
+                    {
+                        NU1 = 0.0;
+                        NU2 = 0.0;
+
+                        TOTAL = NU1 - NU2;
+                        Diferencia.Text = Convert.ToString(TOTAL);
+                    }
+                    else
+                    {
+
+                        NU1 = Convert.ToDouble(fraudefluido.Text);
+                        NU2 = Convert.ToDouble(cortes.Text);
+
+                        TOTAL = NU1 - NU2;
+                        Diferencia.Text = Convert.ToString(TOTAL);
+                    }
+
+                }
+            }
+        }
+
+        private void fraudefluido_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char SignoDecimal = '.';
+            if (e.KeyChar != SignoDecimal)
+            {
+
+            }
+            else
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                {
+                    MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    e.Handled = true;
+                    return;
+                }
+            }
+            
+        }
+
+        private void cortes_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char SignoDecimal = '.';
+            if (e.KeyChar != SignoDecimal)
+            {
+
+            }
+            else
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                {
+                    MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    e.Handled = true;
+                    return;
+                }
             }
         }
     }

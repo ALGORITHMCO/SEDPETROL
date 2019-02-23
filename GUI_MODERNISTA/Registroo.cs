@@ -518,17 +518,23 @@ namespace GUI_MODERNISTA
 
 
                 SqlDataReader reader = comando.ExecuteReader();
+                int vaanterior=0; 
                 while (reader.Read())
                 {
                     analisisyreportesID palimentacion = new analisisyreportesID();
                     
                     palimentacion.FECHA = Convert.ToString(reader.GetInt32(3)) + "-" + Convert.ToString(reader.GetInt32(1)) + "-" + Convert.ToString(reader.GetInt32(2));
-                  
-                    palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
 
-
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0) );
+                    }
+                    else
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
+                    }
+                    vaanterior = reader.GetInt32(0);
                     Lista.Add(palimentacion);
-
                 }
                 conexion.cerrarbd();
                 return Lista;
@@ -756,15 +762,23 @@ namespace GUI_MODERNISTA
 
                 SqlDataReader reader = comando.ExecuteReader();
                 int fecha = -1;
+                int vaanterior = 0; 
                 while (reader.Read())
                 {
 
                     analisisyreportesID palimentacion = new analisisyreportesID();
                     
                     palimentacion.FECHA = Convert.ToString(reader.GetInt32(2)) + "-" + Convert.ToString(reader.GetInt32(1));
-                    
-                    palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
 
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0) );
+                    }
+                    else
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
+                    }
+                    vaanterior = reader.GetInt32(0);
                     Lista.Add(palimentacion);
 
 
@@ -797,13 +811,20 @@ namespace GUI_MODERNISTA
                 }
                 SqlDataReader reader = comando.ExecuteReader();
                 int fecha = -1;
+                int vaanterior = 0; 
                 while (reader.Read())
                 {
                     analisisyreportesID palimentacion = new analisisyreportesID();
-                    palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
                     palimentacion.FECHA = Convert.ToString(reader.GetInt32(1));
-
-
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0) );
+                    }
+                    else
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
+                    }
+                    vaanterior = reader.GetInt32(0);
                     Lista.Add(palimentacion);
 
                 }
@@ -969,14 +990,20 @@ namespace GUI_MODERNISTA
                     }
                 }
                 SqlDataReader reader = comando.ExecuteReader();
-
+                int vaanterior = 0; 
                 while (reader.Read())
                 {
                     analisisyreportesID palimentacion = new analisisyreportesID();
-                    palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
                     palimentacion.FECHA = Convert.ToString(reader.GetInt32(1));
-
-
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0) );
+                    }
+                    else
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
+                    }
+                    vaanterior = reader.GetInt32(0);
                     Lista.Add(palimentacion);
 
                 }
@@ -1107,7 +1134,7 @@ namespace GUI_MODERNISTA
                     }
                 }
                 SqlDataReader reader = comando.ExecuteReader();
-
+                int vaanterior = 0; 
                 while (reader.Read())
                 {
                     analisisyreportesID palimentacion = new analisisyreportesID();
@@ -1116,12 +1143,16 @@ namespace GUI_MODERNISTA
                     // palimentacion.ID_CONTROL = Convert.ToString(reader.GetInt32(1));
                     // palimentacion.ID_MEDIDOR = Convert.ToString(reader.GetInt32(2));
                     palimentacion.FECHA = Convert.ToString(reader.GetInt32(2)) + "-" + Convert.ToString(reader.GetInt32(1));
-                    //  palimentacion.HORA = reader.GetString(4);
-                    palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
-                    //  palimentacion.DEPARTAMENTO = reader.GetString(6);
-                    //  palimentacion.ZONA = reader.GetString(7);
-                    //  palimentacion.DIRECION = reader.GetString(8);
-                    //  palimentacion.ESTRATO = reader.GetString(9);
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0) );
+                    }
+                    else
+                    {
+                        palimentacion.VARIABLE = Convert.ToString(reader.GetInt32(0));
+                    }
+                    vaanterior = reader.GetInt32(0);
+                    Lista.Add(palimentacion);
 
 
                     Lista.Add(palimentacion);
@@ -1203,6 +1234,32 @@ namespace GUI_MODERNISTA
                 {
 
                     Lista.Add(reader.GetString(0));
+
+                }
+
+                conexion.cerrarbd();
+                return Lista;
+
+            }
+
+        }
+
+        public static String vaconsultaIDANC()
+        {
+
+            String Lista = "";
+            using (SqlConnection conexi = conexion.conectarbd())
+            {
+
+                SqlCommand comando = new SqlCommand(string.Format(
+                    "SELECT ID_ANC FROM ANC WHERE ID_ANC = (SELECT MAX(ID_ANC) FROM ANC)"), conexi);
+
+                SqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    Lista =Convert.ToString(reader.GetInt32(0)+1);
 
                 }
 
