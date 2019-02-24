@@ -153,13 +153,16 @@
       <DependentUpon>ConsultareportesyanalisisINzonas.cs</DependentUpon>
     </Compile>
     <Compile Include="CrystalReport1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CrystalReport11.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
@@ -170,12 +173,6 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formFactura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formFactura.Designer.cs">
-      <DependentUpon>formFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="graficaanalisisyreportesMES.cs">
       <SubType>UserControl</SubType>
@@ -385,13 +382,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport11.cs</LastGenOutput>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formFactura.resx">
-      <DependentUpon>formFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="graficaanalisisyreportesMES.resx">
       <DependentUpon>graficaanalisisyreportesMES.cs</DependentUpon>
