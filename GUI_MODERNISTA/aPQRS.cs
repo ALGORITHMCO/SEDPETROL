@@ -19,6 +19,24 @@ namespace GUI_MODERNISTA
             fingPQRS.Text = DateTime.Now.ToShortDateString();
             horaingPQRS.Text = DateTime.Now.ToShortTimeString();
 
+            using (SqlConnection cone = conexion.conectarbd()) { 
+            string query1 = "SELECT ID_PQRS FROM  PQRS WHERE ID_PQRS=(SELECT MAX(ID_PQRS) FROM PQRS)";
+            using (SqlCommand command = new SqlCommand(query1, cone))
+            {
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        //columnData.Add(reader.GetString(0));
+                        
+                        label6.Text=Convert.ToString(reader.GetInt32(0)+1);
+                    }
+                }
+            }
+            }
+
+
+
             tipodesolicitud.Items.Add("Reclamo");
             tipodesolicitud.Items.Add("Facturación");
             tipodesolicitud.Items.Add("Sugerencia");
@@ -337,8 +355,9 @@ namespace GUI_MODERNISTA
 
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
 
-
- 
+        }
     }
 }

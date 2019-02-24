@@ -79,6 +79,8 @@
             this.identificacion = new System.Windows.Forms.TextBox();
             this.lidusuario = new System.Windows.Forms.Label();
             this.descripcionPQRS = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -103,7 +105,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(72, 226);
+            this.label3.Location = new System.Drawing.Point(67, 198);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 17);
@@ -115,7 +117,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(72, 191);
+            this.label2.Location = new System.Drawing.Point(67, 163);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 17);
@@ -407,7 +409,7 @@
             // 
             this.fingPQRS.AutoSize = true;
             this.fingPQRS.BackColor = System.Drawing.Color.Transparent;
-            this.fingPQRS.Location = new System.Drawing.Point(241, 191);
+            this.fingPQRS.Location = new System.Drawing.Point(236, 163);
             this.fingPQRS.Name = "fingPQRS";
             this.fingPQRS.Size = new System.Drawing.Size(46, 17);
             this.fingPQRS.TabIndex = 76;
@@ -417,7 +419,7 @@
             // 
             this.horaingPQRS.AutoSize = true;
             this.horaingPQRS.BackColor = System.Drawing.Color.Transparent;
-            this.horaingPQRS.Location = new System.Drawing.Point(241, 226);
+            this.horaingPQRS.Location = new System.Drawing.Point(236, 198);
             this.horaingPQRS.Name = "horaingPQRS";
             this.horaingPQRS.Size = new System.Drawing.Size(46, 17);
             this.horaingPQRS.TabIndex = 77;
@@ -570,6 +572,29 @@
             this.descripcionPQRS.Size = new System.Drawing.Size(296, 22);
             this.descripcionPQRS.TabIndex = 99;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(74, 236);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.TabIndex = 100;
+            this.label4.Text = "Id PQRS";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(236, 231);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "label9";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // aPQRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -577,6 +602,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.descripcionPQRS);
             this.Controls.Add(this.iusuario);
             this.Controls.Add(this.lcorreo);
@@ -691,5 +718,7 @@
         private System.Windows.Forms.TextBox identificacion;
         private System.Windows.Forms.Label lidusuario;
         private System.Windows.Forms.TextBox descripcionPQRS;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }

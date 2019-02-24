@@ -183,11 +183,20 @@ namespace GUI_MODERNISTA
                     chart1.ChartAreas["ChartArea1"].AxisX.Title = "FECHA";
 
 
-                    while (reader.Read())
-                    {
+                int vaanterior = 0;
+                while (reader.Read())
+                {
 
+                    if (datos.variableaconsultar == "VOLUMENM3")
+                    {
+                        VARIA = Convert.ToDouble(reader.GetInt32(0) );
+                    }
+                    else
+                    {
                         VARIA = Convert.ToDouble(reader.GetInt32(0));
-                        chart1.Series[0].Points.AddXY(con, VARIA);
+                    }
+                    vaanterior = reader.GetInt32(0);
+                    chart1.Series[0].Points.AddXY(con, VARIA);
                         chart1.Series["Series1"].Points[con].AxisLabel = Convert.ToString(reader.GetInt32(2)) + "-" + Convert.ToString(reader.GetInt32(1));
                         con++;
 
