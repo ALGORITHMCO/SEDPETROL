@@ -106,7 +106,7 @@ namespace GUI_MODERNISTA
 
             }
             ReportDocument crystalrpt = new ReportDocument();
-            crystalrpt.Load(@"C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\CrystalReport1.rpt");  // direccion del reporte
+            crystalrpt.Load(@"C:\CrystalReport1.rpt");  // direccion del reporte
 
             ParameterFieldDefinitions crParameterFieldDefinitions;
             ParameterFieldDefinition crParameterFieldDefinition;

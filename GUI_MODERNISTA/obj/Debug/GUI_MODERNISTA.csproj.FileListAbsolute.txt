@@ -1,6 +1,3 @@
-C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.exe.config
-C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.exe
-C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\GUI_MODERNISTA.pdb
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\AlphaBlendTextBox.dll
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -73,5 +70,12 @@ C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MO
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.GenerateResource.cache
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.CoreCompileInputs.cache
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.CopyComplete
-C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.exe
-C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.pdb
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.exe.config
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.exe.manifest
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.application
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.exe
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.pdb
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.exe.manifest
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.application
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.exe
+C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.pdb
