@@ -143,9 +143,11 @@ namespace GUI_MODERNISTA
         private void button3_Click(object sender, EventArgs e)
         {
 
-            submenu2.Visible = false;
-            SubmenuReportes.Visible = false;
-            AbrirFormHija(new ConsultaFacturaPropietario());
+            //submenu2.Visible = false;
+            //SubmenuReportes.Visible = false;
+            //AbrirFormHija(new ConsultaFacturaPropietario());
+            Factura factura = new Factura();
+            factura.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

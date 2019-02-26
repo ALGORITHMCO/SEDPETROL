@@ -44,7 +44,7 @@ namespace GUI_MODERNISTA
             datos.barrio = barrio;
             datos.ID_MEDIDOR = idmedidor;
 
-
+            
 
             using (SqlConnection conexi = conexion.conectarbd())
             {

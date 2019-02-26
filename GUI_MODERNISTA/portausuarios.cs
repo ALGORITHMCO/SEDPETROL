@@ -133,7 +133,7 @@ namespace GUI_MODERNISTA
 
         private void button3_Click(object sender, EventArgs e)
         {
-            formFactura factura = new formFactura();
+            Factura factura = new Factura();
             factura.Show();
         }
 
