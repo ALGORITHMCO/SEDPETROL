@@ -80,6 +80,7 @@
             this.gMapControl1.Size = new System.Drawing.Size(470, 484);
             this.gMapControl1.TabIndex = 24;
             this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // mapa
             // 

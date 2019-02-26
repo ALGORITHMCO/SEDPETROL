@@ -75,7 +75,7 @@ namespace GUI_MODERNISTA
             {
 
                 SqlCommand comando = new SqlCommand(string.Format(
-                    "SELECT  t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.MUNICIPIO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO  WHERE M.ID_MEDIDOR = " + datos.ID_MEDIDOR + ""), conexi);
+                    "SELECT  t2.DEPARTAMENTO, t2.ZONA,t2.DIRECCION , t2.MUNICIPIO  FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO  WHERE M.NU_MEDIDOR = '" + datos.ID_MEDIDOR + "'"), conexi);
 
                 SqlDataReader reader = comando.ExecuteReader();
 
@@ -136,6 +136,11 @@ namespace GUI_MODERNISTA
 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
         {
 
         }
