@@ -102,27 +102,27 @@
             this.Año.AutoSize = true;
             this.Año.Location = new System.Drawing.Point(758, 654);
             this.Año.Name = "Año";
-            this.Año.Size = new System.Drawing.Size(33, 17);
+            this.Año.Size = new System.Drawing.Size(37, 17);
             this.Año.TabIndex = 7;
-            this.Año.Text = "Año";
+            this.Año.Text = "Año:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(527, 654);
+            this.label3.Location = new System.Drawing.Point(510, 651);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 17);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Hasta";
+            this.label3.Text = "Mes Hasta:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(278, 654);
+            this.label4.Location = new System.Drawing.Point(271, 654);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(83, 17);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Desde";
+            this.label4.Text = "Mes Desde:";
             // 
             // Factura
             // 
