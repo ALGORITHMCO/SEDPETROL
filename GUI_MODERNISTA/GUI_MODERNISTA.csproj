@@ -215,6 +215,7 @@
     <Compile Include="graficaanalisisyreporteszonas.Designer.cs">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
     <Compile Include="ingresoDM.cs">
       <SubType>Form</SubType>

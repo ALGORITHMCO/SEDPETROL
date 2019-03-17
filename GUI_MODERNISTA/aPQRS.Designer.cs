@@ -60,7 +60,7 @@
             this.lcampo1 = new System.Windows.Forms.Label();
             this.campo1 = new System.Windows.Forms.TextBox();
             this.alertadesv = new System.Windows.Forms.TextBox();
-            this.idmedidor = new System.Windows.Forms.ComboBox();
+            this.nmedidor = new System.Windows.Forms.ComboBox();
             this.fingPQRS = new System.Windows.Forms.Label();
             this.horaingPQRS = new System.Windows.Forms.Label();
             this.tipodesolicitud = new System.Windows.Forms.ComboBox();
@@ -145,9 +145,9 @@
             this.label5.Location = new System.Drawing.Point(73, 274);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 17);
+            this.label5.Size = new System.Drawing.Size(138, 17);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Id Medidor";
+            this.label5.Text = "Numero de Medidor*";
             // 
             // ldanopresentado
             // 
@@ -395,15 +395,15 @@
             this.alertadesv.Size = new System.Drawing.Size(197, 22);
             this.alertadesv.TabIndex = 51;
             // 
-            // idmedidor
+            // nmedidor
             // 
-            this.idmedidor.FormattingEnabled = true;
-            this.idmedidor.Location = new System.Drawing.Point(239, 267);
-            this.idmedidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.idmedidor.Name = "idmedidor";
-            this.idmedidor.Size = new System.Drawing.Size(336, 24);
-            this.idmedidor.TabIndex = 75;
-            this.idmedidor.SelectedIndexChanged += new System.EventHandler(this.imedidor_SelectedIndexChanged);
+            this.nmedidor.FormattingEnabled = true;
+            this.nmedidor.Location = new System.Drawing.Point(239, 267);
+            this.nmedidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nmedidor.Name = "nmedidor";
+            this.nmedidor.Size = new System.Drawing.Size(336, 24);
+            this.nmedidor.TabIndex = 75;
+            this.nmedidor.SelectedIndexChanged += new System.EventHandler(this.nmedidor_SelectedIndexChanged);
             // 
             // fingPQRS
             // 
@@ -560,9 +560,9 @@
             this.lidusuario.Location = new System.Drawing.Point(74, 454);
             this.lidusuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lidusuario.Name = "lidusuario";
-            this.lidusuario.Size = new System.Drawing.Size(72, 17);
+            this.lidusuario.Size = new System.Drawing.Size(77, 17);
             this.lidusuario.TabIndex = 87;
-            this.lidusuario.Text = "Id Usuario";
+            this.lidusuario.Text = "Id Usuario*";
             // 
             // descripcionPQRS
             // 
@@ -622,7 +622,7 @@
             this.Controls.Add(this.tipodesolicitud);
             this.Controls.Add(this.horaingPQRS);
             this.Controls.Add(this.fingPQRS);
-            this.Controls.Add(this.idmedidor);
+            this.Controls.Add(this.nmedidor);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lcampo5);
@@ -699,7 +699,7 @@
         private System.Windows.Forms.Label lcampo1;
         private System.Windows.Forms.TextBox campo1;
         private System.Windows.Forms.TextBox alertadesv;
-        private System.Windows.Forms.ComboBox idmedidor;
+        private System.Windows.Forms.ComboBox nmedidor;
         private System.Windows.Forms.Label fingPQRS;
         private System.Windows.Forms.Label horaingPQRS;
         private System.Windows.Forms.ComboBox tipodesolicitud;

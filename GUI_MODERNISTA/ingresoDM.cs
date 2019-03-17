@@ -15,6 +15,8 @@ namespace GUI_MODERNISTA
     {
         public ingresoDM()
         {
+
+
             InitializeComponent();
             fingnovedad.Text = DateTime.Now.ToShortDateString();
             horaingnov.Text = DateTime.Now.ToShortTimeString();
@@ -60,7 +62,7 @@ namespace GUI_MODERNISTA
                     }
                 }
             }
-            marca.DataSource = columnData;
+            //marca.DataSource = columnData;
             
         }
 
@@ -76,8 +78,8 @@ namespace GUI_MODERNISTA
             //novedad.fechaingreso = fechaingnove.Text;
             //novedad.horaingresonovedad = horaingresonove.Text;
             //novedad.fechaingreso = fecha.Text;
-            medidor.cuentacontrato=fingnovedad.Text;
-            medidor.numeromedidor = horaingnov.Text;
+            medidor.cuentacontrato = cuentacontrato.Text;
+            medidor.numeromedidor = numeromedidor.Text;
             //novedad.horaingresonovedad = horaingresonove.Text;
             medidor.marca = marca.Text;
             medidor.tipo = tipo.Text;

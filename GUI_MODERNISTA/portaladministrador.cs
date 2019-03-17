@@ -160,7 +160,7 @@ namespace GUI_MODERNISTA
 
             submenu2.Visible = false;
             SubmenuReportes.Visible = false;
-            AbrirFormHija(new aNovedad());
+            AbrirFormHija(new aNovedad(panelContenedor));
         }
 
         private void button5_Click(object sender, EventArgs e)
