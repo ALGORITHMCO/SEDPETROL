@@ -114,6 +114,7 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(197, 21);
             this.comboBox7.TabIndex = 182;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
             // comboBox6
             // 
@@ -527,11 +528,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(409, 475);
+            this.button2.Location = new System.Drawing.Point(35, 518);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 187;
-            this.button2.Text = "Calcular";
+            this.button2.Text = "PDF";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

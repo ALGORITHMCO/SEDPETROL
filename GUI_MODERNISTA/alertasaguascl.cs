@@ -319,47 +319,7 @@ namespace GUI_MODERNISTA
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            if (cortes.Text == "")
-            {
-                NU1 = Convert.ToDouble(fraudefluido.Text);
-                NU2 = 0.0;
-
-                TOTAL = NU1 - NU2;
-                Diferencia.Text = Convert.ToString(TOTAL);
-            }
-            else
-            {
-                if (fraudefluido.Text == "")
-                {
-                    NU1 = 0.0;
-                    NU2 = Convert.ToDouble(cortes.Text);
-
-                    TOTAL = NU1 - NU2;
-                    Diferencia.Text = Convert.ToString(TOTAL);
-                }
-                else
-                {
-                    if (fraudefluido.Text == "" && cortes.Text == "")
-                    {
-                        NU1 = 0.0;
-                        NU2 = 0.0;
-
-                        TOTAL = NU1 - NU2;
-                        Diferencia.Text = Convert.ToString(TOTAL);
-                    }
-                    else
-                    {
-
-                        NU1 = Convert.ToDouble(fraudefluido.Text);
-                        NU2 = Convert.ToDouble(cortes.Text);
-
-                        TOTAL = NU1 - NU2;
-                        Diferencia.Text = Convert.ToString(TOTAL);
-                    }
-
-                }
-            }
+            To_pdf(); 
         }
 
         private void fraudefluido_KeyPress_1(object sender, KeyPressEventArgs e)
@@ -397,6 +357,104 @@ namespace GUI_MODERNISTA
                     return;
                 }
             }
+        }
+
+
+
+
+
+        private void To_pdf()
+        {
+            alertasaguacl datos = new alertasaguacl();
+            datos.ID_MEDIDOR = medidor;
+            datos.FECHAINGRESO = label12.Text;
+            datos.HORAINGRESO = label13.Text;
+            datos.VOLUMENINGRESADO = fraudefluido.Text;
+            datos.SUMATORIACONSUMOLEGAL = cortes.Text;
+            datos.DIFERENCIA = Diferencia.Text;
+            datos.PERDIDASTECNICAS = comboBox2.Text;
+            datos.PERDIDASCOMERCIALES = comboBox3.Text;
+            datos.ACCIONESFRAUDULENTAS = comboBox4.Text;
+            datos.MEDIDORESMANIPULADOS = comboBox5.Text;
+            datos.MICROMEDICION = comboBox6.Text;
+            datos.CLASE_DE_USO = comboBox7.Text;
+            datos.CAMPO1 = campo1.Text;
+            datos.CAMPO2 = campo2.Text;
+            datos.CAMPO3 = campo3.Text;
+            datos.CAMPO4 = campo4.Text;
+            datos.CAMPO5 = campo5.Text;
+
+            Document doc = new Document(PageSize.LETTER_LANDSCAPE.Rotate(), 30, 20, 20, 20);
+            SaveFileDialog save = new SaveFileDialog();
+            save.InitialDirectory = @"C:";
+            save.Title = "Guardar Consulta";
+            save.DefaultExt = "pdf";
+            save.Filter = "pdf Files (*.pdf)|*.pdf| All Files(*.*)|*.*";
+            save.FilterIndex = 2;
+            save.RestoreDirectory = true;
+            string filename = "";
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                filename = save.FileName;
+
+                if (filename.Trim() != "")
+                {
+                    FileStream file = new FileStream(filename,
+                        FileMode.OpenOrCreate,
+                        FileAccess.ReadWrite,
+                        FileShare.ReadWrite);
+                    PdfWriter.GetInstance(doc, file);
+                    doc.Open();
+
+
+                    string remito = "Scada Aquasoft";
+                    string fecha = "fecha: " + DateTime.Now.ToString();
+
+                    Chunk chunk = new Chunk("DETALLES DE NOVEDAD ALERTA AGUAS NO CONTABILIZADAS", FontFactory.GetFont("ARIAL", 20, iTextSharp.text.Font.BOLD));
+                    doc.Add(new Paragraph(chunk));
+                    doc.Add(new Paragraph("                    "));
+                    doc.Add(new Paragraph("                    "));
+                    // doc.Add(new Paragraph("---------------------------------------------------------------------------------------", FontFactory.GetFont("ARIAL", 20, iTextSharp.text.Font.BOLD)));
+                    doc.Add(new Paragraph("ID DE MEDIDOR: " +datos.ID_MEDIDOR));
+                    doc.Add(new Paragraph("FECHA DE INGRESO: " +datos.FECHAINGRESO));
+                    doc.Add(new Paragraph("HORA DE INGRESO: " +datos.HORAINGRESO));
+                    doc.Add(new Paragraph("VOLUMEN INGRESADO: " +datos.VOLUMENINGRESADO));
+                    doc.Add(new Paragraph("SUMATURA CONSUMO LEGAL: " +datos.SUMATORIACONSUMOLEGAL));
+                    doc.Add(new Paragraph("DIFERENCIA: " +datos.DIFERENCIA));
+                    doc.Add(new Paragraph("PERDIDAD TECNICAS: " +datos.PERDIDASTECNICAS));
+                    doc.Add(new Paragraph("ACCIONES FRAUDULENTAS: " +datos.ACCIONESFRAUDULENTAS));
+                    doc.Add(new Paragraph("MEDIDORES MANIPULADOS: " +datos.MEDIDORESMANIPULADOS));
+                    doc.Add(new Paragraph("MICROMEDICION: " +datos.MICROMEDICION));
+                    doc.Add(new Paragraph("CLASE DE USO: " +datos.CLASE_DE_USO));
+                    doc.Add(new Paragraph("CAMPO 1: " +datos.CAMPO1));
+                    doc.Add(new Paragraph("CAMPO 2: " +datos.CAMPO2));
+                    doc.Add(new Paragraph("CAMPO 3: " +datos.CAMPO3));
+                    doc.Add(new Paragraph("CAMPO 4: " +datos.CAMPO4));
+                    doc.Add(new Paragraph("CAMPO 5: " +datos.CAMPO5));
+                    doc.AddCreationDate();
+                    // doc.Add(new Paragraph("---------------------------------------------------------------------------------------", FontFactory.GetFont("ARIAL", 20, iTextSharp.text.Font.BOLD)));
+
+
+                }
+
+                var chartimage = new MemoryStream();
+
+
+                doc.Close();
+
+                Process.Start(filename);
+            }
+            else
+            {
+                DialogResult = DialogResult.Cancel;
+            }
+
+
+        }
+
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

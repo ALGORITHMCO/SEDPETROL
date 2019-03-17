@@ -55,7 +55,7 @@ namespace GUI_MODERNISTA
             comboBox1.Items.Add("PRESION_PSI");
             comboBox1.Items.Add("FLUJO_LT_MIN");
 
-            comboBox2.DataSource = Registroo.vaconsultaIDMEDIDOR();
+            comboBox2.DataSource = Registroo.vaconsultaNUIDMEDIDOR(); ;
 
         }
 
