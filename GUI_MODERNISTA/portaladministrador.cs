@@ -203,7 +203,28 @@ namespace GUI_MODERNISTA
 
         private void button9_Click(object sender, EventArgs e)
         {
+
+            if (panel16.Visible == true)
+            {
+                panel16.Visible = false;
+            }
+            else
+            {
+                panel16.Visible = true;
+            }
+
+            
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
             AbrirFormHija(new ingresoDM());
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new ingresoDP());
         }
     }
 }

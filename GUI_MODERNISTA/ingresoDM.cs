@@ -29,7 +29,6 @@ namespace GUI_MODERNISTA
 
             marca.Items.Add("Aquasoft");
             marca.Items.Add("Watertech");
- 
 
             diametro.Items.Add("1/4''");
             
@@ -63,7 +62,19 @@ namespace GUI_MODERNISTA
                 }
             }
             //marca.DataSource = columnData;
-            
+            cuentacontrato.Text ="";
+            numeromedidor.Text = "";
+            marca.Text = "";
+            tipo.Text = "";
+            ultimalectura.Text = "";
+            lecturaanterior.Text = "";
+            consumom3.Text = "";
+            diametro.Text = "";
+            campo1.Text = "";
+            campo2.Text = "";
+            campo3.Text = "";
+            campo4.Text = "";
+            campo5.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,34 +103,30 @@ namespace GUI_MODERNISTA
             medidor.campo3 = campo3.Text;
             medidor.campo4 = campo4.Text;
             medidor.campo5 = campo5.Text;
-        
 
 
 
-            //novedad.idnovedad = idnovedad.Text;
-            //novedad.idmedidor = idmedidor.Text;
-            //novedad.departamento=departamento.Text
-            //novedad.revisionesinternas = revisionesinternas.Text;
-            //novedad.cortes = cortes.Text;
-            //novedad.reconexiones = reconexiones.Text;
-            //novedad.fraudefluidos = fraudefluido.Text;
-            //novedad.reclamaciones = reclamaciones.Text;
-            //novedad.autoproteccion = autoproteccion.Text;
-            //novedad.evaluaciondepromedios = evaluacionpromedios.Text;
-            //novedad.ingresodatosprimeravez = ingresodatosprimeravez.Text;
-            //novedad.campo1 = campo1.Text;
-            //novedad.campo2 = campo2.Text;
-            //novedad.campo3 = campo3.Text;
-            //novedad.campo4 = campo4.Text;
-            //novedad.campo5 = campo5.Text;
-
-            int resul = Registroo.ingresarMedidor(medidor);
+            if (!String.IsNullOrEmpty(cuentacontrato.Text) && !String.IsNullOrEmpty(numeromedidor.Text) && !String.IsNullOrEmpty(marca.Text) && !String.IsNullOrEmpty(tipo.Text) && !String.IsNullOrEmpty(ultimalectura.Text) && !String.IsNullOrEmpty(lecturaanterior.Text) && !String.IsNullOrEmpty(ultimalectura.Text))
+            { 
+                int resul = Registroo.ingresarMedidor(medidor);
 
             if (resul == 1)
             {
                 MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
+                    cuentacontrato.Text = "";
+                    numeromedidor.Text = "";
+                    marca.Text = "";
+                    tipo.Text = "";
+                    ultimalectura.Text = "";
+                    lecturaanterior.Text = "";
+                    consumom3.Text = "";
+                    diametro.Text = "";
+                    campo1.Text = "";
+                    campo2.Text = "";
+                    campo3.Text = "";
+                    campo4.Text = "";
+                    campo5.Text = "";
+                }
             else
             {
                 if (resul == -1)
@@ -130,6 +137,11 @@ namespace GUI_MODERNISTA
                 {
                     MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+            }
+            }
+            else
+            {
+                MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

@@ -78,6 +78,7 @@
             this.evaluacionpromedioscb = new System.Windows.Forms.ComboBox();
             this.ingresodatoscb = new System.Windows.Forms.ComboBox();
             this.idmedidor = new System.Windows.Forms.Label();
+            this.tipoReporte = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -88,7 +89,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(742, 540);
+            this.button1.Location = new System.Drawing.Point(696, 545);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(269, 43);
@@ -280,7 +281,7 @@
             // 
             this.lcampo5.AutoSize = true;
             this.lcampo5.BackColor = System.Drawing.Color.Transparent;
-            this.lcampo5.Location = new System.Drawing.Point(699, 475);
+            this.lcampo5.Location = new System.Drawing.Point(653, 480);
             this.lcampo5.Name = "lcampo5";
             this.lcampo5.Size = new System.Drawing.Size(64, 17);
             this.lcampo5.TabIndex = 68;
@@ -288,7 +289,7 @@
             // 
             // campo5
             // 
-            this.campo5.Location = new System.Drawing.Point(933, 470);
+            this.campo5.Location = new System.Drawing.Point(887, 475);
             this.campo5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.campo5.Name = "campo5";
             this.campo5.Size = new System.Drawing.Size(197, 22);
@@ -298,7 +299,7 @@
             // 
             this.lcampo4.AutoSize = true;
             this.lcampo4.BackColor = System.Drawing.Color.Transparent;
-            this.lcampo4.Location = new System.Drawing.Point(699, 447);
+            this.lcampo4.Location = new System.Drawing.Point(653, 452);
             this.lcampo4.Name = "lcampo4";
             this.lcampo4.Size = new System.Drawing.Size(64, 17);
             this.lcampo4.TabIndex = 66;
@@ -306,7 +307,7 @@
             // 
             // campo4
             // 
-            this.campo4.Location = new System.Drawing.Point(933, 442);
+            this.campo4.Location = new System.Drawing.Point(887, 447);
             this.campo4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.campo4.Name = "campo4";
             this.campo4.Size = new System.Drawing.Size(197, 22);
@@ -316,7 +317,7 @@
             // 
             this.lcampo3.AutoSize = true;
             this.lcampo3.BackColor = System.Drawing.Color.Transparent;
-            this.lcampo3.Location = new System.Drawing.Point(699, 418);
+            this.lcampo3.Location = new System.Drawing.Point(653, 423);
             this.lcampo3.Name = "lcampo3";
             this.lcampo3.Size = new System.Drawing.Size(64, 17);
             this.lcampo3.TabIndex = 64;
@@ -324,7 +325,7 @@
             // 
             // campo3
             // 
-            this.campo3.Location = new System.Drawing.Point(933, 414);
+            this.campo3.Location = new System.Drawing.Point(887, 419);
             this.campo3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(197, 22);
@@ -334,7 +335,7 @@
             // 
             this.lcampo2.AutoSize = true;
             this.lcampo2.BackColor = System.Drawing.Color.Transparent;
-            this.lcampo2.Location = new System.Drawing.Point(699, 391);
+            this.lcampo2.Location = new System.Drawing.Point(653, 396);
             this.lcampo2.Name = "lcampo2";
             this.lcampo2.Size = new System.Drawing.Size(64, 17);
             this.lcampo2.TabIndex = 62;
@@ -342,7 +343,7 @@
             // 
             // campo2
             // 
-            this.campo2.Location = new System.Drawing.Point(933, 386);
+            this.campo2.Location = new System.Drawing.Point(887, 391);
             this.campo2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.campo2.Name = "campo2";
             this.campo2.Size = new System.Drawing.Size(197, 22);
@@ -352,7 +353,7 @@
             // 
             this.lcampo1.AutoSize = true;
             this.lcampo1.BackColor = System.Drawing.Color.Transparent;
-            this.lcampo1.Location = new System.Drawing.Point(699, 363);
+            this.lcampo1.Location = new System.Drawing.Point(653, 368);
             this.lcampo1.Name = "lcampo1";
             this.lcampo1.Size = new System.Drawing.Size(64, 17);
             this.lcampo1.TabIndex = 60;
@@ -360,7 +361,7 @@
             // 
             // campo1
             // 
-            this.campo1.Location = new System.Drawing.Point(933, 358);
+            this.campo1.Location = new System.Drawing.Point(887, 363);
             this.campo1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.campo1.Name = "campo1";
             this.campo1.Size = new System.Drawing.Size(197, 22);
@@ -370,7 +371,7 @@
             // 
             this.lingresodatosprimeravez.AutoSize = true;
             this.lingresodatosprimeravez.BackColor = System.Drawing.Color.Transparent;
-            this.lingresodatosprimeravez.Location = new System.Drawing.Point(699, 306);
+            this.lingresodatosprimeravez.Location = new System.Drawing.Point(652, 303);
             this.lingresodatosprimeravez.Name = "lingresodatosprimeravez";
             this.lingresodatosprimeravez.Size = new System.Drawing.Size(172, 17);
             this.lingresodatosprimeravez.TabIndex = 58;
@@ -380,7 +381,7 @@
             // 
             this.levaluacionpromedios.AutoSize = true;
             this.levaluacionpromedios.BackColor = System.Drawing.Color.Transparent;
-            this.levaluacionpromedios.Location = new System.Drawing.Point(699, 279);
+            this.levaluacionpromedios.Location = new System.Drawing.Point(652, 276);
             this.levaluacionpromedios.Name = "levaluacionpromedios";
             this.levaluacionpromedios.Size = new System.Drawing.Size(168, 17);
             this.levaluacionpromedios.TabIndex = 56;
@@ -390,7 +391,7 @@
             // 
             this.lrevisionesinternas.AutoSize = true;
             this.lrevisionesinternas.BackColor = System.Drawing.Color.Transparent;
-            this.lrevisionesinternas.Location = new System.Drawing.Point(699, 251);
+            this.lrevisionesinternas.Location = new System.Drawing.Point(652, 248);
             this.lrevisionesinternas.Name = "lrevisionesinternas";
             this.lrevisionesinternas.Size = new System.Drawing.Size(132, 17);
             this.lrevisionesinternas.TabIndex = 54;
@@ -400,7 +401,7 @@
             // 
             this.lalertadesv.AutoSize = true;
             this.lalertadesv.BackColor = System.Drawing.Color.Transparent;
-            this.lalertadesv.Location = new System.Drawing.Point(699, 223);
+            this.lalertadesv.Location = new System.Drawing.Point(652, 220);
             this.lalertadesv.Name = "lalertadesv";
             this.lalertadesv.Size = new System.Drawing.Size(215, 17);
             this.lalertadesv.TabIndex = 52;
@@ -418,7 +419,7 @@
             // 
             this.lautoproteccion.AutoSize = true;
             this.lautoproteccion.BackColor = System.Drawing.Color.Transparent;
-            this.lautoproteccion.Location = new System.Drawing.Point(699, 194);
+            this.lautoproteccion.Location = new System.Drawing.Point(652, 191);
             this.lautoproteccion.Name = "lautoproteccion";
             this.lautoproteccion.Size = new System.Drawing.Size(103, 17);
             this.lautoproteccion.TabIndex = 50;
@@ -513,7 +514,7 @@
             // autoproteccioncb
             // 
             this.autoproteccioncb.FormattingEnabled = true;
-            this.autoproteccioncb.Location = new System.Drawing.Point(933, 185);
+            this.autoproteccioncb.Location = new System.Drawing.Point(886, 182);
             this.autoproteccioncb.Margin = new System.Windows.Forms.Padding(4);
             this.autoproteccioncb.Name = "autoproteccioncb";
             this.autoproteccioncb.Size = new System.Drawing.Size(197, 24);
@@ -522,7 +523,7 @@
             // alertadesviacionescb
             // 
             this.alertadesviacionescb.FormattingEnabled = true;
-            this.alertadesviacionescb.Location = new System.Drawing.Point(933, 215);
+            this.alertadesviacionescb.Location = new System.Drawing.Point(886, 212);
             this.alertadesviacionescb.Margin = new System.Windows.Forms.Padding(4);
             this.alertadesviacionescb.Name = "alertadesviacionescb";
             this.alertadesviacionescb.Size = new System.Drawing.Size(197, 24);
@@ -531,7 +532,7 @@
             // revisionesinternascb
             // 
             this.revisionesinternascb.FormattingEnabled = true;
-            this.revisionesinternascb.Location = new System.Drawing.Point(933, 246);
+            this.revisionesinternascb.Location = new System.Drawing.Point(886, 243);
             this.revisionesinternascb.Margin = new System.Windows.Forms.Padding(4);
             this.revisionesinternascb.Name = "revisionesinternascb";
             this.revisionesinternascb.Size = new System.Drawing.Size(197, 24);
@@ -540,7 +541,7 @@
             // evaluacionpromedioscb
             // 
             this.evaluacionpromedioscb.FormattingEnabled = true;
-            this.evaluacionpromedioscb.Location = new System.Drawing.Point(933, 274);
+            this.evaluacionpromedioscb.Location = new System.Drawing.Point(886, 271);
             this.evaluacionpromedioscb.Margin = new System.Windows.Forms.Padding(4);
             this.evaluacionpromedioscb.Name = "evaluacionpromedioscb";
             this.evaluacionpromedioscb.Size = new System.Drawing.Size(197, 24);
@@ -549,7 +550,7 @@
             // ingresodatoscb
             // 
             this.ingresodatoscb.FormattingEnabled = true;
-            this.ingresodatoscb.Location = new System.Drawing.Point(933, 302);
+            this.ingresodatoscb.Location = new System.Drawing.Point(886, 299);
             this.ingresodatoscb.Margin = new System.Windows.Forms.Padding(4);
             this.ingresodatoscb.Name = "ingresodatoscb";
             this.ingresodatoscb.Size = new System.Drawing.Size(197, 24);
@@ -561,11 +562,21 @@
             this.idmedidor.AutoSize = true;
             this.idmedidor.BackColor = System.Drawing.Color.Transparent;
             this.idmedidor.ForeColor = System.Drawing.Color.Transparent;
-            this.idmedidor.Location = new System.Drawing.Point(756, 557);
+            this.idmedidor.Location = new System.Drawing.Point(710, 562);
             this.idmedidor.Name = "idmedidor";
             this.idmedidor.Size = new System.Drawing.Size(46, 17);
             this.idmedidor.TabIndex = 87;
             this.idmedidor.Text = "label4";
+            // 
+            // tipoReporte
+            // 
+            this.tipoReporte.FormattingEnabled = true;
+            this.tipoReporte.Location = new System.Drawing.Point(886, 331);
+            this.tipoReporte.Margin = new System.Windows.Forms.Padding(4);
+            this.tipoReporte.Name = "tipoReporte";
+            this.tipoReporte.Size = new System.Drawing.Size(197, 24);
+            this.tipoReporte.TabIndex = 88;
+            this.tipoReporte.SelectedIndexChanged += new System.EventHandler(this.tipoReporte_SelectedIndexChanged);
             // 
             // aNovedad
             // 
@@ -574,6 +585,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.tipoReporte);
             this.Controls.Add(this.ingresodatoscb);
             this.Controls.Add(this.evaluacionpromedioscb);
             this.Controls.Add(this.revisionesinternascb);
@@ -685,5 +697,6 @@
         private System.Windows.Forms.ComboBox evaluacionpromedioscb;
         private System.Windows.Forms.ComboBox ingresodatoscb;
         private System.Windows.Forms.Label idmedidor;
+        private System.Windows.Forms.ComboBox tipoReporte;
     }
 }

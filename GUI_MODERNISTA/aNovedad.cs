@@ -9,14 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace GUI_MODERNISTA
 {
+    
     public partial class aNovedad : Form
     {
         Panel panel1;
+        int idmedidor1;
         public aNovedad(Panel p)
         {
             panel1 = p;
+            
             InitializeComponent();
 
             fingnovedad.Text = DateTime.Now.ToShortDateString();
@@ -97,12 +101,19 @@ namespace GUI_MODERNISTA
             reclamacionescb.Items.Add("Otros");
             reclamacionescb.Items.Add("N/A");
 
+            tipoReporte.Items.Add("Reporte y Análisis Predio Días");
+            tipoReporte.Items.Add("Reporte y Análisis Predio Mes");
+            tipoReporte.Items.Add("Reporte y Análisis Predio Año");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Días");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Mes");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Año");
+
         }
 
 
+        public static String idmedido;
 
-        
-        
+
 
         private void Registro_Load(object sender, EventArgs e)
         {
@@ -129,17 +140,32 @@ namespace GUI_MODERNISTA
             }
             nmedidor.DataSource = columnData;
             nmedidor.Text = "";
+            idmedidor.Text= "";
             departamento.Text = "";
             ciudad.Text = "";
             zona.Text = "";
             localidad.Text = "";
             barrio.Text = "";
+            fraudefluidoscb.Text = "";
+            revisionesinternascb.Text = "";
+            cortescb.Text = "";
+            reconexionescb.Text = "";
+            reclamacionescb.Text = "";
+            violacionescb.Text = "";
+            autoproteccioncb.Text = "";
+            evaluacionpromedioscb.Text = "";
+            ingresodatoscb.Text = "";
+            campo1.Text = "";
+            campo2.Text = "";
+            campo3.Text = "";
+            campo4.Text = "";
+            campo5.Text = "";
+            tipoReporte.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AgregarNovedades novedad = new AgregarNovedades();
-
 
             novedad.fechaingreso = fingnovedad.Text;
             novedad.horaingresonovedad = horaingnov.Text;
@@ -323,11 +349,12 @@ namespace GUI_MODERNISTA
                         {
                             //columnData.Add(reader.GetString(0));
                             idmedidor.Text = reader.GetValue(0).ToString();
+                            idmedido = idmedidor.Text;
                         }
                     }
                 }
 
-
+                
 
 
 
@@ -338,9 +365,17 @@ namespace GUI_MODERNISTA
 
         private void ingresodatoscb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ingresodatoscb.Text == "Datos del Medidor") {
-                AbrirFormHija(new ingresoDM());
-                    }
+            if (ingresodatoscb.Text == "Datos del Medidor") {AbrirFormHija(new ingresoDM());}
+            if (ingresodatoscb.Text == "Datos del Propietario") { AbrirFormHija(new ingresoDP());}
+            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            if (ingresodatoscb.Text == "Todos los datos asociados con el medidor") {
+                ingresoDMC DMC = new ingresoDMC();
+                DMC.idmed = idmedidor.Text;
+                AbrirFormHija(DMC);
+                
+            }
+
+            
         }
 
         public void AbrirFormHija(object formhija)
@@ -356,5 +391,16 @@ namespace GUI_MODERNISTA
 
         }
 
+        private void tipoReporte_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (tipoReporte.Text == "Reporte y Análisis Predio Días") { AbrirFormHija(new reportesyanalisisINID()); }
+            if (tipoReporte.Text == "Reporte y Análisis Predio Mes") { AbrirFormHija(new reportesyanalisisINIDmes()); }
+            if (tipoReporte.Text == "Reporte y Análisis Predio Año") { AbrirFormHija(new reportesyanalisisINIDaño()); }
+            if (tipoReporte.Text == "Reporte y Análisis Zona Días") {AbrirFormHija(new reportesyanalisisINzonas()); }
+            if (tipoReporte.Text == "Reporte y Análisis Zona Mes") { AbrirFormHija(new reportesyanalisisINzonasmes());}
+            if (tipoReporte.Text == "Reporte y Análisis Zona Año") { AbrirFormHija(new reportesyanalisisINzonasaño()); }
+            
+        }
     }
 }

@@ -244,11 +244,23 @@
     </Compile>
     <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
+    <Compile Include="ingresoDMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDMC.Designer.cs">
+      <DependentUpon>ingresoDMC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingresoDM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ingresoDM.Designer.cs">
       <DependentUpon>ingresoDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDP.Designer.cs">
+      <DependentUpon>ingresoDP.cs</DependentUpon>
     </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
@@ -439,8 +451,14 @@
     <EmbeddedResource Include="graficaanalisisyreporteszonas.resx">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDMC.resx">
+      <DependentUpon>ingresoDMC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ingresoDM.resx">
       <DependentUpon>ingresoDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDP.resx">
+      <DependentUpon>ingresoDP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
@@ -505,6 +523,8 @@
       <DependentUpon>ConsultareportesyanalisisIN.cs</DependentUpon>
     </EmbeddedResource>
     <Fakes Include="Fakes\AlphaBlendTextBox.fakes" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="GUI_MODERNISTA_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

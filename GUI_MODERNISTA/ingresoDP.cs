@@ -65,33 +65,42 @@ namespace GUI_MODERNISTA
         private void Registro_Load(object sender, EventArgs e)
         {
             //comboBox2.Items.Add("Hola");
-            List<String> columnData = new List<String>();
+            //List<String> columnData = new List<String>();
 
-            using (SqlConnection cone = conexion.conectarbd())
-            {
-                
-                string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
-                using (SqlCommand command = new SqlCommand(query, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            columnData.Add(reader.GetValue(0).ToString());
-                        }
-                    }
-                }
-            }
-            //marca.DataSource = columnData;
-            
+            //using (SqlConnection cone = conexion.conectarbd())
+            //{
+
+            //    string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
+            //    using (SqlCommand command = new SqlCommand(query, cone))
+            //    {
+            //        using (SqlDataReader reader = command.ExecuteReader())
+            //        {
+            //            while (reader.Read())
+            //            {
+            //                //columnData.Add(reader.GetString(0));
+            //                columnData.Add(reader.GetValue(0).ToString());
+            //            }
+            //        }
+            //    }
+            //}
+            ////marca.DataSource = columnData;
+            tipoIdentificacion.Text = "";
+            numeroIdentificacion.Text = "";
+            nombrePropietario.Text = "";
+            porcentajePropiedad.Text = "";
+            calidadPropietario.Text = "";
+            cuentaContrato.Text = "";
+            estado.Text = "";
+            campo1.Text = "";
+            campo2.Text = "";
+            campo3.Text = "";
+            campo4.Text = "";
+            campo5.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             IngresoDatosPropietario propietario = new IngresoDatosPropietario();
-
-
 
             propietario.tipoidentificacion = tipoIdentificacion.Text;
             propietario.numeroidentificacion = numeroIdentificacion.Text;
@@ -105,15 +114,29 @@ namespace GUI_MODERNISTA
             propietario.campo3 = campo3.Text;
             propietario.campo4 = campo4.Text;
             propietario.campo5 = campo5.Text;
-        
 
-            int resul = Registroo.ingresarMedidor(medidor);
+            if (!String.IsNullOrEmpty(tipoIdentificacion.Text) && !String.IsNullOrEmpty(numeroIdentificacion.Text) && !String.IsNullOrEmpty(nombrePropietario.Text) && !String.IsNullOrEmpty(porcentajePropiedad.Text) && !String.IsNullOrEmpty(calidadPropietario.Text) && !String.IsNullOrEmpty(cuentaContrato.Text))
+            { 
+            int resul = Registroo.ingresarPropietario(propietario);
 
             if (resul == 1)
             {
                 MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            }
+                    tipoIdentificacion.Text = "";
+                    numeroIdentificacion.Text = "";
+                    nombrePropietario.Text = "";
+                    porcentajePropiedad.Text = "";
+                    calidadPropietario.Text = "";
+                    cuentaContrato.Text = "";
+                    estado.Text = "";
+                    campo1.Text = "";
+                    campo2.Text = "";
+                    campo3.Text = "";
+                    campo4.Text = "";
+                    campo5.Text = "";
+
+                }
             else
             {
                 if (resul == -1)
@@ -124,6 +147,11 @@ namespace GUI_MODERNISTA
                 {
                     MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+            }
+            }
+            else
+            {
+                    MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
