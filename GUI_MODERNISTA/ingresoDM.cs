@@ -13,6 +13,10 @@ namespace GUI_MODERNISTA
 {
     public partial class ingresoDM : Form
     {
+
+        String idmedidor;
+        String idpredio;
+        String idm;
         public ingresoDM()
         {
 
@@ -31,14 +35,44 @@ namespace GUI_MODERNISTA
             marca.Items.Add("Watertech");
 
             diametro.Items.Add("1/4''");
-            
+            departamento.Items.Add("Amazonas");
+            departamento.Items.Add("Antioquia");
+            departamento.Items.Add("Arauca");
+            departamento.Items.Add("Atlantico");
+            departamento.Items.Add("Bolivar");
+            departamento.Items.Add("Boyacá");
+            departamento.Items.Add("Caldas");
+            departamento.Items.Add("Caqueta");
+            departamento.Items.Add("Casanare");
+            departamento.Items.Add("Cauca");
+            departamento.Items.Add("Cesar");
+            departamento.Items.Add("Choco");
+            departamento.Items.Add("Cundinamarca");
+            departamento.Items.Add("Cordoba");
+            departamento.Items.Add("Guainia");
+            departamento.Items.Add("Guaviare");
+            departamento.Items.Add("Huila");
+            departamento.Items.Add("La Guajira");
+            departamento.Items.Add("Magdalena");
+            departamento.Items.Add("Meta");
+            departamento.Items.Add("Nariño");
+            departamento.Items.Add("Norte de Santander");
+            departamento.Items.Add("Putumayo");
+            departamento.Items.Add("Quindio");
+            departamento.Items.Add("Risaralda");
+            departamento.Items.Add("San Andres y Providencia");
+            departamento.Items.Add("Santander");
+            departamento.Items.Add("Sucre");
+            departamento.Items.Add("Tolima");
+            departamento.Items.Add("Valle del Cauca");
+            departamento.Items.Add("Vaupes");
+            departamento.Items.Add("Vichada");
+
+
+
 
         }
 
-
-
-        
-        
 
         private void Registro_Load(object sender, EventArgs e)
         {
@@ -48,7 +82,7 @@ namespace GUI_MODERNISTA
             using (SqlConnection cone = conexion.conectarbd())
             {
                 
-                string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
+                string query = "SELECT ID_PROPIETARIO FROM PROPIETARIO";
                 using (SqlCommand command = new SqlCommand(query, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -60,8 +94,40 @@ namespace GUI_MODERNISTA
                         }
                     }
                 }
+
+                string query1 = "SELECT ID_MEDIDOR FROM ALIMENTACION_HISTORICA WHERE ID_MEDIDOR=(SELECT MAX(ID_MEDIDOR) FROM ALIMENTACION_HISTORICA)";
+                using (SqlCommand command = new SqlCommand(query1, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+
+                            label22.Text = Convert.ToString(reader.GetInt32(0) + 1);
+                        }
+                    }
+                }
+
+                string query2 = "SELECT ID_PREDIO FROM PREDIO WHERE ID_PREDIO=(SELECT MAX(ID_PREDIO) FROM PREDIO)";
+                using (SqlCommand command = new SqlCommand(query2, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+
+                            label23.Text = Convert.ToString(reader.GetInt32(0) + 1);
+                        }
+                    }
+                }
+
+
             }
             //marca.DataSource = columnData;
+
+            idpropietario.DataSource= columnData;
             cuentacontrato.Text ="";
             numeromedidor.Text = "";
             marca.Text = "";
@@ -75,6 +141,20 @@ namespace GUI_MODERNISTA
             campo3.Text = "";
             campo4.Text = "";
             campo5.Text = "";
+            idpropietario.Text = "";
+            idchip.Text = "";
+            matriculainmobiliaria.Text = "";
+            direccion.Text = "";
+            municipio.Text = "";
+            localidad.Text = "";
+            barrio.Text = "";
+            estrato.Text = "";
+            claseuso.Text = "";
+            unidadhab.Text = "";
+            unidadnohab.Text = "";
+            zona.Text = "";
+            ciclo.Text = "";
+            ruta.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -89,6 +169,8 @@ namespace GUI_MODERNISTA
             //novedad.fechaingreso = fechaingnove.Text;
             //novedad.horaingresonovedad = horaingresonove.Text;
             //novedad.fechaingreso = fecha.Text;
+
+            medidor.idmedidor = idmedidor;
             medidor.cuentacontrato = cuentacontrato.Text;
             medidor.numeromedidor = numeromedidor.Text;
             //novedad.horaingresonovedad = horaingresonove.Text;
@@ -104,8 +186,41 @@ namespace GUI_MODERNISTA
             medidor.campo4 = campo4.Text;
             medidor.campo5 = campo5.Text;
 
+            medidor.idpredio = idpredio;
+            medidor.idpropietario = idpropietario.Text;
+            medidor.idchip = idchip.Text;
+            medidor.matriculainmobiliaria = matriculainmobiliaria.Text;
+            medidor.direccion = direccion.Text;
+            medidor.departamento = departamento.Text;
+            medidor.municipio = municipio.Text;
+            medidor.localidad = localidad.Text;
+            medidor.barrio = barrio.Text;
+            medidor.estrato = estrato.Text;
+            medidor.claseuso = claseuso.Text;
+            medidor.unidadhabitacional = unidadhab.Text;
+            medidor.unidadnohabitacional = unidadnohab.Text;
+            medidor.zona = zona.Text;
+            medidor.ciclo = ciclo.Text;
+            medidor.ruta = ruta.Text;
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+                string query1 = "SELECT MEDIDOR.CUENTA_CONTRATO FROM MEDIDOR WHERE MEDIDOR.NU_MEDIDOR='" + numeromedidor.Text + "'";
+                using (SqlCommand command = new SqlCommand(query1, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                          
+                            idm = reader.GetValue(0).ToString();
+                            
+                        }
+                    }
+                }
+            }
 
-
+            if (idm!=cuentacontrato.Text)
+            { 
             if (!String.IsNullOrEmpty(cuentacontrato.Text) && !String.IsNullOrEmpty(numeromedidor.Text) && !String.IsNullOrEmpty(marca.Text) && !String.IsNullOrEmpty(tipo.Text) && !String.IsNullOrEmpty(ultimalectura.Text) && !String.IsNullOrEmpty(lecturaanterior.Text) && !String.IsNullOrEmpty(ultimalectura.Text))
             { 
                 int resul = Registroo.ingresarMedidor(medidor);
@@ -126,6 +241,21 @@ namespace GUI_MODERNISTA
                     campo3.Text = "";
                     campo4.Text = "";
                     campo5.Text = "";
+                    idpropietario.Text = "";
+                    idchip.Text = "";
+                    matriculainmobiliaria.Text = "";
+                    direccion.Text = "";
+                    municipio.Text = "";
+                    localidad.Text = "";
+                    barrio.Text = "";
+                    estrato.Text = "";
+                    claseuso.Text = "";
+                    unidadhab.Text = "";
+                    unidadnohab.Text = "";
+                    zona.Text = "";
+                    ciclo.Text = "";
+                    ruta.Text = "";
+
                 }
             else
             {
@@ -144,7 +274,12 @@ namespace GUI_MODERNISTA
                 MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+            else {
 
+                MessageBox.Show("Esta cuenta contrato ya esta asociada a un medidor", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+        }
         private void label4_Click(object sender, EventArgs e)
         {
 

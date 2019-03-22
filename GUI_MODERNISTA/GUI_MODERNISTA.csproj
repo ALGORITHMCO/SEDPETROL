@@ -299,6 +299,7 @@
     <Compile Include="mapazonas.Designer.cs">
       <DependentUpon>mapazonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registroo.cs" />
     <Compile Include="reportesyanalisisINIDaño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,7 +349,6 @@
     <Compile Include="reportesyanalisisINzonas.Designer.cs">
       <DependentUpon>reportesyanalisisINzonas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registroo.cs" />
     <Compile Include="RegistroIn.cs">
       <SubType>Form</SubType>
     </Compile>

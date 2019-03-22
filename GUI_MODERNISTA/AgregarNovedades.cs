@@ -76,7 +76,6 @@ namespace GUI_MODERNISTA
             this.revisionesinternas = previsionesinternas;
             this.evaluaciondepromedios = pevaluaciondepromedios;
             this.ingresodatosprimeravez = pingresodatosprimeravez;
-            this.reclamaciones = preclamaciones;
             this.campo1 = pcampo1;
             this.campo2 = pcampo2;
             this.campo3 = pcampo3;

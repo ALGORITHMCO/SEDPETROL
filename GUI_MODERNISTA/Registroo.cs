@@ -84,8 +84,8 @@ namespace GUI_MODERNISTA
                         //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_INFENTRADA, ID_MEDIDOR, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, RECLAMACIONES, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
                         //novedades.idnovedad, novedades.idmedidor, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
 
-                        SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,FECHA_INGRESO_NOVEDAD, HORA_INGRESO_NOVEDAD, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, RECLAMACIONES, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}','{16}')",
-                        novedades.idmedidor,novedades.fechaingreso, novedades.horaingresonovedad, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,FECHA_INGRESO_NOVEDAD, HORA_INGRESO_NOVEDAD, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}')",
+                        novedades.idmedidor,novedades.fechaingreso, novedades.horaingresonovedad, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
 
                         //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION) values ('{0}', '{1}', '{2}', '{3}')",
                         // novedades.fechaingreso, novedades.horaingresonovedad, novedades.idmedidor, novedades.departamento), conee);
@@ -151,10 +151,24 @@ namespace GUI_MODERNISTA
                         SqlCommand comando = new SqlCommand(String.Format("Insert into MEDIDOR (CUENTA_CONTRATO, NU_MEDIDOR, MARCA, TIPO, ULTIMA_LECTURA, LECTURA_ANTERIOR, CONSUMOM3, DIAMETRO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')",
                         medidor.cuentacontrato, medidor.numeromedidor, medidor.marca, medidor.tipo, medidor.ultimalectura, medidor.lecturaanterior, medidor.consumom3, medidor.diametro, medidor.campo1, medidor.campo2, medidor.campo3, medidor.campo4, medidor.campo5), conee);
 
-                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION) values ('{0}', '{1}', '{2}', '{3}')",
-                        // novedades.fechaingreso, novedades.horaingresonovedad, novedades.idmedidor, novedades.departamento), conee);
-                        return retorno1 = comando.ExecuteNonQuery();
+
+                        return retorno = comando.ExecuteNonQuery();
+
+
                     }
+
+                    using (SqlConnection conee = conexion.conectarbd())
+                    {
+
+                        SqlCommand comando1 = new SqlCommand(String.Format("Insert into MEDIDOR (ID_PREDIO, ID_PROPIETARIO, ID_CHIP, MATRICULA_INMOBILIARIA, DIRECCION, DEPARTAMENTO, MUNICIPIO, LOCALIDAD, BARRRIO, ESTRATO, CLASE_USO, UNID_HAB_FAMILIAS, UNID_NOHAB_FAMILIAS, ZONA, CICLO, RUTA) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
+                        medidor.idpredio, medidor.idpropietario, medidor.idchip, medidor.matriculainmobiliaria, medidor.direccion, medidor.departamento, medidor.municipio, medidor.localidad, medidor.barrio, medidor.estrato, medidor.claseuso, medidor.unidadhabitacional, medidor.unidadnohabitacional, medidor.zona, medidor.ciclo, medidor.ruta), conee);
+
+
+                        return retorno1 = comando1.ExecuteNonQuery();
+
+
+                    }
+
                 }
             }
         }
