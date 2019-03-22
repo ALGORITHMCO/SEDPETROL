@@ -63,7 +63,6 @@
             this.lalertadesv = new System.Windows.Forms.Label();
             this.alertadesv = new System.Windows.Forms.TextBox();
             this.lautoproteccion = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.nmedidor = new System.Windows.Forms.ComboBox();
             this.fingnovedad = new System.Windows.Forms.Label();
             this.horaingnov = new System.Windows.Forms.Label();
@@ -71,7 +70,6 @@
             this.cortescb = new System.Windows.Forms.ComboBox();
             this.reconexionescb = new System.Windows.Forms.ComboBox();
             this.violacionescb = new System.Windows.Forms.ComboBox();
-            this.reclamacionescb = new System.Windows.Forms.ComboBox();
             this.autoproteccioncb = new System.Windows.Forms.ComboBox();
             this.alertadesviacionescb = new System.Windows.Forms.ComboBox();
             this.revisionesinternascb = new System.Windows.Forms.ComboBox();
@@ -79,6 +77,8 @@
             this.ingresodatoscb = new System.Windows.Forms.ComboBox();
             this.idmedidor = new System.Windows.Forms.Label();
             this.tipoReporte = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -103,7 +103,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(72, 226);
+            this.label3.Location = new System.Drawing.Point(72, 201);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 17);
@@ -115,7 +115,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(72, 191);
+            this.label2.Location = new System.Drawing.Point(72, 166);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(159, 17);
@@ -425,16 +425,6 @@
             this.lautoproteccion.TabIndex = 50;
             this.lautoproteccion.Text = "Autoproteccion";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(72, 559);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 17);
-            this.label8.TabIndex = 72;
-            this.label8.Text = "Reclamaciones";
-            // 
             // nmedidor
             // 
             this.nmedidor.FormattingEnabled = true;
@@ -449,7 +439,7 @@
             // 
             this.fingnovedad.AutoSize = true;
             this.fingnovedad.BackColor = System.Drawing.Color.Transparent;
-            this.fingnovedad.Location = new System.Drawing.Point(241, 191);
+            this.fingnovedad.Location = new System.Drawing.Point(241, 166);
             this.fingnovedad.Name = "fingnovedad";
             this.fingnovedad.Size = new System.Drawing.Size(46, 17);
             this.fingnovedad.TabIndex = 76;
@@ -459,7 +449,7 @@
             // 
             this.horaingnov.AutoSize = true;
             this.horaingnov.BackColor = System.Drawing.Color.Transparent;
-            this.horaingnov.Location = new System.Drawing.Point(241, 226);
+            this.horaingnov.Location = new System.Drawing.Point(241, 201);
             this.horaingnov.Name = "horaingnov";
             this.horaingnov.Size = new System.Drawing.Size(46, 17);
             this.horaingnov.TabIndex = 77;
@@ -501,15 +491,6 @@
             this.violacionescb.Name = "violacionescb";
             this.violacionescb.Size = new System.Drawing.Size(336, 24);
             this.violacionescb.TabIndex = 80;
-            // 
-            // reclamacionescb
-            // 
-            this.reclamacionescb.FormattingEnabled = true;
-            this.reclamacionescb.Location = new System.Drawing.Point(240, 559);
-            this.reclamacionescb.Margin = new System.Windows.Forms.Padding(4);
-            this.reclamacionescb.Name = "reclamacionescb";
-            this.reclamacionescb.Size = new System.Drawing.Size(336, 24);
-            this.reclamacionescb.TabIndex = 81;
             // 
             // autoproteccioncb
             // 
@@ -578,6 +559,28 @@
             this.tipoReporte.TabIndex = 88;
             this.tipoReporte.SelectedIndexChanged += new System.EventHandler(this.tipoReporte_SelectedIndexChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(72, 233);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 17);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "ID Novedad";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(241, 234);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 90;
+            this.label6.Text = "label9";
+            // 
             // aNovedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -585,13 +588,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.tipoReporte);
             this.Controls.Add(this.ingresodatoscb);
             this.Controls.Add(this.evaluacionpromedioscb);
             this.Controls.Add(this.revisionesinternascb);
             this.Controls.Add(this.alertadesviacionescb);
             this.Controls.Add(this.autoproteccioncb);
-            this.Controls.Add(this.reclamacionescb);
             this.Controls.Add(this.violacionescb);
             this.Controls.Add(this.reconexionescb);
             this.Controls.Add(this.cortescb);
@@ -599,7 +603,6 @@
             this.Controls.Add(this.fingnovedad);
             this.Controls.Add(this.nmedidor);
             this.Controls.Add(this.fraudefluidoscb);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.lcampo5);
             this.Controls.Add(this.campo5);
             this.Controls.Add(this.lcampo4);
@@ -682,7 +685,6 @@
         private System.Windows.Forms.Label lalertadesv;
         private System.Windows.Forms.TextBox alertadesv;
         private System.Windows.Forms.Label lautoproteccion;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox nmedidor;
         private System.Windows.Forms.Label fingnovedad;
         private System.Windows.Forms.Label horaingnov;
@@ -690,7 +692,6 @@
         private System.Windows.Forms.ComboBox cortescb;
         private System.Windows.Forms.ComboBox reconexionescb;
         private System.Windows.Forms.ComboBox violacionescb;
-        private System.Windows.Forms.ComboBox reclamacionescb;
         private System.Windows.Forms.ComboBox autoproteccioncb;
         private System.Windows.Forms.ComboBox alertadesviacionescb;
         private System.Windows.Forms.ComboBox revisionesinternascb;
@@ -698,5 +699,7 @@
         private System.Windows.Forms.ComboBox ingresodatoscb;
         private System.Windows.Forms.Label idmedidor;
         private System.Windows.Forms.ComboBox tipoReporte;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -135,8 +135,6 @@ namespace GUI_MODERNISTA
             PQRS.idmedidor = idmedidor;
             PQRS.fechaingreso = fingPQRS.Text;
             PQRS.horaingreso = horaingPQRS.Text;
-            //novedad.horaingresonovedad = horaingresonove.Text;
-            //PQRS.idmedidor = nmedidor.Text;
             PQRS.descripciónPQRS = descripcionPQRS.Text;
             PQRS.tipodesolicitud = tipodesolicitud.Text;
             PQRS.dañopresentado = dañopresentadoen.Text;
@@ -146,9 +144,6 @@ namespace GUI_MODERNISTA
             PQRS.campo3 = campo3.Text;
             PQRS.campo4 = campo4.Text;
             PQRS.campo5 = campo5.Text;
-
-
-
 
 
             if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(iusuario.Text) && !String.IsNullOrEmpty(descripcionPQRS.Text) && !String.IsNullOrEmpty(tipodesolicitud.Text) && !String.IsNullOrEmpty(dañopresentadoen.Text) && !String.IsNullOrEmpty(consultaestadoPQRS.Text))

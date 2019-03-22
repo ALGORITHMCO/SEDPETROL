@@ -94,12 +94,7 @@ namespace GUI_MODERNISTA
             ingresodatoscb.Items.Add("Otros");
             ingresodatoscb.Items.Add("N/A");
 
-            reclamacionescb.Items.Add("Asignacion de cupo");
-            reclamacionescb.Items.Add("Solicitud del usuario");
-            reclamacionescb.Items.Add("Derecho de peticion");
-            reclamacionescb.Items.Add("Proceso de reclamacion");
-            reclamacionescb.Items.Add("Otros");
-            reclamacionescb.Items.Add("N/A");
+            
 
             tipoReporte.Items.Add("Reporte y Análisis Predio Días");
             tipoReporte.Items.Add("Reporte y Análisis Predio Mes");
@@ -137,6 +132,22 @@ namespace GUI_MODERNISTA
                         }
                     }
                 }
+
+                string query1 = "SELECT ID_MEDIDOR FROM ALIMENTACION_HISTORICA WHERE ID_MEDIDOR=(SELECT MAX(ID_MEDIDOR) FROM ALIMENTACION_HISTORICA)";
+                using (SqlCommand command = new SqlCommand(query1, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+
+                            label6.Text = Convert.ToString(reader.GetInt32(0) + 1);
+                        }
+                    }
+                }
+
+
             }
             nmedidor.DataSource = columnData;
             nmedidor.Text = "";
@@ -150,7 +161,7 @@ namespace GUI_MODERNISTA
             revisionesinternascb.Text = "";
             cortescb.Text = "";
             reconexionescb.Text = "";
-            reclamacionescb.Text = "";
+            alertadesviacionescb.Text = "";
             violacionescb.Text = "";
             autoproteccioncb.Text = "";
             evaluacionpromedioscb.Text = "";
@@ -175,7 +186,7 @@ namespace GUI_MODERNISTA
             novedad.cortes = cortescb.Text;
             novedad.reconexiones = reconexionescb.Text;
             novedad.fraudefluidos = fraudefluidoscb.Text;
-            novedad.reclamaciones = reclamacionescb.Text;
+            novedad.alertasdesviacionessignificativas = alertadesviacionescb.Text;
             novedad.violaciones = violacionescb.Text;
             novedad.autoproteccion = autoproteccioncb.Text;
             novedad.evaluaciondepromedios = evaluacionpromedioscb.Text;
@@ -187,7 +198,7 @@ namespace GUI_MODERNISTA
             novedad.campo5 = campo5.Text;
 
            
-            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) && !String.IsNullOrEmpty(reclamacionescb.Text) && !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text))
+            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) &&  !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
  
             {
                 int resul = Registroo.agregarN(novedad);
@@ -205,7 +216,7 @@ namespace GUI_MODERNISTA
                     revisionesinternascb.Text = "";
                     cortescb.Text = "";
                     reconexionescb.Text = "";
-                    reclamacionescb.Text = "";
+                    alertadesviacionescb.Text = "";
                     violacionescb.Text = "";
                     autoproteccioncb.Text = "";
                     evaluacionpromedioscb.Text = "";
@@ -240,7 +251,7 @@ namespace GUI_MODERNISTA
             }
 
 
-            
+            InitializeComponent();
 
         }
 
@@ -401,6 +412,11 @@ namespace GUI_MODERNISTA
             if (tipoReporte.Text == "Reporte y Análisis Zona Mes") { AbrirFormHija(new reportesyanalisisINzonasmes());}
             if (tipoReporte.Text == "Reporte y Análisis Zona Año") { AbrirFormHija(new reportesyanalisisINzonasaño()); }
             
+        }
+
+        private void reclamacionescb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
