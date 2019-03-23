@@ -126,6 +126,12 @@
     <Compile Include="aNovedad.Designer.cs">
       <DependentUpon>aNovedad.cs</DependentUpon>
     </Compile>
+    <Compile Include="aNovedadCON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aNovedadCON.Designer.cs">
+      <DependentUpon>aNovedadCON.cs</DependentUpon>
+    </Compile>
     <Compile Include="aPQRS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aNovedad.resx">
       <DependentUpon>aNovedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aNovedadCON.resx">
+      <DependentUpon>aNovedadCON.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aPQRS.resx">
       <DependentUpon>aPQRS.cs</DependentUpon>

@@ -385,8 +385,15 @@ namespace GUI_MODERNISTA
                 AbrirFormHija(DMC);
                 
             }
+            if (ingresodatoscb.Text == "Datos de Novedades Anteriores")
+            {
+                aNovedadCON ANC = new aNovedadCON();
+                ANC.idmed = idmedidor.Text;
+                AbrirFormHija(ANC);
 
-            
+            }
+
+
         }
 
         public void AbrirFormHija(object formhija)

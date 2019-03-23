@@ -106,7 +106,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(760, 620);
+            this.button1.Location = new System.Drawing.Point(813, 619);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(269, 43);
@@ -424,7 +424,7 @@
             this.idchip.Location = new System.Drawing.Point(796, 205);
             this.idchip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idchip.Name = "idchip";
-            this.idchip.Size = new System.Drawing.Size(336, 22);
+            this.idchip.Size = new System.Drawing.Size(304, 22);
             this.idchip.TabIndex = 83;
             // 
             // label4
@@ -445,7 +445,7 @@
             this.idpropietario.Location = new System.Drawing.Point(796, 177);
             this.idpropietario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idpropietario.Name = "idpropietario";
-            this.idpropietario.Size = new System.Drawing.Size(336, 24);
+            this.idpropietario.Size = new System.Drawing.Size(304, 24);
             this.idpropietario.TabIndex = 84;
             // 
             // label6
@@ -513,7 +513,7 @@
             this.matriculainmobiliaria.Location = new System.Drawing.Point(796, 232);
             this.matriculainmobiliaria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.matriculainmobiliaria.Name = "matriculainmobiliaria";
-            this.matriculainmobiliaria.Size = new System.Drawing.Size(336, 22);
+            this.matriculainmobiliaria.Size = new System.Drawing.Size(304, 22);
             this.matriculainmobiliaria.TabIndex = 90;
             // 
             // direccion
@@ -521,7 +521,7 @@
             this.direccion.Location = new System.Drawing.Point(796, 259);
             this.direccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.direccion.Name = "direccion";
-            this.direccion.Size = new System.Drawing.Size(336, 22);
+            this.direccion.Size = new System.Drawing.Size(304, 22);
             this.direccion.TabIndex = 91;
             // 
             // label11
@@ -554,7 +554,7 @@
             this.estrato.Location = new System.Drawing.Point(796, 404);
             this.estrato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.estrato.Name = "estrato";
-            this.estrato.Size = new System.Drawing.Size(336, 24);
+            this.estrato.Size = new System.Drawing.Size(304, 24);
             this.estrato.TabIndex = 102;
             // 
             // label13
@@ -575,7 +575,7 @@
             this.claseuso.Location = new System.Drawing.Point(796, 434);
             this.claseuso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.claseuso.Name = "claseuso";
-            this.claseuso.Size = new System.Drawing.Size(336, 24);
+            this.claseuso.Size = new System.Drawing.Size(304, 24);
             this.claseuso.TabIndex = 104;
             // 
             // label14
@@ -596,7 +596,7 @@
             this.unidadhab.Location = new System.Drawing.Point(796, 466);
             this.unidadhab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.unidadhab.Name = "unidadhab";
-            this.unidadhab.Size = new System.Drawing.Size(336, 24);
+            this.unidadhab.Size = new System.Drawing.Size(304, 24);
             this.unidadhab.TabIndex = 106;
             // 
             // label15
@@ -617,7 +617,7 @@
             this.unidadnohab.Location = new System.Drawing.Point(796, 496);
             this.unidadnohab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.unidadnohab.Name = "unidadnohab";
-            this.unidadnohab.Size = new System.Drawing.Size(336, 24);
+            this.unidadnohab.Size = new System.Drawing.Size(304, 24);
             this.unidadnohab.TabIndex = 108;
             // 
             // label16
@@ -637,7 +637,7 @@
             this.zona.Location = new System.Drawing.Point(796, 524);
             this.zona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.zona.Name = "zona";
-            this.zona.Size = new System.Drawing.Size(336, 22);
+            this.zona.Size = new System.Drawing.Size(304, 22);
             this.zona.TabIndex = 110;
             // 
             // label17
@@ -657,7 +657,7 @@
             this.ciclo.Location = new System.Drawing.Point(796, 549);
             this.ciclo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ciclo.Name = "ciclo";
-            this.ciclo.Size = new System.Drawing.Size(336, 22);
+            this.ciclo.Size = new System.Drawing.Size(304, 22);
             this.ciclo.TabIndex = 112;
             // 
             // label18
@@ -677,7 +677,7 @@
             this.ruta.Location = new System.Drawing.Point(796, 575);
             this.ruta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ruta.Name = "ruta";
-            this.ruta.Size = new System.Drawing.Size(336, 22);
+            this.ruta.Size = new System.Drawing.Size(304, 22);
             this.ruta.TabIndex = 114;
             // 
             // label19
@@ -709,7 +709,7 @@
             this.departamento.Location = new System.Drawing.Point(796, 286);
             this.departamento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.departamento.Name = "departamento";
-            this.departamento.Size = new System.Drawing.Size(336, 24);
+            this.departamento.Size = new System.Drawing.Size(304, 24);
             this.departamento.TabIndex = 100;
             // 
             // municipio
@@ -717,7 +717,7 @@
             this.municipio.Location = new System.Drawing.Point(796, 315);
             this.municipio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.municipio.Name = "municipio";
-            this.municipio.Size = new System.Drawing.Size(336, 22);
+            this.municipio.Size = new System.Drawing.Size(304, 22);
             this.municipio.TabIndex = 116;
             // 
             // localidad
@@ -725,7 +725,7 @@
             this.localidad.Location = new System.Drawing.Point(796, 345);
             this.localidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.localidad.Name = "localidad";
-            this.localidad.Size = new System.Drawing.Size(336, 22);
+            this.localidad.Size = new System.Drawing.Size(304, 22);
             this.localidad.TabIndex = 117;
             // 
             // barrio
@@ -733,7 +733,7 @@
             this.barrio.Location = new System.Drawing.Point(796, 374);
             this.barrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.barrio.Name = "barrio";
-            this.barrio.Size = new System.Drawing.Size(336, 22);
+            this.barrio.Size = new System.Drawing.Size(304, 22);
             this.barrio.TabIndex = 118;
             // 
             // label21
