@@ -248,6 +248,7 @@
     <Compile Include="graficaanalisisyreporteszonas.Designer.cs">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDatosPredio.cs" />
     <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
     <Compile Include="ingresoDMC.cs">

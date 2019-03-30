@@ -11,6 +11,12 @@ namespace GUI_MODERNISTA
         public string fechaingreso { get; set; }
         public string horaingreso { get; set; }
         public string idmedidor { get; set; }
+        public string nombrepeticionario { get; set; }
+        public string identificacion { get; set; }
+        public string direccion { get; set; }
+        public string telefonofijo{ get; set; }
+        public string celular { get; set; }
+        public string correoelectronico { get; set; }
         public int idPQRS { get; set; }
         public string descripciónPQRS { get; set; }
         public string tipodesolicitud { get; set; }
@@ -25,12 +31,18 @@ namespace GUI_MODERNISTA
 
         public AgregarPQRS() { }
 
-        public AgregarPQRS(String pfechaingreso, String phoraingreso, String pidmedidor, int pidPQRS, String pdescripciónPQRS, String ptipodesolicitud, String pconsultaestadoPQRS, String pdañopresentado, String pcampo1, String pcampo2, String pcampo3, String pcampo4, String pcampo5)
+        public AgregarPQRS(String pfechaingreso, String phoraingreso, String pnombrepeticionario, String pidentificacion, String pdireccion, String ptelefonofijo, String pcelular, String pcorreoelectronico, String pidmedidor, int pidPQRS, String pdescripciónPQRS, String ptipodesolicitud, String pconsultaestadoPQRS, String pdañopresentado, String pcampo1, String pcampo2, String pcampo3, String pcampo4, String pcampo5)
         {
 
             this.fechaingreso = pfechaingreso;
-            this.horaingreso = phoraingreso;    
+            this.horaingreso = phoraingreso;
             this.idmedidor = pidmedidor;
+            this.nombrepeticionario = pnombrepeticionario;
+            this.identificacion = pidentificacion;
+            this.direccion = pdireccion;
+            this.telefonofijo = ptelefonofijo;
+            this.celular = pcelular;
+            this.correoelectronico = pcorreoelectronico;
             this.idPQRS = pidPQRS;            
             this.descripciónPQRS = pdescripciónPQRS;
             this.tipodesolicitud = ptipodesolicitud;

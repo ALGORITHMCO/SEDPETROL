@@ -13,6 +13,7 @@ namespace GUI_MODERNISTA
 {
     public partial class ingresoDP : Form
     {
+        String idpropietario;
         public ingresoDP()
         {
 
@@ -20,6 +21,7 @@ namespace GUI_MODERNISTA
             InitializeComponent();
             fingnovedad.Text = DateTime.Now.ToShortDateString();
             horaingnov.Text = DateTime.Now.ToShortTimeString();
+
 
 
             tipoIdentificacion.Items.Add("CC");
@@ -64,25 +66,25 @@ namespace GUI_MODERNISTA
 
         private void Registro_Load(object sender, EventArgs e)
         {
-            //comboBox2.Items.Add("Hola");
-            //List<String> columnData = new List<String>();
+            
+            List<String> columnData = new List<String>();
 
-            //using (SqlConnection cone = conexion.conectarbd())
-            //{
+            using (SqlConnection cone = conexion.conectarbd())
+            {
 
-            //    string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
-            //    using (SqlCommand command = new SqlCommand(query, cone))
-            //    {
-            //        using (SqlDataReader reader = command.ExecuteReader())
-            //        {
-            //            while (reader.Read())
-            //            {
-            //                //columnData.Add(reader.GetString(0));
-            //                columnData.Add(reader.GetValue(0).ToString());
-            //            }
-            //        }
-            //    }
-            //}
+                string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
+                using (SqlCommand command = new SqlCommand(query, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+                            idpropietario = reader.GetValue(0).ToString();
+                        }
+                    }
+                }
+            }
             ////marca.DataSource = columnData;
             tipoIdentificacion.Text = "";
             numeroIdentificacion.Text = "";
@@ -102,6 +104,7 @@ namespace GUI_MODERNISTA
         {
             IngresoDatosPropietario propietario = new IngresoDatosPropietario();
 
+            propietario.idpropietario = idpropietario;
             propietario.tipoidentificacion = tipoIdentificacion.Text;
             propietario.numeroidentificacion = numeroIdentificacion.Text;
             propietario.nombrepropietario = nombrePropietario.Text;
@@ -115,8 +118,8 @@ namespace GUI_MODERNISTA
             propietario.campo4 = campo4.Text;
             propietario.campo5 = campo5.Text;
 
-            if (!String.IsNullOrEmpty(tipoIdentificacion.Text) && !String.IsNullOrEmpty(numeroIdentificacion.Text) && !String.IsNullOrEmpty(nombrePropietario.Text) && !String.IsNullOrEmpty(porcentajePropiedad.Text) && !String.IsNullOrEmpty(calidadPropietario.Text) && !String.IsNullOrEmpty(cuentaContrato.Text))
-            { 
+            //if (!String.IsNullOrEmpty(tipoIdentificacion.Text) && !String.IsNullOrEmpty(numeroIdentificacion.Text) && !String.IsNullOrEmpty(nombrePropietario.Text) && !String.IsNullOrEmpty(porcentajePropiedad.Text) && !String.IsNullOrEmpty(calidadPropietario.Text) && !String.IsNullOrEmpty(cuentaContrato.Text))
+            //{ 
             int resul = Registroo.ingresarPropietario(propietario);
 
             if (resul == 1)
@@ -137,23 +140,23 @@ namespace GUI_MODERNISTA
                     campo5.Text = "";
 
                 }
-            else
-            {
-                if (resul == -1)
-                {
-                    MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
                 else
                 {
-                    MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (resul == -1)
+                    {
+                        MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
             }
-            }
-            else
-            {
-                    MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
+            //else
+            //{
+            //        MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //}
+        //}
 
         private void label4_Click(object sender, EventArgs e)
         {

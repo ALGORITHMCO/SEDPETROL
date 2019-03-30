@@ -66,7 +66,6 @@
             this.tipodesolicitud = new System.Windows.Forms.ComboBox();
             this.consultaestadoPQRS = new System.Windows.Forms.ComboBox();
             this.dañopresentadoen = new System.Windows.Forms.ComboBox();
-            this.iusuario = new System.Windows.Forms.ComboBox();
             this.lcorreo = new System.Windows.Forms.Label();
             this.correo = new System.Windows.Forms.TextBox();
             this.lcelular = new System.Windows.Forms.Label();
@@ -81,6 +80,7 @@
             this.descripcionPQRS = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.npeticionario = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -452,16 +452,6 @@
             this.dañopresentadoen.Size = new System.Drawing.Size(296, 24);
             this.dañopresentadoen.TabIndex = 80;
             // 
-            // iusuario
-            // 
-            this.iusuario.FormattingEnabled = true;
-            this.iusuario.Location = new System.Drawing.Point(240, 447);
-            this.iusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iusuario.Name = "iusuario";
-            this.iusuario.Size = new System.Drawing.Size(336, 24);
-            this.iusuario.TabIndex = 98;
-            this.iusuario.SelectedIndexChanged += new System.EventHandler(this.iusuario_SelectedIndexChanged);
-            // 
             // lcorreo
             // 
             this.lcorreo.AutoSize = true;
@@ -560,9 +550,9 @@
             this.lidusuario.Location = new System.Drawing.Point(74, 454);
             this.lidusuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lidusuario.Name = "lidusuario";
-            this.lidusuario.Size = new System.Drawing.Size(77, 17);
+            this.lidusuario.Size = new System.Drawing.Size(136, 17);
             this.lidusuario.TabIndex = 87;
-            this.lidusuario.Text = "Id Usuario*";
+            this.lidusuario.Text = "Nombre Peticionario";
             // 
             // descripcionPQRS
             // 
@@ -595,6 +585,14 @@
             this.label6.Text = "label9";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // npeticionario
+            // 
+            this.npeticionario.Location = new System.Drawing.Point(239, 444);
+            this.npeticionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.npeticionario.Name = "npeticionario";
+            this.npeticionario.Size = new System.Drawing.Size(336, 22);
+            this.npeticionario.TabIndex = 102;
+            // 
             // aPQRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -602,10 +600,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.npeticionario);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.descripcionPQRS);
-            this.Controls.Add(this.iusuario);
             this.Controls.Add(this.lcorreo);
             this.Controls.Add(this.correo);
             this.Controls.Add(this.lcelular);
@@ -705,7 +703,6 @@
         private System.Windows.Forms.ComboBox tipodesolicitud;
         private System.Windows.Forms.ComboBox consultaestadoPQRS;
         private System.Windows.Forms.ComboBox dañopresentadoen;
-        private System.Windows.Forms.ComboBox iusuario;
         private System.Windows.Forms.Label lcorreo;
         private System.Windows.Forms.TextBox correo;
         private System.Windows.Forms.Label lcelular;
@@ -720,5 +717,6 @@
         private System.Windows.Forms.TextBox descripcionPQRS;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox npeticionario;
     }
 }
