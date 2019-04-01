@@ -43,7 +43,6 @@
             this.lciudad = new System.Windows.Forms.Label();
             this.cuentacontrato = new System.Windows.Forms.TextBox();
             this.ldepartamento = new System.Windows.Forms.Label();
-            this.numeromedidor = new System.Windows.Forms.TextBox();
             this.lcampo5 = new System.Windows.Forms.Label();
             this.campo5 = new System.Windows.Forms.TextBox();
             this.lcampo4 = new System.Windows.Forms.Label();
@@ -89,13 +88,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.departamento = new System.Windows.Forms.ComboBox();
-            this.municipio = new System.Windows.Forms.TextBox();
-            this.localidad = new System.Windows.Forms.TextBox();
-            this.barrio = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.municipio = new System.Windows.Forms.ComboBox();
+            this.localidad = new System.Windows.Forms.ComboBox();
+            this.barrio = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.numeromedidor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -257,14 +258,6 @@
             this.ldepartamento.Size = new System.Drawing.Size(113, 17);
             this.ldepartamento.TabIndex = 28;
             this.ldepartamento.Text = "Numero Medidor";
-            // 
-            // numeromedidor
-            // 
-            this.numeromedidor.Location = new System.Drawing.Point(212, 290);
-            this.numeromedidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numeromedidor.Name = "numeromedidor";
-            this.numeromedidor.Size = new System.Drawing.Size(336, 22);
-            this.numeromedidor.TabIndex = 27;
             // 
             // lcampo5
             // 
@@ -712,30 +705,6 @@
             this.departamento.Size = new System.Drawing.Size(304, 24);
             this.departamento.TabIndex = 100;
             // 
-            // municipio
-            // 
-            this.municipio.Location = new System.Drawing.Point(796, 315);
-            this.municipio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.municipio.Name = "municipio";
-            this.municipio.Size = new System.Drawing.Size(304, 22);
-            this.municipio.TabIndex = 116;
-            // 
-            // localidad
-            // 
-            this.localidad.Location = new System.Drawing.Point(796, 345);
-            this.localidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.localidad.Name = "localidad";
-            this.localidad.Size = new System.Drawing.Size(304, 22);
-            this.localidad.TabIndex = 117;
-            // 
-            // barrio
-            // 
-            this.barrio.Location = new System.Drawing.Point(796, 374);
-            this.barrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barrio.Name = "barrio";
-            this.barrio.Size = new System.Drawing.Size(304, 22);
-            this.barrio.TabIndex = 118;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -780,6 +749,53 @@
             this.label24.TabIndex = 121;
             this.label24.Text = "ID Medidor";
             // 
+            // municipio
+            // 
+            this.municipio.FormattingEnabled = true;
+            this.municipio.Location = new System.Drawing.Point(796, 317);
+            this.municipio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.municipio.Name = "municipio";
+            this.municipio.Size = new System.Drawing.Size(304, 24);
+            this.municipio.TabIndex = 123;
+            // 
+            // localidad
+            // 
+            this.localidad.FormattingEnabled = true;
+            this.localidad.Location = new System.Drawing.Point(796, 345);
+            this.localidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.localidad.Name = "localidad";
+            this.localidad.Size = new System.Drawing.Size(304, 24);
+            this.localidad.TabIndex = 124;
+            // 
+            // barrio
+            // 
+            this.barrio.FormattingEnabled = true;
+            this.barrio.Location = new System.Drawing.Point(796, 374);
+            this.barrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barrio.Name = "barrio";
+            this.barrio.Size = new System.Drawing.Size(304, 24);
+            this.barrio.TabIndex = 125;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Location = new System.Drawing.Point(213, 293);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(46, 17);
+            this.label25.TabIndex = 127;
+            this.label25.Text = "label9";
+            // 
+            // numeromedidor
+            // 
+            this.numeromedidor.AutoSize = true;
+            this.numeromedidor.BackColor = System.Drawing.Color.Transparent;
+            this.numeromedidor.Location = new System.Drawing.Point(461, 163);
+            this.numeromedidor.Name = "numeromedidor";
+            this.numeromedidor.Size = new System.Drawing.Size(46, 17);
+            this.numeromedidor.TabIndex = 126;
+            this.numeromedidor.Text = "label9";
+            // 
             // ingresoDM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -787,13 +803,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.numeromedidor);
+            this.Controls.Add(this.barrio);
+            this.Controls.Add(this.localidad);
+            this.Controls.Add(this.municipio);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.barrio);
-            this.Controls.Add(this.localidad);
-            this.Controls.Add(this.municipio);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.ruta);
             this.Controls.Add(this.label19);
@@ -849,7 +867,6 @@
             this.Controls.Add(this.lciudad);
             this.Controls.Add(this.cuentacontrato);
             this.Controls.Add(this.ldepartamento);
-            this.Controls.Add(this.numeromedidor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -881,7 +898,6 @@
         private System.Windows.Forms.Label lciudad;
         private System.Windows.Forms.TextBox cuentacontrato;
         private System.Windows.Forms.Label ldepartamento;
-        private System.Windows.Forms.TextBox numeromedidor;
         private System.Windows.Forms.Label lcampo5;
         private System.Windows.Forms.TextBox campo5;
         private System.Windows.Forms.Label lcampo4;
@@ -927,12 +943,14 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox departamento;
-        private System.Windows.Forms.TextBox municipio;
-        private System.Windows.Forms.TextBox localidad;
-        private System.Windows.Forms.TextBox barrio;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox municipio;
+        private System.Windows.Forms.ComboBox localidad;
+        private System.Windows.Forms.ComboBox barrio;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label numeromedidor;
     }
 }

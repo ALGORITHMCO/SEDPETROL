@@ -248,8 +248,16 @@
     <Compile Include="graficaanalisisyreporteszonas.Designer.cs">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDatosPredio.cs" />
+    <Compile Include="IngresoConsumosAnteriores.cs" />
     <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
+    <Compile Include="ingresoCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoCA.Designer.cs">
+      <DependentUpon>ingresoCA.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingresoDMC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -459,6 +467,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="graficaanalisisyreporteszonas.resx">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoCA.resx">
+      <DependentUpon>ingresoCA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoDMC.resx">
       <DependentUpon>ingresoDMC.cs</DependentUpon>

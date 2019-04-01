@@ -133,7 +133,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query1 = "SELECT ID_MEDIDOR FROM ALIMENTACION_HISTORICA WHERE ID_MEDIDOR=(SELECT MAX(ID_MEDIDOR) FROM ALIMENTACION_HISTORICA)";
+                string query1 = "SELECT ID_INFENTRADA FROM ALIMENTACION_HISTORICA WHERE ID_INFENTRADA=(SELECT MAX(ID_INFENTRADA) FROM ALIMENTACION_HISTORICA)";
                 using (SqlCommand command = new SqlCommand(query1, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -378,7 +378,8 @@ namespace GUI_MODERNISTA
         {
             if (ingresodatoscb.Text == "Datos del Medidor") {AbrirFormHija(new ingresoDM());}
             if (ingresodatoscb.Text == "Datos del Propietario") { AbrirFormHija(new ingresoDP());}
-            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            //if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { AbrirFormHija(new ingresoCA()); }
             if (ingresodatoscb.Text == "Todos los datos asociados con el medidor") {
                 ingresoDMC DMC = new ingresoDMC();
                 DMC.idmed = idmedidor.Text;

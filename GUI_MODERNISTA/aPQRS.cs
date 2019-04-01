@@ -94,30 +94,30 @@ namespace GUI_MODERNISTA
 
             List<String> columnData1 = new List<String>();
 
-            using (SqlConnection cone = conexion.conectarbd())
-            {
+            //using (SqlConnection cone = conexion.conectarbd())
+            //{
 
-                string query1 = "SELECT Id FROM  Usuarios";
-                using (SqlCommand command = new SqlCommand(query1, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            columnData1.Add(reader.GetValue(0).ToString());
-                        }
-                    }
-                }
-            }
-            iusuario.DataSource = columnData1;
+            //    string query1 = "SELECT Id FROM  Usuarios";
+            //    using (SqlCommand command = new SqlCommand(query1, cone))
+            //    {
+            //        using (SqlDataReader reader = command.ExecuteReader())
+            //        {
+            //            while (reader.Read())
+            //            {
+            //                //columnData.Add(reader.GetString(0));
+            //                columnData1.Add(reader.GetValue(0).ToString());
+            //            }
+            //        }
+            //    }
+            //}
+            //iusuario.DataSource = columnData1;
             nmedidor.Text = "";
             departamento.Text = "";
             ciudad.Text = "";
             zona.Text = "";
             localidad.Text = "";
             barrio.Text = "";
-            iusuario.Text = "";
+            npeticionario.Text = "";
             identificacion.Text = "";
             direccion.Text = "";
             telefonofijo.Text = "";
@@ -135,6 +135,12 @@ namespace GUI_MODERNISTA
             PQRS.idmedidor = idmedidor;
             PQRS.fechaingreso = fingPQRS.Text;
             PQRS.horaingreso = horaingPQRS.Text;
+            PQRS.nombrepeticionario = npeticionario.Text;
+            PQRS.identificacion = identificacion.Text;
+            PQRS.direccion = direccion.Text;
+            PQRS.telefonofijo = telefonofijo.Text;
+            PQRS.celular = celular.Text;
+            PQRS.correoelectronico = correo.Text;
             PQRS.descripciónPQRS = descripcionPQRS.Text;
             PQRS.tipodesolicitud = tipodesolicitud.Text;
             PQRS.dañopresentado = dañopresentadoen.Text;
@@ -146,7 +152,7 @@ namespace GUI_MODERNISTA
             PQRS.campo5 = campo5.Text;
 
 
-            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(iusuario.Text) && !String.IsNullOrEmpty(descripcionPQRS.Text) && !String.IsNullOrEmpty(tipodesolicitud.Text) && !String.IsNullOrEmpty(dañopresentadoen.Text) && !String.IsNullOrEmpty(consultaestadoPQRS.Text))
+            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(npeticionario.Text) && !String.IsNullOrEmpty(descripcionPQRS.Text) && !String.IsNullOrEmpty(tipodesolicitud.Text) && !String.IsNullOrEmpty(dañopresentadoen.Text) && !String.IsNullOrEmpty(consultaestadoPQRS.Text))
             { 
             //if (nmedidor.Text !="" & iusuario.Text != "") {
                 int resul = Registroo.agregarPQRS(PQRS);
@@ -159,7 +165,7 @@ namespace GUI_MODERNISTA
                     zona.Text = "";
                     localidad.Text = "";
                     barrio.Text = "";
-                    iusuario.Text = "";
+                    npeticionario.Text = "";
                     identificacion.Text = "";
                     direccion.Text = "";
                     telefonofijo.Text = "";
@@ -308,81 +314,8 @@ namespace GUI_MODERNISTA
 
         }
 
-       
-        private void iusuario_SelectedIndexChanged(object sender, EventArgs e)
 
-        {
-            using (SqlConnection cone = conexion.conectarbd())
-            {
-
-                string query8 = "SELECT Usuarios.identificacion FROM Usuarios WHERE Usuarios.Id='" + iusuario.Text + "'";
-                using (SqlCommand command = new SqlCommand(query8, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            identificacion.Text = reader.GetValue(0).ToString();
-                        }
-                    }
-                }
-
-                string query9 = "SELECT Usuarios.direccion FROM Usuarios WHERE Usuarios.Id='" + iusuario.Text + "'";
-                using (SqlCommand command = new SqlCommand(query9, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            direccion.Text = reader.GetValue(0).ToString();
-                        }
-                    }
-                }
-
-                string query10 = "SELECT Usuarios.telefono_fijo FROM Usuarios WHERE Usuarios.Id='" + iusuario.Text + "'";
-                using (SqlCommand command = new SqlCommand(query10, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            telefonofijo.Text = reader.GetValue(0).ToString();
-                        }
-                    }
-                }
-
-                string query11 = "SELECT Usuarios.celular FROM Usuarios WHERE Usuarios.Id='" + iusuario.Text + "'";
-                using (SqlCommand command = new SqlCommand(query11, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            celular.Text = reader.GetValue(0).ToString();
-                        }
-                    }
-                }
-
-                string query12 = "SELECT Usuarios.correo FROM Usuarios WHERE Usuarios.Id='" + iusuario.Text + "'";
-                using (SqlCommand command = new SqlCommand(query12, cone))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            //columnData.Add(reader.GetString(0));
-                            correo.Text = reader.GetValue(0).ToString();
-                        }
-                    }
-                }
-
-            }
-
-        }
+      
 
         private void label6_Click(object sender, EventArgs e)
         {
