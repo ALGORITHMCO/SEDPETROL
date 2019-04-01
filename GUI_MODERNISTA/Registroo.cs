@@ -205,17 +205,53 @@ namespace GUI_MODERNISTA
           
         }
 
-   
-
 
         public static int ingresarPropietario(IngresoDatosPropietario propietario)
         {
             int retorno = 0;
-            int retorno1 = 0;
+
 
             using (SqlConnection cone = conexion.conectarbd())
             {
                 SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM PROPIETARIO WHERE ID_PROPIETARIO ='" + propietario.idpropietario + "'"), cone);
+                SqlDataReader dr = consul.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return retorno = -1;
+
+                }
+                else
+                {
+                    using (SqlConnection conee = conexion.conectarbd())
+                    {
+
+                        
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into PROPIETARIO (TIPO_IDENTIFICACION, NU_IDENTIFICACION, NOMBRE_PROPIETARIO, PORC_PROPIEDAD, CALIDAD_PROPIETARIO, CUENTA_CONTRATO, ESTADO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}','{10}','{11}')",
+                        propietario.tipoidentificacion, propietario.numeroidentificacion, propietario.nombrepropietario, propietario.porcentajepropiedad, propietario.calidadpropietario, propietario.cuentacontrato, propietario.estado, propietario.campo1, propietario.campo2, propietario.campo3, propietario.campo4, propietario.campo5), conee);
+
+                        conexion.cerrarbd();
+
+                        return retorno = comando.ExecuteNonQuery();
+                    }
+
+
+
+                }
+
+            }
+
+        }
+
+
+        public static int ingresarCA(IngresoConsumosAnteriores consumos)
+        {
+            int retorno = 0;
+            
+
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+                SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM FACTURAS WHERE ID_FACTURAS ='" + consumos.idfactura+ "'"), cone);
                 SqlDataReader dr = consul.ExecuteReader();
 
                 if (dr.Read())
@@ -226,15 +262,11 @@ namespace GUI_MODERNISTA
                 {
                     using (SqlConnection conee = conexion.conectarbd())
                     {
-                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_INFENTRADA, ID_MEDIDOR, REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION, DEFRAUDACION_FLUIDOS, RECLAMACIONES, VIOLACIONES, AUTO_PROTECCION, EVALUACION_PROMEDIOS, INGRESO_DATOS_1VEZ, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
-                        //novedades.idnovedad, novedades.idmedidor, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
 
-                        SqlCommand comando = new SqlCommand(String.Format("Insert into PROPIETARIO (ID_PROPIETARIO,TIPO_IDENTIFICACION, NU_IDENTIFICACION, NOMBRE_PROPIETARIO, PORC_PROPIEDAD, CALIDAD_PROPIETARIO, CUENTA_CONTRATO, ESTADO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}','{10}','{11}','{12}')",
-                        propietario.idpropietario,propietario.tipoidentificacion, propietario.numeroidentificacion, propietario.nombrepropietario, propietario.porcentajepropiedad, propietario.calidadpropietario, propietario.cuentacontrato, propietario.estado, propietario.campo1, propietario.campo2, propietario.campo3, propietario.campo4, propietario.campo5), conee);
-
-                        //SqlCommand comando = new SqlCommand(String.Format("Insert into ALIMENTACION_HISTORICA (ID_MEDIDOR,REVISIONES_INTERNAS, CORTES_SERVICIO, RECONEXION) values ('{0}', '{1}', '{2}', '{3}')",
-                        // novedades.fechaingreso, novedades.horaingresonovedad, novedades.idmedidor, novedades.departamento), conee);
-                        return retorno1 = comando.ExecuteNonQuery();
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into FACTURAS (ID_MEDIDOR, EMPRESA, FACTURA_SP_NO, CONSUMOM3, PERIODO1, PERIODO2, PERIODO3, PERIODO4, PERIODO5, PERIODO6, CONSUMO_PROMEDIO, PERIODO_A_FACTURAR, FACTURADO_CON, DESCARGUE_FUENTE, TOTAL_A_PAGAR, FECHA_PAGO_OPORTUNO, FECHA_LIMITE_PAGO, CUENTA_CONTRATO) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}')",
+                        consumos.idmedidor, consumos.empresa, consumos.facturaspno, consumos.consumom3, consumos.periodo1, consumos.periodo2, consumos.periodo3, consumos.periodo4, consumos.periodo5, consumos.periodo6, consumos.consumopromedio, consumos.periodoafacturar, consumos.facturadocon, consumos.descarguefuente, consumos.totalapagar, consumos.fechalimitepago, consumos.fechapagoportuno, consumos.cuentacontrato), conee);
+                        conexion.cerrarbd();
+                        return retorno = comando.ExecuteNonQuery();
                     }
                 }
 

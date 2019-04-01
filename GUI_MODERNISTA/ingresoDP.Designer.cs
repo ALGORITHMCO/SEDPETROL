@@ -59,6 +59,7 @@
             this.nombrePropietario = new System.Windows.Forms.TextBox();
             this.calidadPropietario = new System.Windows.Forms.ComboBox();
             this.estado = new System.Windows.Forms.ComboBox();
+            this.idpropietario1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -70,7 +71,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(732, 542);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(269, 43);
             this.button1.TabIndex = 21;
@@ -365,6 +366,16 @@
             this.estado.Size = new System.Drawing.Size(336, 24);
             this.estado.TabIndex = 84;
             // 
+            // idpropietario1
+            // 
+            this.idpropietario1.AutoSize = true;
+            this.idpropietario1.BackColor = System.Drawing.Color.Transparent;
+            this.idpropietario1.Location = new System.Drawing.Point(513, 226);
+            this.idpropietario1.Name = "idpropietario1";
+            this.idpropietario1.Size = new System.Drawing.Size(46, 17);
+            this.idpropietario1.TabIndex = 85;
+            this.idpropietario1.Text = "label9";
+            // 
             // ingresoDP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -372,6 +383,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BackgroundImage = global::GUI_MODERNISTA.Properties.Resources.fondo_azul_04;
             this.ClientSize = new System.Drawing.Size(1208, 722);
+            this.Controls.Add(this.idpropietario1);
             this.Controls.Add(this.estado);
             this.Controls.Add(this.calidadPropietario);
             this.Controls.Add(this.nombrePropietario);
@@ -404,7 +416,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ingresoDP";
             this.Text = "inicio";
             this.Load += new System.EventHandler(this.Registro_Load);
@@ -445,5 +457,6 @@
         private System.Windows.Forms.TextBox nombrePropietario;
         private System.Windows.Forms.ComboBox calidadPropietario;
         private System.Windows.Forms.ComboBox estado;
+        private System.Windows.Forms.Label idpropietario1;
     }
 }

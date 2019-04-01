@@ -72,7 +72,7 @@ namespace GUI_MODERNISTA
             using (SqlConnection cone = conexion.conectarbd())
             {
 
-                string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
+                string query = "SELECT ID_PROPIETARIO FROM PROPIETARIO WHERE ID_PROPIETARIO=(SELECT MAX(ID_PROPIETARIO) FROM PROPIETARIO)";
                 using (SqlCommand command = new SqlCommand(query, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -80,7 +80,7 @@ namespace GUI_MODERNISTA
                         while (reader.Read())
                         {
                             //columnData.Add(reader.GetString(0));
-                            idpropietario = reader.GetValue(0).ToString();
+                            idpropietario1.Text = Convert.ToString(reader.GetInt32(0) + 1);
                         }
                     }
                 }
@@ -104,7 +104,7 @@ namespace GUI_MODERNISTA
         {
             IngresoDatosPropietario propietario = new IngresoDatosPropietario();
 
-            propietario.idpropietario = idpropietario;
+            propietario.idpropietario = idpropietario1.Text;
             propietario.tipoidentificacion = tipoIdentificacion.Text;
             propietario.numeroidentificacion = numeroIdentificacion.Text;
             propietario.nombrepropietario = nombrePropietario.Text;

@@ -378,7 +378,8 @@ namespace GUI_MODERNISTA
         {
             if (ingresodatoscb.Text == "Datos del Medidor") {AbrirFormHija(new ingresoDM());}
             if (ingresodatoscb.Text == "Datos del Propietario") { AbrirFormHija(new ingresoDP());}
-            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            //if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { AbrirFormHija(new ingresoCA()); }
             if (ingresodatoscb.Text == "Todos los datos asociados con el medidor") {
                 ingresoDMC DMC = new ingresoDMC();
                 DMC.idmed = idmedidor.Text;
