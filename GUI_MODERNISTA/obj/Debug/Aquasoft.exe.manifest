@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8663048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8696840">
       <assemblyIdentity name="Aquasoft" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hr+DjnumUFgyz7gac36p1LBgOlWxONRjMSkjLYLQAi4=</dsig:DigestValue>
+        <dsig:DigestValue>IEeZRaR4svTplztNpXTM817Rnt/XoCcnYV4QehT6XnI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

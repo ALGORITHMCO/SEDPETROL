@@ -128,3 +128,4 @@ C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETR
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.exe
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.pdb
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.ingresoCA.resources
+C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.cServicio.resources
