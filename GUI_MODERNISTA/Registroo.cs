@@ -273,7 +273,37 @@ namespace GUI_MODERNISTA
             }
         }
 
+        public static int ingresarCS(ComportamientoServicio comportamiento)
+        {
+            int retorno = 0;
 
+
+            using (SqlConnection cone = conexion.conectarbd())
+            {
+                SqlCommand consul = new SqlCommand(String.Format("SELECT * FROM COMPORTAMIENTO_SERVICIO WHERE ID_COMPORTAMIENTO ='" + comportamiento.idcomportamiento+ "'"), cone);
+                SqlDataReader dr = consul.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return retorno = -1;
+
+                }
+                else
+                {
+                    using (SqlConnection conee = conexion.conectarbd())
+                    {
+                        SqlCommand comando = new SqlCommand(String.Format("Insert into COMPORTAMIENTO_SERVICIO (ID_MEDIDOR, FECHA_INGRESO, HORA_INGRESO, TIPODEALARMA, SOLICITUDAPERTURAOCIERRE, PATRONPARAMETROS, DIFERENCIAPROMEDIO, ALERTADESVIACIONES, RESULTADODELREQUERIMIENTO, DIAMETROSUGERIDO, CAMPO1, CAMPO2, CAMPO3, CAMPO4, CAMPO5) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}','{10}','{11}','{12}','{13}','{14}')",
+                        comportamiento.idmedidor, comportamiento.fechaingreso, comportamiento.horaingreso, comportamiento.tiposalarmas, comportamiento.solicitudac, comportamiento.patronparametrosconsumos, comportamiento.diferenciaconsumopatron, comportamiento.alertadesvsignificativas, comportamiento.resultadorequerimiento, comportamiento.diametrosugeridomedidor, comportamiento.campo1, comportamiento.campo2, comportamiento.campo3, comportamiento.campo4, comportamiento.campo5), conee);
+
+                        conexion.cerrarbd();
+
+                        return retorno = comando.ExecuteNonQuery();
+                    }
+                }
+
+            }
+
+        }
 
         public static List<Medidor> Buscar(String pcuenta)
         {

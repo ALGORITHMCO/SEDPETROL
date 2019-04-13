@@ -226,5 +226,10 @@ namespace GUI_MODERNISTA
         {
             AbrirFormHija(new ingresoDP());
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new cServicio());
+        }
     }
 }

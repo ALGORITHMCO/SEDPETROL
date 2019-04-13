@@ -120,6 +120,12 @@
       <DependentUpon>alertasaguascl.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cServicio.Designer.cs">
+      <DependentUpon>cServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="aNovedad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,7 @@
     </Compile>
     <Compile Include="IngresoDatosPredio.cs" />
     <Compile Include="IngresoConsumosAnteriores.cs" />
+    <Compile Include="ComportamientoServicio.cs" />
     <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
     <Compile Include="ingresoCA.cs">
@@ -406,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alertasaguascl.resx">
       <DependentUpon>alertasaguascl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cServicio.resx">
+      <DependentUpon>cServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aNovedad.resx">
       <DependentUpon>aNovedad.cs</DependentUpon>
