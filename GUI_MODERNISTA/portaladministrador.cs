@@ -162,7 +162,7 @@ namespace GUI_MODERNISTA
 
             submenu2.Visible = false;
             SubmenuReportes.Visible = false;
-            AbrirFormHija(new aNovedad());
+            AbrirFormHija(new aNovedad(panelContenedor));
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -203,7 +203,33 @@ namespace GUI_MODERNISTA
 
         private void button9_Click(object sender, EventArgs e)
         {
+
+            if (panel16.Visible == true)
+            {
+                panel16.Visible = false;
+            }
+            else
+            {
+                panel16.Visible = true;
+            }
+
+            
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
             AbrirFormHija(new ingresoDM());
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new ingresoDP());
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new cServicio());
         }
     }
 }

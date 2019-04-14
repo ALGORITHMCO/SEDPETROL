@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\cesar77muse\Desktop\sedpetrol\version 7.0\</PublishUrl>
+    <PublishUrl>C:\Users\cesar77muse\Desktop\sedpetrol\version 9.0\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Aquasoft</ProductName>
     <PublisherName>Algorithm SAS</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -120,11 +120,23 @@
       <DependentUpon>alertasaguascl.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cServicio.Designer.cs">
+      <DependentUpon>cServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="aNovedad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="aNovedad.Designer.cs">
       <DependentUpon>aNovedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aNovedadCON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aNovedadCON.Designer.cs">
+      <DependentUpon>aNovedadCON.cs</DependentUpon>
     </Compile>
     <Compile Include="aPQRS.cs">
       <SubType>Form</SubType>
@@ -242,12 +254,34 @@
     <Compile Include="graficaanalisisyreporteszonas.Designer.cs">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDatosPredio.cs" />
+    <Compile Include="IngresoConsumosAnteriores.cs" />
+    <Compile Include="ComportamientoServicio.cs" />
+    <Compile Include="IngresoDatosPropietario.cs" />
     <Compile Include="IngresoDatosMedidor.cs" />
+    <Compile Include="ingresoCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoCA.Designer.cs">
+      <DependentUpon>ingresoCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoDMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDMC.Designer.cs">
+      <DependentUpon>ingresoDMC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingresoDM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ingresoDM.Designer.cs">
       <DependentUpon>ingresoDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDP.Designer.cs">
+      <DependentUpon>ingresoDP.cs</DependentUpon>
     </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
@@ -286,6 +320,7 @@
     <Compile Include="mapazonas.Designer.cs">
       <DependentUpon>mapazonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registroo.cs" />
     <Compile Include="reportesyanalisisINIDaño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,7 +370,6 @@
     <Compile Include="reportesyanalisisINzonas.Designer.cs">
       <DependentUpon>reportesyanalisisINzonas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registroo.cs" />
     <Compile Include="RegistroIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,8 +414,14 @@
     <EmbeddedResource Include="alertasaguascl.resx">
       <DependentUpon>alertasaguascl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cServicio.resx">
+      <DependentUpon>cServicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="aNovedad.resx">
       <DependentUpon>aNovedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aNovedadCON.resx">
+      <DependentUpon>aNovedadCON.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aPQRS.resx">
       <DependentUpon>aPQRS.cs</DependentUpon>
@@ -438,8 +478,17 @@
     <EmbeddedResource Include="graficaanalisisyreporteszonas.resx">
       <DependentUpon>graficaanalisisyreporteszonas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingresoCA.resx">
+      <DependentUpon>ingresoCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDMC.resx">
+      <DependentUpon>ingresoDMC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ingresoDM.resx">
       <DependentUpon>ingresoDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDP.resx">
+      <DependentUpon>ingresoDP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
@@ -504,6 +553,8 @@
       <DependentUpon>ConsultareportesyanalisisIN.cs</DependentUpon>
     </EmbeddedResource>
     <Fakes Include="Fakes\AlphaBlendTextBox.fakes" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="GUI_MODERNISTA_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

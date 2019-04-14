@@ -1,7 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_MODERNISTA", "GUI_MODERNISTA\GUI_MODERNISTA.csproj", "{D31F941D-85E3-495C-829A-C320E58E73E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9884604B-E966-40D3-8145-EDF4BAB1ED29}"
+	ProjectSection(SolutionItems) = preProject
+		GUI_MODERNISTA\aNovedad.Designer.cs = GUI_MODERNISTA\aNovedad.Designer.cs
+		GUI_MODERNISTA\aNovedad.resx = GUI_MODERNISTA\aNovedad.resx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB9C426A-D76B-48B9-B6E9-512D8F581591}
 	EndGlobalSection
 EndGlobal

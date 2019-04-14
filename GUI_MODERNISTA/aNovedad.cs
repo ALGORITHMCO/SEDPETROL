@@ -9,15 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace GUI_MODERNISTA
 {
+    
     public partial class aNovedad : Form
     {
-        public aNovedad()
+        Panel panel1;
+        int idmedidor1;
+        public aNovedad(Panel p)
         {
+            panel1 = p;
+            
             InitializeComponent();
+
             fingnovedad.Text = DateTime.Now.ToShortDateString();
             horaingnov.Text = DateTime.Now.ToShortTimeString();
+
+            
 
             fraudefluidoscb.Items.Add("Control de actividad Economica");
             fraudefluidoscb.Items.Add("Control clase de uso");
@@ -77,7 +86,7 @@ namespace GUI_MODERNISTA
             evaluacionpromedioscb.Items.Add("Otros");
             evaluacionpromedioscb.Items.Add("N/A");
 
-            ingresodatoscb.Items.Add("Datos del propietario");
+            ingresodatoscb.Items.Add("Datos del Propietario");
             ingresodatoscb.Items.Add("Datos del Medidor");
             ingresodatoscb.Items.Add("Datos de Novedades Anteriores");
             ingresodatoscb.Items.Add("Datos de Consumos Anteriores");
@@ -85,29 +94,32 @@ namespace GUI_MODERNISTA
             ingresodatoscb.Items.Add("Otros");
             ingresodatoscb.Items.Add("N/A");
 
-            reclamacionescb.Items.Add("Asignacion de cupo");
-            reclamacionescb.Items.Add("Solicitud del usuario");
-            reclamacionescb.Items.Add("Derecho de peticion");
-            reclamacionescb.Items.Add("Proceso de reclamacion");
-            reclamacionescb.Items.Add("Otros");
-            reclamacionescb.Items.Add("N/A");
+            
+
+            tipoReporte.Items.Add("Reporte y Análisis Predio Días");
+            tipoReporte.Items.Add("Reporte y Análisis Predio Mes");
+            tipoReporte.Items.Add("Reporte y Análisis Predio Año");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Días");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Mes");
+            tipoReporte.Items.Add("Reporte y Análisis Zona Año");
 
         }
 
 
+        public static String idmedido;
 
-        
-        
+
 
         private void Registro_Load(object sender, EventArgs e)
         {
-            //comboBox2.Items.Add("Hola");
+      
             List<String> columnData = new List<String>();
+            List<String> columnData1 = new List<String>();
 
             using (SqlConnection cone = conexion.conectarbd())
             {
                 
-                string query = "SELECT ID_MEDIDOR FROM MEDIDOR";
+                string query = "SELECT NU_MEDIDOR FROM MEDIDOR";
                 using (SqlCommand command = new SqlCommand(query, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -116,35 +128,65 @@ namespace GUI_MODERNISTA
                         {
                             //columnData.Add(reader.GetString(0));
                             columnData.Add(reader.GetValue(0).ToString());
+                            
                         }
                     }
                 }
+
+                string query1 = "SELECT ID_INFENTRADA FROM ALIMENTACION_HISTORICA WHERE ID_INFENTRADA=(SELECT MAX(ID_INFENTRADA) FROM ALIMENTACION_HISTORICA)";
+                using (SqlCommand command = new SqlCommand(query1, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+
+                            label6.Text = Convert.ToString(reader.GetInt32(0) + 1);
+                        }
+                    }
+                }
+
+
             }
-            imedidor.DataSource = columnData;
-            
+            nmedidor.DataSource = columnData;
+            nmedidor.Text = "";
+            idmedidor.Text= "";
+            departamento.Text = "";
+            ciudad.Text = "";
+            zona.Text = "";
+            localidad.Text = "";
+            barrio.Text = "";
+            fraudefluidoscb.Text = "";
+            revisionesinternascb.Text = "";
+            cortescb.Text = "";
+            reconexionescb.Text = "";
+            alertadesviacionescb.Text = "";
+            violacionescb.Text = "";
+            autoproteccioncb.Text = "";
+            evaluacionpromedioscb.Text = "";
+            ingresodatoscb.Text = "";
+            campo1.Text = "";
+            campo2.Text = "";
+            campo3.Text = "";
+            campo4.Text = "";
+            campo5.Text = "";
+            tipoReporte.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AgregarNovedades novedad = new AgregarNovedades();
 
-            //novedad.usuarios = textusuario.Text;
-            //novedad.nombres = textnombre.Text;
-            //novedad.contraseñas = textcontra.Text;
-            //novedad.correos = textcorreo.Text;
-
-            //novedad.fechaingreso = fechaingnove.Text;
-            //novedad.horaingresonovedad = horaingresonove.Text;
-            //novedad.fechaingreso = fecha.Text;
-            novedad.fechaingreso=fingnovedad.Text;
+            novedad.fechaingreso = fingnovedad.Text;
             novedad.horaingresonovedad = horaingnov.Text;
-            //novedad.horaingresonovedad = horaingresonove.Text;
-            novedad.idmedidor = imedidor.Text;
+            novedad.idmedidor = idmedidor.Text;
+            novedad.nmedidor = nmedidor.Text;
             novedad.revisionesinternas = revisionesinternascb.Text;
             novedad.cortes = cortescb.Text;
             novedad.reconexiones = reconexionescb.Text;
             novedad.fraudefluidos = fraudefluidoscb.Text;
-            novedad.reclamaciones = reclamacionescb.Text;
+            novedad.alertasdesviacionessignificativas = alertadesviacionescb.Text;
             novedad.violaciones = violacionescb.Text;
             novedad.autoproteccion = autoproteccioncb.Text;
             novedad.evaluaciondepromedios = evaluacionpromedioscb.Text;
@@ -154,45 +196,63 @@ namespace GUI_MODERNISTA
             novedad.campo3 = campo3.Text;
             novedad.campo4 = campo4.Text;
             novedad.campo5 = campo5.Text;
-        
 
-
-
-            //novedad.idnovedad = idnovedad.Text;
-            //novedad.idmedidor = idmedidor.Text;
-            //novedad.departamento=departamento.Text
-            //novedad.revisionesinternas = revisionesinternas.Text;
-            //novedad.cortes = cortes.Text;
-            //novedad.reconexiones = reconexiones.Text;
-            //novedad.fraudefluidos = fraudefluido.Text;
-            //novedad.reclamaciones = reclamaciones.Text;
-            //novedad.autoproteccion = autoproteccion.Text;
-            //novedad.evaluaciondepromedios = evaluacionpromedios.Text;
-            //novedad.ingresodatosprimeravez = ingresodatosprimeravez.Text;
-            //novedad.campo1 = campo1.Text;
-            //novedad.campo2 = campo2.Text;
-            //novedad.campo3 = campo3.Text;
-            //novedad.campo4 = campo4.Text;
-            //novedad.campo5 = campo5.Text;
-
-            int resul = Registroo.agregarN(novedad);
-
-            if (resul == 1)
+           
+            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) &&  !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
+ 
             {
-                MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                int resul = Registroo.agregarN(novedad);
+                if (resul == 1)
+                {
+                    MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    nmedidor.Text = "";
+                    departamento.Text = "";
+                    ciudad.Text = "";
+                    zona.Text = "";
+                    localidad.Text = "";
+                    barrio.Text = "";
+                    fraudefluidoscb.Text = "";
+                    revisionesinternascb.Text = "";
+                    cortescb.Text = "";
+                    reconexionescb.Text = "";
+                    alertadesviacionescb.Text = "";
+                    violacionescb.Text = "";
+                    autoproteccioncb.Text = "";
+                    evaluacionpromedioscb.Text = "";
+                    ingresodatoscb.Text = "";
+                    campo1.Text = "";
+                    campo2.Text = "";
+                    campo3.Text = "";
+                    campo4.Text = "";
+                    campo5.Text = "";
+
+                }
+                else
+                {
+                    if (resul == -1)
+                    {
+                        MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            
+
+
 
             }
             else
             {
-                if (resul == -1)
-                {
-                    MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+                MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+
+            InitializeComponent();
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -213,7 +273,7 @@ namespace GUI_MODERNISTA
         {
             using (SqlConnection cone = conexion.conectarbd())
             {
-                string query2 = "SELECT PREDIO.DEPARTAMENTO, MEDIDOR.ID_MEDIDOR FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query2 = "SELECT PREDIO.DEPARTAMENTO, MEDIDOR.ID_MEDIDOR FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query2, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -226,7 +286,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query3 = "SELECT PREDIO.MUNICIPIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query3 = "SELECT PREDIO.MUNICIPIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query3, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -239,7 +299,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query4 = "SELECT PREDIO.ZONA FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query4 = "SELECT PREDIO.ZONA FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query4, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -252,7 +312,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query5 = "SELECT PREDIO.LOCALIDAD FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query5 = "SELECT PREDIO.LOCALIDAD FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query5, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -265,7 +325,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query6 = "SELECT PREDIO.BARRIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query6 = "SELECT PREDIO.BARRIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query6, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -278,7 +338,7 @@ namespace GUI_MODERNISTA
                     }
                 }
 
-                string query7 = "SELECT PREDIO.BARRIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.ID_MEDIDOR='" + imedidor.Text + "'";
+                string query7 = "SELECT PREDIO.BARRIO FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
                 using (SqlCommand command = new SqlCommand(query7, cone))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -291,7 +351,80 @@ namespace GUI_MODERNISTA
                     }
                 }
 
+                string query8 = "SELECT MEDIDOR.ID_MEDIDOR FROM PREDIO, MEDIDOR WHERE PREDIO.ID_PREDIO=MEDIDOR.ID_PREDIO AND MEDIDOR.NU_MEDIDOR='" + nmedidor.Text + "'";
+                using (SqlCommand command = new SqlCommand(query8, cone))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            //columnData.Add(reader.GetString(0));
+                            idmedidor.Text = reader.GetValue(0).ToString();
+                            idmedido = idmedidor.Text;
+                        }
+                    }
+                }
+
+                
+
+
+
+
+
             }
+        }
+
+        private void ingresodatoscb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ingresodatoscb.Text == "Datos del Medidor") {AbrirFormHija(new ingresoDM());}
+            if (ingresodatoscb.Text == "Datos del Propietario") { AbrirFormHija(new ingresoDP());}
+            //if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { tipoReporte.Visible = true;}
+            if (ingresodatoscb.Text == "Datos de Consumos Anteriores") { AbrirFormHija(new ingresoCA()); }
+            if (ingresodatoscb.Text == "Todos los datos asociados con el medidor") {
+                ingresoDMC DMC = new ingresoDMC();
+                DMC.idmed = idmedidor.Text;
+                AbrirFormHija(DMC);
+                
+            }
+            if (ingresodatoscb.Text == "Datos de Novedades Anteriores")
+            {
+                aNovedadCON ANC = new aNovedadCON();
+                ANC.idmed = idmedidor.Text;
+                AbrirFormHija(ANC);
+
+            }
+
+
+        }
+
+        public void AbrirFormHija(object formhija)
+        {
+            if (this.panel1.Controls.Count > 0)
+                this.panel1.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel1.Controls.Add(fh);
+            this.panel1.Tag = fh;
+            fh.Show();
+
+        }
+
+        private void tipoReporte_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (tipoReporte.Text == "Reporte y Análisis Predio Días") { AbrirFormHija(new reportesyanalisisINID()); }
+            if (tipoReporte.Text == "Reporte y Análisis Predio Mes") { AbrirFormHija(new reportesyanalisisINIDmes()); }
+            if (tipoReporte.Text == "Reporte y Análisis Predio Año") { AbrirFormHija(new reportesyanalisisINIDaño()); }
+            if (tipoReporte.Text == "Reporte y Análisis Zona Días") {AbrirFormHija(new reportesyanalisisINzonas()); }
+            if (tipoReporte.Text == "Reporte y Análisis Zona Mes") { AbrirFormHija(new reportesyanalisisINzonasmes());}
+            if (tipoReporte.Text == "Reporte y Análisis Zona Año") { AbrirFormHija(new reportesyanalisisINzonasaño()); }
+            
+        }
+
+        private void reclamacionescb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

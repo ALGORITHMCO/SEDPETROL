@@ -19,6 +19,7 @@ namespace GUI_MODERNISTA
         public string horaingresonovedad { get; set; }
         public int idnovedad { get; set; }
         public string idmedidor { get; set; }
+        public string nmedidor { get; set; }
         public string departamento { get; set; }
         //public string ciudad { get; set; }
         //public string zona { get; set; }
@@ -53,11 +54,12 @@ namespace GUI_MODERNISTA
 
         //}novedades.idmedidor, novedades.fechaingreso, novedades.horaingresonovedad, novedades.revisionesinternas, novedades.cortes, novedades.reconexiones, novedades.fraudefluidos, novedades.reclamaciones, novedades.violaciones, novedades.autoproteccion,novedades.evaluaciondepromedios, novedades.ingresodatosprimeravez,novedades.campo1, novedades.campo2, novedades.campo3, novedades.campo4, novedades.campo5), conee);
 
-        public AgregarNovedades(String pfechaingreso, String phoraingresonovedad, int pidnovedad, String pidmedidor, String previsionesinternas, String pcortes, String preconexiones, String pfraudefluidos, String preclamaciones, String pviolaciones, String pautoproteccion, String pevaluaciondepromedios, String pingresodatosprimeravez, String pcampo1, String pcampo2, String pcampo3, String pcampo4, String pcampo5)
+        public AgregarNovedades(String pfechaingreso, String phoraingresonovedad, int pidnovedad,  String pidmedidor, String pnmedidor, String previsionesinternas, String pcortes, String preconexiones, String pfraudefluidos, String preclamaciones, String pviolaciones, String pautoproteccion, String pevaluaciondepromedios, String pingresodatosprimeravez, String pcampo1, String pcampo2, String pcampo3, String pcampo4, String pcampo5)
         {
             this.fechaingreso = pfechaingreso; 
             this.horaingresonovedad = phoraingresonovedad;
             this.idnovedad = pidnovedad;
+            this.nmedidor = pnmedidor;
             this.idmedidor = pidmedidor;
             this.revisionesinternas = previsionesinternas;
 
@@ -74,7 +76,6 @@ namespace GUI_MODERNISTA
             this.revisionesinternas = previsionesinternas;
             this.evaluaciondepromedios = pevaluaciondepromedios;
             this.ingresodatosprimeravez = pingresodatosprimeravez;
-            this.reclamaciones = preclamaciones;
             this.campo1 = pcampo1;
             this.campo2 = pcampo2;
             this.campo3 = pcampo3;
