@@ -53,12 +53,12 @@ namespace GUI_MODERNISTA
                 if (datos.variableaconsultar == "VOLUMENM3")
                 {
                     comando = new SqlCommand(string.Format(
-                    "SELECT ROUND(SUM(t1." + datos.variableaconsultar + "),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)   FROM VARIABLES t1 inner join MEDIDOR M on t1.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR = '" + datos.ID_MEDIDOR + "'  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)"), conexi);
+                    "SELECT ROUND(SUM(t1." + datos.variableaconsultar + "),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)   FROM VARIABLES t1 inner join MEDIDOR M on t1.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR = '" + datos.ID_MEDIDOR + "'  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by 3 ASC, 2 ASC"), conexi);
                 }
                 else
                 {
                     comando = new SqlCommand(string.Format(
-                     "SELECT ROUND(SUM(t1." + datos.variableaconsultar + ")/count(*),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)  FROM VARIABLES t1 inner join MEDIDOR M on t1.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR = '" + datos.ID_MEDIDOR + "'  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)"), conexi);
+                     "SELECT ROUND(SUM(t1." + datos.variableaconsultar + ")/count(*),2), DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA)  FROM VARIABLES t1 inner join MEDIDOR M on t1.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR = '" + datos.ID_MEDIDOR + "'  and FECHA >= '" + datos.FechaInicio + "-1' AND FECHA < '" + datos.FechaFin + "-1' GROUP BY DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by DATEPART (MONTH, t1.FECHA), DATEPART (YEAR, t1.FECHA) order by 3 ASC, 2 ASC"), conexi);
                 }
 
                 SqlDataReader reader = comando.ExecuteReader();

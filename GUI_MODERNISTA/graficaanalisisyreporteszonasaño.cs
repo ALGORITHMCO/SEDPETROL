@@ -57,59 +57,59 @@ namespace GUI_MODERNISTA
                         if (datos.barrio == "" && datos.localidad == "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                         if (datos.barrio != "" && datos.localidad == "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                         if (datos.barrio != "" && datos.localidad != "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND t2.BARRIO = '" + datos.barrio + "' AND DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND t2.BARRIO = '" + datos.barrio + "' AND DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                     }
                     if (datos.ciudad != "" && datos.departamento == "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                             "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                             "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                             "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                             "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento == "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                              "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                              "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                         "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                         "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento != "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                           "SELECT SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                           "SELECT SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento == "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                          "SELECT SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                          "SELECT SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + "), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                 }
@@ -120,59 +120,59 @@ namespace GUI_MODERNISTA
                         if (datos.barrio == "" && datos.localidad == "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                         if (datos.barrio != "" && datos.localidad == "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                         if (datos.barrio != "" && datos.localidad != "")
                         {
                             comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND t2.BARRIO = '" + datos.barrio + "' AND DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND t2.LOCALIDAD = '" + datos.localidad + "' AND t2.BARRIO = '" + datos.barrio + "' AND DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
                         }
                     }
                     if (datos.ciudad != "" && datos.departamento == "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                             "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                             "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                             "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                             "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento == "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                              "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                              "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                         "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                         "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad == "" && datos.departamento != "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                           "SELECT SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                           "SELECT SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.ZONA = '" + datos.zona + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento == "" && datos.zona != "")
                     {
                         comando = new SqlCommand(string.Format(
-                          "SELECT SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                          "SELECT SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.ZONA = '" + datos.zona + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                     if (datos.ciudad != "" && datos.departamento != "" && datos.zona == "")
                     {
                         comando = new SqlCommand(string.Format(
-                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA)"), conexi);
+                            "SELECT  SUM(t1." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, t1.FECHA) FROM PREDIO t2 inner join MEDIDOR M on t2.ID_PREDIO = M.ID_PREDIO inner join VARIABLES t1 on t1.ID_MEDIDOR = M.ID_MEDIDOR WHERE  t2.DEPARTAMENTO = '" + datos.departamento + "' AND t2.MUNICIPIO ='" + datos.ciudad + "' AND  DATEPART (YEAR, t1.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, t1.FECHA)<= " + datos.FechaFin + "  GROUP BY DATEPART (YEAR, t1.FECHA) order by 2 ASC"), conexi);
 
                     }
                 }

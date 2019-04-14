@@ -53,12 +53,12 @@ namespace GUI_MODERNISTA
                 if (datos.variableaconsultar == "VOLUMENM3")
                 {
                     comando = new SqlCommand(string.Format(
-                     "SELECT SUM(VARIABLES." + datos.variableaconsultar + "), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES  inner join MEDIDOR M on VARIABLES.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR= '" + datos.ID_MEDIDOR + "' AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA)"), conexi);
+                     "SELECT SUM(VARIABLES." + datos.variableaconsultar + "), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES  inner join MEDIDOR M on VARIABLES.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR= '" + datos.ID_MEDIDOR + "' AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA) order by 2 ASC"), conexi);
                 }
                 else
                 {
                     comando = new SqlCommand(string.Format(
-                       "SELECT SUM(VARIABLES." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES inner join MEDIDOR M on VARIABLES.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR= '" + datos.ID_MEDIDOR + "' AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA)"), conexi);
+                       "SELECT SUM(VARIABLES." + datos.variableaconsultar + ") / count(*), DATEPART (YEAR, VARIABLES.FECHA) FROM VARIABLES inner join MEDIDOR M on VARIABLES.ID_MEDIDOR = M.ID_MEDIDOR  WHERE M.NU_MEDIDOR= '" + datos.ID_MEDIDOR + "' AND DATEPART (YEAR, VARIABLES.FECHA)>= " + datos.FechaInicio + " AND DATEPART (YEAR, VARIABLES.FECHA)<= " + datos.FechaFin + "   GROUP BY DATEPART (YEAR, VARIABLES.FECHA) order by 2 ASC"), conexi);
                 }
 
 
