@@ -527,6 +527,7 @@
             this.evaluacionpromedioscb.Name = "evaluacionpromedioscb";
             this.evaluacionpromedioscb.Size = new System.Drawing.Size(197, 24);
             this.evaluacionpromedioscb.TabIndex = 85;
+            this.evaluacionpromedioscb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluacionpromedioscb_KeyPress);
             // 
             // ingresodatoscb
             // 

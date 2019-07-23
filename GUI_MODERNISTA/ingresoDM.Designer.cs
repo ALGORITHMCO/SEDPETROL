@@ -672,6 +672,7 @@
             this.ruta.Name = "ruta";
             this.ruta.Size = new System.Drawing.Size(304, 22);
             this.ruta.TabIndex = 114;
+            this.ruta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ruta_KeyPress);
             // 
             // label19
             // 

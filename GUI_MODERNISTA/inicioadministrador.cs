@@ -115,7 +115,20 @@ namespace GUI_MODERNISTA
                 portaladministrador formaSiguiente = new portaladministrador();
                 this.Hide(); //oculta la forma actual
                 formaSiguiente.Show();
+               
+
             }// muestra la forma2
+        }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==Convert.ToChar(Keys.Enter))
+            {
+                portaladministrador formaSiguiente = new portaladministrador();
+                this.Hide(); //oculta la forma actual
+                formaSiguiente.Show();
+
+            }
         }
     }
 }

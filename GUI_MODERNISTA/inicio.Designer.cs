@@ -43,19 +43,20 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::GUI_MODERNISTA.Properties.Resources.botoninicio;
             this.button2.Location = new System.Drawing.Point(847, 570);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 37);
             this.button2.TabIndex = 23;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button2_KeyPress);
             // 
             // alphaBlendTextBox1
             // 
             this.alphaBlendTextBox1.BackAlpha = 10;
             this.alphaBlendTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.alphaBlendTextBox1.Location = new System.Drawing.Point(643, 487);
-            this.alphaBlendTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alphaBlendTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
             this.alphaBlendTextBox1.Size = new System.Drawing.Size(299, 22);
             this.alphaBlendTextBox1.TabIndex = 24;
@@ -65,11 +66,12 @@
             this.alphaBlendTextBox2.BackAlpha = 10;
             this.alphaBlendTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.alphaBlendTextBox2.Location = new System.Drawing.Point(643, 533);
-            this.alphaBlendTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alphaBlendTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.alphaBlendTextBox2.Name = "alphaBlendTextBox2";
             this.alphaBlendTextBox2.PasswordChar = '*';
             this.alphaBlendTextBox2.Size = new System.Drawing.Size(299, 22);
             this.alphaBlendTextBox2.TabIndex = 25;
+            this.alphaBlendTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.alphaBlendTextBox2_KeyPress);
             // 
             // inicio
             // 
@@ -82,7 +84,7 @@
             this.Controls.Add(this.alphaBlendTextBox1);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "inicio";
             this.Text = "inicio";
             this.Resize += new System.EventHandler(this.inicio_Resize);
