@@ -93,6 +93,34 @@ namespace GUI_MODERNISTA
 
         }
 
+        private void button2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
 
+        private void alphaBlendTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                DatosRegis datos = new DatosRegis();
+                datos.usuario = alphaBlendTextBox1.Text;
+                datos.contraseña = alphaBlendTextBox2.Text;
+
+                int resul = Registroo.login(datos); 
+
+                if (resul == 1)
+                {
+                    AbrirFormHija(new consulta());
+                }
+                else
+                {
+
+                    MessageBox.Show("Usuario o contraseña incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+
+            }
+        }
     }
 }

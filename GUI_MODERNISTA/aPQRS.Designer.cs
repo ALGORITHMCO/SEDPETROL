@@ -451,6 +451,7 @@
             this.dañopresentadoen.Name = "dañopresentadoen";
             this.dañopresentadoen.Size = new System.Drawing.Size(296, 24);
             this.dañopresentadoen.TabIndex = 80;
+            this.dañopresentadoen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dañopresentadoen_KeyPress);
             // 
             // lcorreo
             // 
