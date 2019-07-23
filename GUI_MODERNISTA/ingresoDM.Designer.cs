@@ -202,6 +202,7 @@
             this.lecturaanterior.Name = "lecturaanterior";
             this.lecturaanterior.Size = new System.Drawing.Size(336, 22);
             this.lecturaanterior.TabIndex = 35;
+            this.lecturaanterior.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // llocalidad
             // 
@@ -220,6 +221,7 @@
             this.ultimalectura.Name = "ultimalectura";
             this.ultimalectura.Size = new System.Drawing.Size(336, 22);
             this.ultimalectura.TabIndex = 33;
+            this.ultimalectura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lzona
             // 
@@ -248,6 +250,7 @@
             this.cuentacontrato.Name = "cuentacontrato";
             this.cuentacontrato.Size = new System.Drawing.Size(336, 22);
             this.cuentacontrato.TabIndex = 29;
+            this.cuentacontrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ldepartamento
             // 
@@ -276,6 +279,7 @@
             this.campo5.Name = "campo5";
             this.campo5.Size = new System.Drawing.Size(335, 22);
             this.campo5.TabIndex = 67;
+            this.campo5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo4
             // 
@@ -294,6 +298,7 @@
             this.campo4.Name = "campo4";
             this.campo4.Size = new System.Drawing.Size(335, 22);
             this.campo4.TabIndex = 65;
+            this.campo4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo3
             // 
@@ -312,6 +317,7 @@
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(335, 22);
             this.campo3.TabIndex = 63;
+            this.campo3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo2
             // 
@@ -330,6 +336,7 @@
             this.campo2.Name = "campo2";
             this.campo2.Size = new System.Drawing.Size(335, 22);
             this.campo2.TabIndex = 61;
+            this.campo2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo1
             // 
@@ -348,6 +355,7 @@
             this.campo1.Name = "campo1";
             this.campo1.Size = new System.Drawing.Size(335, 22);
             this.campo1.TabIndex = 59;
+            this.campo1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // alertadesv
             // 
@@ -365,6 +373,7 @@
             this.marca.Name = "marca";
             this.marca.Size = new System.Drawing.Size(336, 24);
             this.marca.TabIndex = 75;
+            this.marca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // fingnovedad
             // 
@@ -393,6 +402,7 @@
             this.consumom3.Name = "consumom3";
             this.consumom3.Size = new System.Drawing.Size(335, 22);
             this.consumom3.TabIndex = 78;
+            this.consumom3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // tipo
             // 
@@ -402,6 +412,7 @@
             this.tipo.Name = "tipo";
             this.tipo.Size = new System.Drawing.Size(336, 24);
             this.tipo.TabIndex = 80;
+            this.tipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // diametro
             // 
@@ -411,6 +422,7 @@
             this.diametro.Name = "diametro";
             this.diametro.Size = new System.Drawing.Size(335, 24);
             this.diametro.TabIndex = 81;
+            this.diametro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // idchip
             // 
@@ -419,6 +431,7 @@
             this.idchip.Name = "idchip";
             this.idchip.Size = new System.Drawing.Size(304, 22);
             this.idchip.TabIndex = 83;
+            this.idchip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label4
             // 
@@ -440,6 +453,7 @@
             this.idpropietario.Name = "idpropietario";
             this.idpropietario.Size = new System.Drawing.Size(304, 24);
             this.idpropietario.TabIndex = 84;
+            this.idpropietario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label6
             // 
@@ -508,6 +522,8 @@
             this.matriculainmobiliaria.Name = "matriculainmobiliaria";
             this.matriculainmobiliaria.Size = new System.Drawing.Size(304, 22);
             this.matriculainmobiliaria.TabIndex = 90;
+            this.matriculainmobiliaria.TextChanged += new System.EventHandler(this.matriculainmobiliaria_TextChanged);
+            this.matriculainmobiliaria.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // direccion
             // 
@@ -516,6 +532,7 @@
             this.direccion.Name = "direccion";
             this.direccion.Size = new System.Drawing.Size(304, 22);
             this.direccion.TabIndex = 91;
+            this.direccion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label11
             // 
@@ -549,6 +566,7 @@
             this.estrato.Name = "estrato";
             this.estrato.Size = new System.Drawing.Size(304, 24);
             this.estrato.TabIndex = 102;
+            this.estrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label13
             // 
@@ -570,6 +588,7 @@
             this.claseuso.Name = "claseuso";
             this.claseuso.Size = new System.Drawing.Size(304, 24);
             this.claseuso.TabIndex = 104;
+            this.claseuso.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label14
             // 
@@ -591,6 +610,7 @@
             this.unidadhab.Name = "unidadhab";
             this.unidadhab.Size = new System.Drawing.Size(304, 24);
             this.unidadhab.TabIndex = 106;
+            this.unidadhab.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label15
             // 
@@ -612,6 +632,7 @@
             this.unidadnohab.Name = "unidadnohab";
             this.unidadnohab.Size = new System.Drawing.Size(304, 24);
             this.unidadnohab.TabIndex = 108;
+            this.unidadnohab.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label16
             // 
@@ -632,6 +653,7 @@
             this.zona.Name = "zona";
             this.zona.Size = new System.Drawing.Size(304, 22);
             this.zona.TabIndex = 110;
+            this.zona.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label17
             // 
@@ -652,6 +674,7 @@
             this.ciclo.Name = "ciclo";
             this.ciclo.Size = new System.Drawing.Size(304, 22);
             this.ciclo.TabIndex = 112;
+            this.ciclo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label18
             // 
@@ -672,6 +695,7 @@
             this.ruta.Name = "ruta";
             this.ruta.Size = new System.Drawing.Size(304, 22);
             this.ruta.TabIndex = 114;
+            this.ruta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label19
             // 
@@ -704,6 +728,7 @@
             this.departamento.Name = "departamento";
             this.departamento.Size = new System.Drawing.Size(304, 24);
             this.departamento.TabIndex = 100;
+            this.departamento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label21
             // 
@@ -757,6 +782,7 @@
             this.municipio.Name = "municipio";
             this.municipio.Size = new System.Drawing.Size(304, 24);
             this.municipio.TabIndex = 123;
+            this.municipio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // localidad
             // 
@@ -766,6 +792,7 @@
             this.localidad.Name = "localidad";
             this.localidad.Size = new System.Drawing.Size(304, 24);
             this.localidad.TabIndex = 124;
+            this.localidad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // barrio
             // 
@@ -775,6 +802,7 @@
             this.barrio.Name = "barrio";
             this.barrio.Size = new System.Drawing.Size(304, 24);
             this.barrio.TabIndex = 125;
+            this.barrio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label25
             // 

@@ -179,6 +179,7 @@
             this.facturano.Name = "facturano";
             this.facturano.Size = new System.Drawing.Size(336, 22);
             this.facturano.TabIndex = 29;
+            this.facturano.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ldepartamento
             // 
@@ -207,6 +208,7 @@
             this.periodo6.Name = "periodo6";
             this.periodo6.Size = new System.Drawing.Size(335, 22);
             this.periodo6.TabIndex = 67;
+            this.periodo6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo4
             // 
@@ -225,6 +227,7 @@
             this.periodo5.Name = "periodo5";
             this.periodo5.Size = new System.Drawing.Size(335, 22);
             this.periodo5.TabIndex = 65;
+            this.periodo5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo3
             // 
@@ -243,6 +246,7 @@
             this.periodo4.Name = "periodo4";
             this.periodo4.Size = new System.Drawing.Size(335, 22);
             this.periodo4.TabIndex = 63;
+            this.periodo4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo2
             // 
@@ -261,6 +265,7 @@
             this.periodo3.Name = "periodo3";
             this.periodo3.Size = new System.Drawing.Size(335, 22);
             this.periodo3.TabIndex = 61;
+            this.periodo3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo1
             // 
@@ -279,6 +284,7 @@
             this.periodo2.Name = "periodo2";
             this.periodo2.Size = new System.Drawing.Size(335, 22);
             this.periodo2.TabIndex = 59;
+            this.periodo2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // alertadesv
             // 
@@ -296,6 +302,7 @@
             this.idmedidor1.Name = "idmedidor1";
             this.idmedidor1.Size = new System.Drawing.Size(336, 24);
             this.idmedidor1.TabIndex = 75;
+            this.idmedidor1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // fingnovedad
             // 
@@ -324,6 +331,7 @@
             this.consumopromedio.Name = "consumopromedio";
             this.consumopromedio.Size = new System.Drawing.Size(304, 22);
             this.consumopromedio.TabIndex = 83;
+            this.consumopromedio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label4
             // 
@@ -392,6 +400,7 @@
             this.periodoafacturar.Name = "periodoafacturar";
             this.periodoafacturar.Size = new System.Drawing.Size(304, 22);
             this.periodoafacturar.TabIndex = 90;
+            this.periodoafacturar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // descarguefte
             // 
@@ -400,6 +409,7 @@
             this.descarguefte.Name = "descarguefte";
             this.descarguefte.Size = new System.Drawing.Size(304, 22);
             this.descarguefte.TabIndex = 91;
+            this.descarguefte.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // label11
             // 
@@ -445,6 +455,7 @@
             this.facturadocon.Name = "facturadocon";
             this.facturadocon.Size = new System.Drawing.Size(304, 24);
             this.facturadocon.TabIndex = 100;
+            this.facturadocon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // idfacturas
             // 
@@ -485,6 +496,7 @@
             this.consumo.Name = "consumo";
             this.consumo.Size = new System.Drawing.Size(336, 22);
             this.consumo.TabIndex = 128;
+            this.consumo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // empresa
             // 
@@ -493,6 +505,7 @@
             this.empresa.Name = "empresa";
             this.empresa.Size = new System.Drawing.Size(336, 22);
             this.empresa.TabIndex = 129;
+            this.empresa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // periodo1
             // 
@@ -501,6 +514,7 @@
             this.periodo1.Name = "periodo1";
             this.periodo1.Size = new System.Drawing.Size(335, 22);
             this.periodo1.TabIndex = 130;
+            this.periodo1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // totalapagar
             // 
@@ -509,6 +523,7 @@
             this.totalapagar.Name = "totalapagar";
             this.totalapagar.Size = new System.Drawing.Size(304, 22);
             this.totalapagar.TabIndex = 131;
+            this.totalapagar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // fechaltepago
             // 
@@ -517,6 +532,7 @@
             this.fechaltepago.Name = "fechaltepago";
             this.fechaltepago.Size = new System.Drawing.Size(304, 22);
             this.fechaltepago.TabIndex = 132;
+            this.fechaltepago.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // fechapagoo
             // 
@@ -525,6 +541,7 @@
             this.fechapagoo.Name = "fechapagoo";
             this.fechapagoo.Size = new System.Drawing.Size(304, 22);
             this.fechapagoo.TabIndex = 133;
+            this.fechapagoo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ctacontrato
             // 
@@ -533,6 +550,7 @@
             this.ctacontrato.Name = "ctacontrato";
             this.ctacontrato.Size = new System.Drawing.Size(304, 22);
             this.ctacontrato.TabIndex = 134;
+            this.ctacontrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ingresoCA
             // 

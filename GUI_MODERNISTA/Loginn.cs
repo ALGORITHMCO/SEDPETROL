@@ -99,5 +99,10 @@ namespace GUI_MODERNISTA
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

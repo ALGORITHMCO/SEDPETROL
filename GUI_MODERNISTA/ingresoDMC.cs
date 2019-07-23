@@ -224,7 +224,76 @@ namespace GUI_MODERNISTA
             
             
         }
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                IngresoDatosMedidor medidor = new IngresoDatosMedidor();
 
+                //novedad.usuarios = textusuario.Text;
+                //novedad.nombres = textnombre.Text;
+                //novedad.contraseñas = textcontra.Text;
+                //novedad.correos = textcorreo.Text;
+
+                //novedad.fechaingreso = fechaingnove.Text;
+                //novedad.horaingresonovedad = horaingresonove.Text;
+                //novedad.fechaingreso = fecha.Text;
+                medidor.cuentacontrato = cuentacontrato.Text;
+                medidor.numeromedidor = numeromedidor.Text;
+                //novedad.horaingresonovedad = horaingresonove.Text;
+                medidor.marca = marca.Text;
+                medidor.tipo = tipo.Text;
+                medidor.ultimalectura = ultimalectura.Text;
+                medidor.lecturaanterior = lecturaanterior.Text;
+                medidor.consumom3 = consumom3.Text;
+                medidor.diametro = diametro.Text;
+                medidor.campo1 = campo1.Text;
+                medidor.campo2 = campo2.Text;
+                medidor.campo3 = campo3.Text;
+                medidor.campo4 = campo4.Text;
+                medidor.campo5 = campo5.Text;
+
+
+
+                if (!String.IsNullOrEmpty(cuentacontrato.Text) && !String.IsNullOrEmpty(numeromedidor.Text) && !String.IsNullOrEmpty(marca.Text) && !String.IsNullOrEmpty(tipo.Text) && !String.IsNullOrEmpty(ultimalectura.Text) && !String.IsNullOrEmpty(lecturaanterior.Text) && !String.IsNullOrEmpty(ultimalectura.Text))
+                {
+                    int resul = Registroo.ingresarMedidor(medidor);
+
+                    if (resul == 1)
+                    {
+                        MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        cuentacontrato.Text = "";
+                        numeromedidor.Text = "";
+                        marca.Text = "";
+                        tipo.Text = "";
+                        ultimalectura.Text = "";
+                        lecturaanterior.Text = "";
+                        consumom3.Text = "";
+                        diametro.Text = "";
+                        campo1.Text = "";
+                        campo2.Text = "";
+                        campo3.Text = "";
+                        campo4.Text = "";
+                        campo5.Text = "";
+                    }
+                    else
+                    {
+                        if (resul == -1)
+                        {
+                            MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             IngresoDatosMedidor medidor = new IngresoDatosMedidor();

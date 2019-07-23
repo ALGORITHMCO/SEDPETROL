@@ -61,7 +61,109 @@ namespace GUI_MODERNISTA
 
             
         }
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                if (comboBox1.Text == "" || textfechainicio.Text == "" || textfechafin.Text == "")
+                {
+                    MessageBox.Show("INGRESE VARIABLE A CONSULTAR", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+                else
+                {
+                    if (comboBox2.Text == "" && comboBox3.Text == "" && comboBox4.Text == "")
+                    {
+                        MessageBox.Show("Ingrese algún parametro de busqueda", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+
+                    else
+                    {
+
+                        graficaanalisisyreporteszonasmes reportes1 = new graficaanalisisyreporteszonasmes();
+
+                        ConsultareportesyanalisisINzonasmes dd = new ConsultareportesyanalisisINzonasmes();
+
+                        if (Convert.ToInt32(textBox2.Text) > 12 || Convert.ToInt32(textBox2.Text) < 1 || Convert.ToInt32(textBox1.Text) > 12 || Convert.ToInt32(textBox1.Text) < 1)
+                        {
+                            MessageBox.Show("Ingrese un nuevo valor", "FECHAS INCORRECTAS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            if (Convert.ToInt32(textBox2.Text) == 12)
+                            {
+                                mesinicio = Convert.ToInt32(textBox1.Text);
+                                mesfin = 1;
+                                añoinicio = Convert.ToInt32(textfechainicio.Text);
+                                añofin = Convert.ToInt32(textfechafin.Text) + 1;
+                            }
+                            else
+                            {
+                                mesinicio = Convert.ToInt32(textBox1.Text);
+                                mesfin = Convert.ToInt32(textBox2.Text) + 1;
+                                añoinicio = Convert.ToInt32(textfechainicio.Text);
+                                añofin = Convert.ToInt32(textfechafin.Text);
+                            }
+
+
+
+
+                            variable = comboBox1.Text;
+                            fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                            fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                            departamento = comboBox2.Text;
+                            ciudad = comboBox3.Text;
+                            zona = comboBox4.Text;
+                            localidad = comboBox5.Text;
+                            barrio = comboBox6.Text;
+
+
+                            dd.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                            dd.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                            dd.variable = comboBox1.Text;
+                            dd.departamento = comboBox2.Text;
+                            dd.ciudad = comboBox3.Text;
+                            dd.zona = comboBox4.Text;
+                            dd.localidad = comboBox5.Text;
+                            dd.barrio = comboBox6.Text;
+
+                            panel2.Controls.Clear();
+                            panel2.Controls.Add(dd);
+
+                            reportes1.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                            reportes1.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                            reportes1.variable = comboBox1.Text;
+                            reportes1.departamento = comboBox2.Text;
+                            reportes1.ciudad = comboBox3.Text;
+                            reportes1.zona = comboBox4.Text;
+                            reportes1.localidad = comboBox5.Text;
+                            reportes1.barrio = comboBox6.Text;
+
+
+                            panel3.Controls.Clear();
+                            panel3.Controls.Add(reportes1);
+
+                            mapazonasmes reportes2 = new mapazonasmes();
+                            reportes2.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                            reportes2.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                            reportes2.variable = comboBox1.Text;
+                            reportes2.departamento = comboBox2.Text;
+                            reportes2.ciudad = comboBox3.Text;
+                            reportes2.zona = comboBox4.Text;
+                            reportes2.localidad = comboBox5.Text;
+                            reportes2.barrio = comboBox6.Text;
+
+
+                            panel4.Controls.Clear();
+                            panel4.Controls.Add(reportes2);
+                        }
+                    }
+                }
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -162,7 +264,7 @@ namespace GUI_MODERNISTA
                 }
             }
 
-
+                
 
         }
 

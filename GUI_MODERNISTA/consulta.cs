@@ -33,7 +33,23 @@ namespace GUI_MODERNISTA
 
             
         }
-
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                if (textcontrato.Text == "")
+                {
+                    MessageBox.Show("INGRESE NUMERO DE CONTRATO", "DATOS FALTANTES", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    portausuarios portal = new portausuarios();
+                    portal.cuenta = textcontrato.Text;
+                    //portal.con.Text = textcontrato.Text;
+                    portal.Show(); // muestra la forma2
+                }
+            }
+        }
         private void label3_Click(object sender, EventArgs e)
         {
 

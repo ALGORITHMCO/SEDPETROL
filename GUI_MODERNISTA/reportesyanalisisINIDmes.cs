@@ -63,6 +63,78 @@ namespace GUI_MODERNISTA
             comboBox2.DataSource = Registroo.vaconsultaNUIDMEDIDOR();
 
         }
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                if (comboBox2.Text == "" || comboBox1.Text == "" || textfechainicio.Text == "" || textfechafin.Text == "")
+                {
+                    MessageBox.Show("INGRESE TODOS LOS DATOS", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+
+                    ConsultareportesyanalisisINMES dd = new ConsultareportesyanalisisINMES();
+                    graficaanalisisyreportesMES reportes1 = new graficaanalisisyreportesMES();
+                    if (Convert.ToInt32(textBox2.Text) > 12 || Convert.ToInt32(textBox2.Text) < 1 || Convert.ToInt32(textBox1.Text) > 12 || Convert.ToInt32(textBox1.Text) < 1)
+                    {
+                        MessageBox.Show("Ingrese un nuevo valor", "FECHAS INCORRECTAS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        if (Convert.ToInt32(textBox2.Text) == 12)
+                        {
+                            mesinicio = Convert.ToInt32(textBox1.Text);
+                            mesfin = 1;
+                            añoinicio = Convert.ToInt32(textfechainicio.Text);
+                            añofin = Convert.ToInt32(textfechafin.Text) + 1;
+                        }
+                        else
+                        {
+                            mesinicio = Convert.ToInt32(textBox1.Text);
+                            mesfin = Convert.ToInt32(textBox2.Text) + 1;
+                            añoinicio = Convert.ToInt32(textfechainicio.Text);
+                            añofin = Convert.ToInt32(textfechafin.Text);
+                        }
+                    }
+
+                    variable = comboBox1.Text;
+                    fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                    fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                    idmedido = comboBox2.Text;
+
+                    variable = comboBox1.Text;
+                    dd.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                    dd.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                    dd.variable = comboBox1.Text;
+                    dd.idmedidor = comboBox2.Text;
+
+                    panel2.Controls.Clear();
+                    panel2.Controls.Add(dd);
+
+
+                    reportes1.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                    reportes1.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                    reportes1.variable = comboBox1.Text;
+                    reportes1.idmedidor = comboBox2.Text;
+
+
+                    panel3.Controls.Clear();
+                    panel3.Controls.Add(reportes1);
+
+                    mapa reportes2 = new mapa();
+                    reportes2.fechainicio = Convert.ToString(añoinicio) + "-" + Convert.ToString(mesinicio);
+                    reportes2.fechafin = Convert.ToString(añofin) + "-" + Convert.ToString(mesfin);
+                    reportes2.variable = comboBox1.Text;
+                    reportes2.idmedidor = comboBox2.Text;
+
+                    panel4.Controls.Clear();
+                    panel4.Controls.Add(reportes2);
+                }
+            }
+        }
 
         private void button1_ClickAsync(object sender, EventArgs e)
         {
