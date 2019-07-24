@@ -55,7 +55,81 @@ namespace GUI_MODERNISTA
 
             comboBox2.DataSource = Registroo.vaconsultaDEPAR();
         }
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                if (comboBox1.Text == "" || textfechainicio.Text == "" || textfechafin.Text == "")
+                {
+                    MessageBox.Show("INGRESE VARIABLE A CONSULTAR", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+                else
+                {
+                    if (comboBox2.Text == "" && comboBox3.Text == "" && comboBox4.Text == "")
+                    {
+                        MessageBox.Show("Ingrese algún parametro de busqueda", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+
+                    else
+                    {
+
+                        graficaanalisisyreporteszonasaño reportes1 = new graficaanalisisyreporteszonasaño();
+
+                        ConsultareportesyanalisisINzonasaño dd = new ConsultareportesyanalisisINzonasaño();
+                        variable = comboBox1.Text;
+                        fechainicio = textfechainicio.Text;
+                        fechafin = textfechafin.Text;
+                        departamento = comboBox2.Text;
+                        ciudad = comboBox3.Text;
+                        zona = comboBox4.Text;
+                        localidad = comboBox5.Text;
+                        barrio = comboBox6.Text;
+
+
+                        dd.fechainicio = textfechainicio.Text;
+                        dd.fechafin = textfechafin.Text;
+                        dd.variable = comboBox1.Text;
+                        dd.departamento = comboBox2.Text;
+                        dd.ciudad = comboBox3.Text;
+                        dd.zona = comboBox4.Text;
+                        dd.localidad = comboBox5.Text;
+                        dd.barrio = comboBox6.Text;
+
+                        panel2.Controls.Clear();
+                        panel2.Controls.Add(dd);
+
+                        reportes1.fechainicio = textfechainicio.Text;
+                        reportes1.fechafin = textfechafin.Text;
+                        reportes1.variable = comboBox1.Text;
+                        reportes1.departamento = comboBox2.Text;
+                        reportes1.ciudad = comboBox3.Text;
+                        reportes1.zona = comboBox4.Text;
+                        reportes1.localidad = comboBox5.Text;
+                        reportes1.barrio = comboBox6.Text;
+
+
+                        panel3.Controls.Clear();
+                        panel3.Controls.Add(reportes1);
+
+                        mapazonasaño reportes2 = new mapazonasaño();
+                        reportes2.fechainicio = textfechainicio.Text;
+                        reportes2.fechafin = textfechafin.Text;
+                        reportes2.variable = comboBox1.Text;
+                        reportes2.departamento = comboBox2.Text;
+                        reportes2.ciudad = comboBox3.Text;
+                        reportes2.zona = comboBox4.Text;
+                        reportes2.localidad = comboBox5.Text;
+                        reportes2.barrio = comboBox6.Text;
+
+
+                        panel4.Controls.Clear();
+                        panel4.Controls.Add(reportes2);
+                    }
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
