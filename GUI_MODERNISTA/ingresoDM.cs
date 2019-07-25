@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -447,7 +450,143 @@ namespace GUI_MODERNISTA
             ciclo.Text = "";
             ruta.Text = "";
         }
+<<<<<<< HEAD
 
+=======
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                IngresoDatosMedidor medidor = new IngresoDatosMedidor();
+
+                //novedad.usuarios = textusuario.Text;
+                //novedad.nombres = textnombre.Text;
+                //novedad.contraseñas = textcontra.Text;
+                //novedad.correos = textcorreo.Text;
+
+                //novedad.fechaingreso = fechaingnove.Text;
+                //novedad.horaingresonovedad = horaingresonove.Text;
+                //novedad.fechaingreso = fecha.Text;
+
+                medidor.idmedidor = idmedidor;
+                medidor.cuentacontrato = cuentacontrato.Text;
+                medidor.numeromedidor = label25.Text;
+                //novedad.horaingresonovedad = horaingresonove.Text;
+                medidor.marca = marca.Text;
+                medidor.tipo = tipo.Text;
+                medidor.ultimalectura = ultimalectura.Text;
+                medidor.lecturaanterior = lecturaanterior.Text;
+                medidor.consumom3 = consumom3.Text;
+                medidor.diametro = diametro.Text;
+                medidor.campo1 = campo1.Text;
+                medidor.campo2 = campo2.Text;
+                medidor.campo3 = campo3.Text;
+                medidor.campo4 = campo4.Text;
+                medidor.campo5 = campo5.Text;
+
+                medidor.idpredio = label23.Text;
+                medidor.idpropietario = idpropietario.Text;
+                medidor.idchip = idchip.Text;
+                medidor.matriculainmobiliaria = matriculainmobiliaria.Text;
+                medidor.direccion = direccion.Text;
+                medidor.departamento = departamento.Text;
+                medidor.municipio = municipio.Text;
+                medidor.localidad = localidad.Text;
+                medidor.barrio = barrio.Text;
+                medidor.estrato = estrato.Text;
+                medidor.claseuso = claseuso.Text;
+                medidor.unidadhabitacional = unidadhab.Text;
+                medidor.unidadnohabitacional = unidadnohab.Text;
+                medidor.zona = zona.Text;
+                medidor.ciclo = ciclo.Text;
+                medidor.ruta = ruta.Text;
+
+
+
+                using (SqlConnection cone = conexion.conectarbd())
+                {
+                    string query1 = "SELECT MEDIDOR.CUENTA_CONTRATO FROM MEDIDOR WHERE MEDIDOR.NU_MEDIDOR='" + numeromedidor.Text + "'";
+                    using (SqlCommand command = new SqlCommand(query1, cone))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+
+                                idm = reader.GetValue(0).ToString();
+
+                            }
+                        }
+                    }
+                }
+
+                if (idm != cuentacontrato.Text)
+                {
+                    if (!String.IsNullOrEmpty(cuentacontrato.Text) && !String.IsNullOrEmpty(marca.Text) && !String.IsNullOrEmpty(tipo.Text) && !String.IsNullOrEmpty(ultimalectura.Text) && !String.IsNullOrEmpty(lecturaanterior.Text) && !String.IsNullOrEmpty(ultimalectura.Text))
+                    {
+                        int resul1 = Registroo.ingresarPredio(medidor);
+                        int resul = Registroo.ingresarMedidor(medidor);
+
+
+                        if (resul == 1)
+                        {
+                            MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            cuentacontrato.Text = "";
+                            numeromedidor.Text = "";
+                            marca.Text = "";
+                            tipo.Text = "";
+                            ultimalectura.Text = "";
+                            lecturaanterior.Text = "";
+                            consumom3.Text = "";
+                            diametro.Text = "";
+                            campo1.Text = "";
+                            campo2.Text = "";
+                            campo3.Text = "";
+                            campo4.Text = "";
+                            campo5.Text = "";
+                            idpropietario.Text = "";
+                            idchip.Text = "";
+                            matriculainmobiliaria.Text = "";
+                            direccion.Text = "";
+                            departamento.Text = "";
+                            municipio.Text = "";
+                            localidad.Text = "";
+                            barrio.Text = "";
+                            estrato.Text = "";
+                            claseuso.Text = "";
+                            unidadhab.Text = "";
+                            unidadnohab.Text = "";
+                            zona.Text = "";
+                            ciclo.Text = "";
+                            ruta.Text = "";
+
+                        }
+                        else
+                        {
+                            if (resul == -1)
+                            {
+                                MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+
+                    MessageBox.Show("Esta cuenta contrato ya esta asociada a un medidor", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+            }
+        }
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
         private void button1_Click(object sender, EventArgs e)
         {
             IngresoDatosMedidor medidor = new IngresoDatosMedidor();
@@ -591,7 +730,16 @@ namespace GUI_MODERNISTA
             
         }
 
+<<<<<<< HEAD
         
     }
 }
 >>>>>>> parent of 96aa6a1... cambios
+=======
+        private void matriculainmobiliaria_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

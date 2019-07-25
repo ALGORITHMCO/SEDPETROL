@@ -365,7 +365,6 @@
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(336, 24);
             this.estado.TabIndex = 84;
-            this.estado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.estado_KeyPress);
             // 
             // idpropietario1
             // 

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿namespace GUI_MODERNISTA
 {
     partial class ingresoDM
@@ -205,6 +208,10 @@
             this.lecturaanterior.Name = "lecturaanterior";
             this.lecturaanterior.Size = new System.Drawing.Size(336, 22);
             this.lecturaanterior.TabIndex = 35;
+<<<<<<< HEAD
+=======
+            this.lecturaanterior.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // llocalidad
             // 
@@ -223,6 +230,10 @@
             this.ultimalectura.Name = "ultimalectura";
             this.ultimalectura.Size = new System.Drawing.Size(336, 22);
             this.ultimalectura.TabIndex = 33;
+<<<<<<< HEAD
+=======
+            this.ultimalectura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // lzona
             // 
@@ -251,6 +262,10 @@
             this.cuentacontrato.Name = "cuentacontrato";
             this.cuentacontrato.Size = new System.Drawing.Size(336, 22);
             this.cuentacontrato.TabIndex = 29;
+<<<<<<< HEAD
+=======
+            this.cuentacontrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // ldepartamento
             // 
@@ -279,6 +294,10 @@
             this.campo5.Name = "campo5";
             this.campo5.Size = new System.Drawing.Size(335, 22);
             this.campo5.TabIndex = 67;
+<<<<<<< HEAD
+=======
+            this.campo5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // lcampo4
             // 
@@ -297,6 +316,10 @@
             this.campo4.Name = "campo4";
             this.campo4.Size = new System.Drawing.Size(335, 22);
             this.campo4.TabIndex = 65;
+<<<<<<< HEAD
+=======
+            this.campo4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // lcampo3
             // 
@@ -315,6 +338,10 @@
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(335, 22);
             this.campo3.TabIndex = 63;
+<<<<<<< HEAD
+=======
+            this.campo3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // lcampo2
             // 
@@ -333,6 +360,10 @@
             this.campo2.Name = "campo2";
             this.campo2.Size = new System.Drawing.Size(335, 22);
             this.campo2.TabIndex = 61;
+<<<<<<< HEAD
+=======
+            this.campo2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // lcampo1
             // 
@@ -351,6 +382,10 @@
             this.campo1.Name = "campo1";
             this.campo1.Size = new System.Drawing.Size(335, 22);
             this.campo1.TabIndex = 59;
+<<<<<<< HEAD
+=======
+            this.campo1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // alertadesv
             // 
@@ -368,6 +403,10 @@
             this.marca.Name = "marca";
             this.marca.Size = new System.Drawing.Size(336, 24);
             this.marca.TabIndex = 75;
+<<<<<<< HEAD
+=======
+            this.marca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // fingnovedad
             // 
@@ -396,6 +435,10 @@
             this.consumom3.Name = "consumom3";
             this.consumom3.Size = new System.Drawing.Size(335, 22);
             this.consumom3.TabIndex = 78;
+<<<<<<< HEAD
+=======
+            this.consumom3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // tipo
             // 
@@ -405,6 +448,10 @@
             this.tipo.Name = "tipo";
             this.tipo.Size = new System.Drawing.Size(336, 24);
             this.tipo.TabIndex = 80;
+<<<<<<< HEAD
+=======
+            this.tipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // diametro
             // 
@@ -414,6 +461,10 @@
             this.diametro.Name = "diametro";
             this.diametro.Size = new System.Drawing.Size(335, 24);
             this.diametro.TabIndex = 81;
+<<<<<<< HEAD
+=======
+            this.diametro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // idchip
             // 
@@ -422,6 +473,10 @@
             this.idchip.Name = "idchip";
             this.idchip.Size = new System.Drawing.Size(304, 22);
             this.idchip.TabIndex = 83;
+<<<<<<< HEAD
+=======
+            this.idchip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label4
             // 
@@ -443,6 +498,10 @@
             this.idpropietario.Name = "idpropietario";
             this.idpropietario.Size = new System.Drawing.Size(304, 24);
             this.idpropietario.TabIndex = 84;
+<<<<<<< HEAD
+=======
+            this.idpropietario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label6
             // 
@@ -511,6 +570,11 @@
             this.matriculainmobiliaria.Name = "matriculainmobiliaria";
             this.matriculainmobiliaria.Size = new System.Drawing.Size(304, 22);
             this.matriculainmobiliaria.TabIndex = 90;
+<<<<<<< HEAD
+=======
+            this.matriculainmobiliaria.TextChanged += new System.EventHandler(this.matriculainmobiliaria_TextChanged);
+            this.matriculainmobiliaria.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // direccion
             // 
@@ -519,6 +583,10 @@
             this.direccion.Name = "direccion";
             this.direccion.Size = new System.Drawing.Size(304, 22);
             this.direccion.TabIndex = 91;
+<<<<<<< HEAD
+=======
+            this.direccion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label11
             // 
@@ -552,6 +620,10 @@
             this.estrato.Name = "estrato";
             this.estrato.Size = new System.Drawing.Size(304, 24);
             this.estrato.TabIndex = 102;
+<<<<<<< HEAD
+=======
+            this.estrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label13
             // 
@@ -573,6 +645,10 @@
             this.claseuso.Name = "claseuso";
             this.claseuso.Size = new System.Drawing.Size(304, 24);
             this.claseuso.TabIndex = 104;
+<<<<<<< HEAD
+=======
+            this.claseuso.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label14
             // 
@@ -594,6 +670,10 @@
             this.unidadhab.Name = "unidadhab";
             this.unidadhab.Size = new System.Drawing.Size(304, 24);
             this.unidadhab.TabIndex = 106;
+<<<<<<< HEAD
+=======
+            this.unidadhab.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label15
             // 
@@ -615,6 +695,10 @@
             this.unidadnohab.Name = "unidadnohab";
             this.unidadnohab.Size = new System.Drawing.Size(304, 24);
             this.unidadnohab.TabIndex = 108;
+<<<<<<< HEAD
+=======
+            this.unidadnohab.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label16
             // 
@@ -635,6 +719,10 @@
             this.zona.Name = "zona";
             this.zona.Size = new System.Drawing.Size(304, 22);
             this.zona.TabIndex = 110;
+<<<<<<< HEAD
+=======
+            this.zona.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label17
             // 
@@ -655,6 +743,10 @@
             this.ciclo.Name = "ciclo";
             this.ciclo.Size = new System.Drawing.Size(304, 22);
             this.ciclo.TabIndex = 112;
+<<<<<<< HEAD
+=======
+            this.ciclo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label18
             // 
@@ -675,6 +767,10 @@
             this.ruta.Name = "ruta";
             this.ruta.Size = new System.Drawing.Size(304, 22);
             this.ruta.TabIndex = 114;
+<<<<<<< HEAD
+=======
+            this.ruta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label19
             // 
@@ -707,6 +803,10 @@
             this.departamento.Name = "departamento";
             this.departamento.Size = new System.Drawing.Size(304, 24);
             this.departamento.TabIndex = 100;
+<<<<<<< HEAD
+=======
+            this.departamento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label21
             // 
@@ -760,6 +860,10 @@
             this.municipio.Name = "municipio";
             this.municipio.Size = new System.Drawing.Size(304, 24);
             this.municipio.TabIndex = 123;
+<<<<<<< HEAD
+=======
+            this.municipio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // localidad
             // 
@@ -769,6 +873,10 @@
             this.localidad.Name = "localidad";
             this.localidad.Size = new System.Drawing.Size(304, 24);
             this.localidad.TabIndex = 124;
+<<<<<<< HEAD
+=======
+            this.localidad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // barrio
             // 
@@ -778,6 +886,10 @@
             this.barrio.Name = "barrio";
             this.barrio.Size = new System.Drawing.Size(304, 24);
             this.barrio.TabIndex = 125;
+<<<<<<< HEAD
+=======
+            this.barrio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // label25
             // 
@@ -956,5 +1068,9 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label numeromedidor;
     }
+<<<<<<< HEAD
 }
 >>>>>>> parent of 96aa6a1... cambios
+=======
+}
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -102,6 +105,25 @@ namespace GUI_MODERNISTA
 
           
         }
+<<<<<<< HEAD
+=======
+        private void panelContenedor_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyValue == (char)Keys.Enter) {
+                if (TextBox1.Text != "admi1" && TextBox2.Text != "admi1")
+                {
+                    // si funciono esta madre
+                    MessageBox.Show("Usuario o contraseña incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    portaladministrador formaSiguiente = new portaladministrador();
+                    this.Hide(); //oculta la forma actual
+                    formaSiguiente.Show();
+                }// muestra la forma2
+            }
+        }
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 
        
 
@@ -120,6 +142,16 @@ namespace GUI_MODERNISTA
                 formaSiguiente.Show();
             }// muestra la forma2
         }
+<<<<<<< HEAD
     }
 }
 >>>>>>> parent of 96aa6a1... cambios
+=======
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
+}
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

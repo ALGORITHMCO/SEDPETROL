@@ -7,7 +7,11 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" codebase="Aquasoft.exe.manifest" size="21345">
+=======
+    <dependentAssembly dependencyType="install" codebase="Aquasoft.exe.manifest" size="22757">
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
       <assemblyIdentity name="Aquasoft.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
@@ -15,10 +19,14 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <dsig:DigestValue>XzhGXAi1hF3HPPo97VZdq1n6YSu6qqzjyuhc70f8l+w=</dsig:DigestValue>
 =======
         <dsig:DigestValue>UTU/XUFfuwO4IgkRw0Pmmlsblko/rSyB5aYCa06opss=</dsig:DigestValue>
 >>>>>>> parent of 96aa6a1... cambios
+=======
+        <dsig:DigestValue>ThYgoW1IZKK9DojUQIQatcJuDlJR2uSHUvrx2jFAoYI=</dsig:DigestValue>
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
       </hash>
     </dependentAssembly>
   </dependency>

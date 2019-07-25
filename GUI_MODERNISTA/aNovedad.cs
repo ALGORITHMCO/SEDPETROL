@@ -176,7 +176,6 @@ namespace GUI_MODERNISTA
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             AgregarNovedades novedad = new AgregarNovedades();
 
             novedad.fechaingreso = fingnovedad.Text;
@@ -198,10 +197,10 @@ namespace GUI_MODERNISTA
             novedad.campo4 = campo4.Text;
             novedad.campo5 = campo5.Text;
 
-
-            //if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) && !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
-                if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) && !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
-                {
+           
+            if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) &&  !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
+ 
+            {
                 int resul = Registroo.agregarN(novedad);
                 if (resul == 1)
                 {
@@ -228,24 +227,24 @@ namespace GUI_MODERNISTA
                     campo4.Text = "";
                     campo5.Text = "";
 
-            }
-            else
-            {
-                if (resul == -1)
-                {
-                    MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
                 }
                 else
                 {
-                    MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (resul == -1)
+                    {
+                        MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
+            
+
+
+
             }
-
-
-
-
-        }
             else
             {
                 MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -426,89 +425,6 @@ namespace GUI_MODERNISTA
         private void reclamacionescb_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void evaluacionpromedioscb_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                AgregarNovedades novedad = new AgregarNovedades();
-
-                novedad.fechaingreso = fingnovedad.Text;
-                novedad.horaingresonovedad = horaingnov.Text;
-                novedad.idmedidor = idmedidor.Text;
-                novedad.nmedidor = nmedidor.Text;
-                novedad.revisionesinternas = revisionesinternascb.Text;
-                novedad.cortes = cortescb.Text;
-                novedad.reconexiones = reconexionescb.Text;
-                novedad.fraudefluidos = fraudefluidoscb.Text;
-                novedad.alertasdesviacionessignificativas = alertadesviacionescb.Text;
-                novedad.violaciones = violacionescb.Text;
-                novedad.autoproteccion = autoproteccioncb.Text;
-                novedad.evaluaciondepromedios = evaluacionpromedioscb.Text;
-                novedad.ingresodatosprimeravez = ingresodatoscb.Text;
-                novedad.campo1 = campo1.Text;
-                novedad.campo2 = campo2.Text;
-                novedad.campo3 = campo3.Text;
-                novedad.campo4 = campo4.Text;
-                novedad.campo5 = campo5.Text;
-
-
-                //if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) && !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(ingresodatoscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
-                if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(revisionesinternascb.Text) && !String.IsNullOrEmpty(fraudefluidoscb.Text) && !String.IsNullOrEmpty(cortescb.Text) && !String.IsNullOrEmpty(reconexionescb.Text) && !String.IsNullOrEmpty(violacionescb.Text) && !String.IsNullOrEmpty(autoproteccioncb.Text) && !String.IsNullOrEmpty(evaluacionpromedioscb.Text) && !String.IsNullOrEmpty(alertadesviacionescb.Text))
-                {
-                    int resul = Registroo.agregarN(novedad);
-                    if (resul == 1)
-                    {
-                        MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        nmedidor.Text = "";
-                        departamento.Text = "";
-                        ciudad.Text = "";
-                        zona.Text = "";
-                        localidad.Text = "";
-                        barrio.Text = "";
-                        fraudefluidoscb.Text = "";
-                        revisionesinternascb.Text = "";
-                        cortescb.Text = "";
-                        reconexionescb.Text = "";
-                        alertadesviacionescb.Text = "";
-                        violacionescb.Text = "";
-                        autoproteccioncb.Text = "";
-                        evaluacionpromedioscb.Text = "";
-                        ingresodatoscb.Text = "";
-                        campo1.Text = "";
-                        campo2.Text = "";
-                        campo3.Text = "";
-                        campo4.Text = "";
-                        campo5.Text = "";
-
-                    }
-                    else
-                    {
-                        if (resul == -1)
-                        {
-                            MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        }
-                    }
-
-
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-
-
-                InitializeComponent();
-            }
         }
     }
 }
