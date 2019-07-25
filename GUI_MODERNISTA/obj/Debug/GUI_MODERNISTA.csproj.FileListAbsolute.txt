@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csprojFakesResolveAssemblyReference.cache
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Fakes\abtb\b\Accessibility.dll
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Fakes\abtb\b\AlphaBlendTextBox.dll
@@ -103,9 +101,6 @@ C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETR
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.exe
 C:\Users\Charly\Google Drive\Propuestas\SELPRETOL\Aplicaciones\Sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.pdb
 =======
-=======
->>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
-=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.exe.config
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\bin\Debug\Aquasoft.exe.manifest
@@ -193,10 +188,3 @@ C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquaso
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\GUI_MODERNISTA.csproj.CopyComplete
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.exe
 C:\Users\cesar77muse\Desktop\sedpetrol\SEDPETROL\GUI_MODERNISTA\obj\Debug\Aquasoft.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
-=======
->>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
-=======
->>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
