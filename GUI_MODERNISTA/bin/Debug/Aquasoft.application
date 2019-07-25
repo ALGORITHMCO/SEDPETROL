@@ -9,7 +9,11 @@
   <dependency>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" codebase="Aquasoft.exe.manifest" size="21345">
+=======
+    <dependentAssembly dependencyType="install" codebase="Aquasoft.exe.manifest" size="22757">
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
     <dependentAssembly dependencyType="install" codebase="Aquasoft.exe.manifest" size="22757">
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -25,10 +29,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <dsig:DigestValue>XzhGXAi1hF3HPPo97VZdq1n6YSu6qqzjyuhc70f8l+w=</dsig:DigestValue>
 =======
         <dsig:DigestValue>UTU/XUFfuwO4IgkRw0Pmmlsblko/rSyB5aYCa06opss=</dsig:DigestValue>
 >>>>>>> parent of 96aa6a1... cambios
+=======
+        <dsig:DigestValue>ThYgoW1IZKK9DojUQIQatcJuDlJR2uSHUvrx2jFAoYI=</dsig:DigestValue>
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
         <dsig:DigestValue>ThYgoW1IZKK9DojUQIQatcJuDlJR2uSHUvrx2jFAoYI=</dsig:DigestValue>
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

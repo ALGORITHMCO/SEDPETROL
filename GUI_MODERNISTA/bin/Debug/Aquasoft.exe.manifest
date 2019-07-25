@@ -57,10 +57,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8707080">
 =======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8697352">
 >>>>>>> parent of 96aa6a1... cambios
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8702472">
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8702472">
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -76,10 +80,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <dsig:DigestValue>A9uO/9Y+1CTsHC1IXbH3rtFhiQvI+o4Eoy6FPNuoT+Q=</dsig:DigestValue>
 =======
         <dsig:DigestValue>C37/5hsF+A+Aufaz8c+nuSWZKSw8J/BMVFm8mGlOZmg=</dsig:DigestValue>
 >>>>>>> parent of 96aa6a1... cambios
+=======
+        <dsig:DigestValue>Fxbikvsi0OrDSGBsFydFmLsIUYA3+VAim7aoF3RlRuE=</dsig:DigestValue>
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
         <dsig:DigestValue>Fxbikvsi0OrDSGBsFydFmLsIUYA3+VAim7aoF3RlRuE=</dsig:DigestValue>
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -332,7 +340,10 @@
   <dependency>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="237568">
@@ -348,6 +359,9 @@
   </dependency>
   <dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -365,7 +379,10 @@
   <dependency>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.QualityTools.Testing.Fakes.resources.dll" size="25160">
@@ -381,6 +398,9 @@
   </dependency>
   <dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

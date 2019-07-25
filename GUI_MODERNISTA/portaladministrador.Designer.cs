@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
@@ -41,8 +44,11 @@
             this.BarraTitulo = new System.Windows.Forms.Panel();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.MenuVertical = new System.Windows.Forms.Panel();
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +61,9 @@
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -101,6 +110,7 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -120,13 +130,19 @@
 =======
             this.BarraTitulo.SuspendLayout();
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BarraTitulo.SuspendLayout();
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.MenuVertical.SuspendLayout();
@@ -135,6 +151,9 @@
             this.submenu2.SuspendLayout();
             this.SubmenuReportes.SuspendLayout();
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -145,6 +164,10 @@
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.BarraTitulo.Controls.Add(this.label1);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.BarraTitulo.Controls.Add(this.label1);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -165,6 +188,7 @@
             // 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -180,6 +204,8 @@
             this.MenuVertical.Controls.Add(this.label2);
             this.MenuVertical.Controls.Add(this.SubmenuReportes);
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // label1
@@ -264,6 +290,9 @@
             this.MenuVertical.Controls.Add(this.button8);
             this.MenuVertical.Controls.Add(this.label2);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -290,7 +319,10 @@
             // 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // panel20
@@ -334,6 +366,9 @@
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -347,7 +382,11 @@
             this.panel16.Controls.Add(this.button12);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel16.Location = new System.Drawing.Point(37, 492);
+=======
+            this.panel16.Location = new System.Drawing.Point(16, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel16.Location = new System.Drawing.Point(16, 416);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -433,7 +472,11 @@
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button12.Location = new System.Drawing.Point(0, 4);
+=======
+            this.button12.Location = new System.Drawing.Point(11, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button12.Location = new System.Drawing.Point(11, 4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -453,7 +496,11 @@
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel15.Location = new System.Drawing.Point(0, 448);
+=======
+            this.panel15.Location = new System.Drawing.Point(4, 354);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel15.Location = new System.Drawing.Point(4, 354);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -470,7 +517,11 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel8.Location = new System.Drawing.Point(0, 391);
+=======
+            this.panel8.Location = new System.Drawing.Point(4, 297);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel8.Location = new System.Drawing.Point(4, 297);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -493,7 +544,11 @@
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button9.Location = new System.Drawing.Point(4, 448);
+=======
+            this.button9.Location = new System.Drawing.Point(11, 358);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button9.Location = new System.Drawing.Point(11, 358);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -513,6 +568,7 @@
             this.submenu2.Controls.Add(this.panel12);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.submenu2.Controls.Add(this.panel13);
             this.submenu2.Controls.Add(this.button1);
             this.submenu2.Controls.Add(this.button2);
@@ -522,6 +578,8 @@
 =======
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.submenu2.Controls.Add(this.button1);
             this.submenu2.Controls.Add(this.button7);
             this.submenu2.Controls.Add(this.button2);
@@ -529,6 +587,9 @@
             this.submenu2.Controls.Add(this.panel14);
             this.submenu2.Location = new System.Drawing.Point(37, 201);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -567,7 +628,11 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(4, 84);
+=======
+            this.button1.Location = new System.Drawing.Point(4, 85);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button1.Location = new System.Drawing.Point(4, 85);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -620,7 +685,11 @@
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button7.Location = new System.Drawing.Point(0, 4);
+=======
+            this.button7.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button7.Location = new System.Drawing.Point(4, 4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -646,7 +715,11 @@
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button8.Location = new System.Drawing.Point(4, 391);
+=======
+            this.button8.Location = new System.Drawing.Point(7, 305);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button8.Location = new System.Drawing.Point(7, 305);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -677,6 +750,7 @@
             // 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.SubmenuReportes.Controls.Add(this.panel11);
             this.SubmenuReportes.Controls.Add(this.panel10);
             this.SubmenuReportes.Controls.Add(this.btnrptpagos);
@@ -687,6 +761,8 @@
 =======
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.SubmenuReportes.Controls.Add(this.panel10);
             this.SubmenuReportes.Controls.Add(this.btnrptventa);
             this.SubmenuReportes.Controls.Add(this.btnrptcompra);
@@ -695,6 +771,9 @@
             this.SubmenuReportes.Controls.Add(this.panel9);
             this.SubmenuReportes.Location = new System.Drawing.Point(37, 128);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -718,7 +797,11 @@
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel10.Location = new System.Drawing.Point(0, 42);
+=======
+            this.panel10.Location = new System.Drawing.Point(0, 45);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel10.Location = new System.Drawing.Point(0, 45);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -759,7 +842,11 @@
             this.btnrptcompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnrptcompra.Location = new System.Drawing.Point(4, 42);
+=======
+            this.btnrptcompra.Location = new System.Drawing.Point(4, 46);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.btnrptcompra.Location = new System.Drawing.Point(4, 46);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -779,7 +866,11 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel9.Location = new System.Drawing.Point(0, 0);
+=======
+            this.panel9.Location = new System.Drawing.Point(0, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel9.Location = new System.Drawing.Point(0, 4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -802,7 +893,11 @@
             this.btnrptventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnrptventa.Location = new System.Drawing.Point(4, 0);
+=======
+            this.btnrptventa.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.btnrptventa.Location = new System.Drawing.Point(4, 4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -822,7 +917,11 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(0, 510);
+=======
+            this.panel2.Location = new System.Drawing.Point(4, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel2.Location = new System.Drawing.Point(4, 416);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -839,7 +938,11 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel7.Location = new System.Drawing.Point(0, 684);
+=======
+            this.panel7.Location = new System.Drawing.Point(4, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel7.Location = new System.Drawing.Point(4, 590);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -862,7 +965,11 @@
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnReportes.Location = new System.Drawing.Point(7, 566);
+=======
+            this.btnReportes.Location = new System.Drawing.Point(13, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.btnReportes.Location = new System.Drawing.Point(13, 472);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -882,7 +989,11 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel6.Location = new System.Drawing.Point(0, 566);
+=======
+            this.panel6.Location = new System.Drawing.Point(4, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel6.Location = new System.Drawing.Point(4, 472);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -898,7 +1009,11 @@
             // 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+=======
+            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -911,9 +1026,15 @@
             this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(3, 684);
+=======
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(7, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -937,7 +1058,11 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel5.Location = new System.Drawing.Point(0, 335);
+=======
+            this.panel5.Location = new System.Drawing.Point(4, 241);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel5.Location = new System.Drawing.Point(4, 241);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -960,7 +1085,11 @@
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button5.Location = new System.Drawing.Point(3, 510);
+=======
+            this.button5.Location = new System.Drawing.Point(7, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button5.Location = new System.Drawing.Point(7, 416);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -980,7 +1109,11 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel4.Location = new System.Drawing.Point(0, 278);
+=======
+            this.panel4.Location = new System.Drawing.Point(4, 184);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel4.Location = new System.Drawing.Point(4, 184);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1003,7 +1136,11 @@
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button4.Location = new System.Drawing.Point(4, 335);
+=======
+            this.button4.Location = new System.Drawing.Point(8, 188);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button4.Location = new System.Drawing.Point(8, 188);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1023,7 +1160,11 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel3.Location = new System.Drawing.Point(0, 222);
+=======
+            this.panel3.Location = new System.Drawing.Point(4, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel3.Location = new System.Drawing.Point(4, 128);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1046,7 +1187,11 @@
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button3.Location = new System.Drawing.Point(4, 278);
+=======
+            this.button3.Location = new System.Drawing.Point(11, 249);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button3.Location = new System.Drawing.Point(11, 249);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1072,7 +1217,11 @@
             this.BTNventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.BTNventas.Location = new System.Drawing.Point(4, 222);
+=======
+            this.BTNventas.Location = new System.Drawing.Point(8, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.BTNventas.Location = new System.Drawing.Point(8, 128);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1092,7 +1241,11 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 165);
+=======
+            this.panel1.Location = new System.Drawing.Point(4, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.panel1.Location = new System.Drawing.Point(4, 71);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1116,7 +1269,11 @@
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnproductos.Location = new System.Drawing.Point(4, 165);
+=======
+            this.btnproductos.Location = new System.Drawing.Point(8, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.btnproductos.Location = new System.Drawing.Point(8, 71);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1142,6 +1299,7 @@
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             // btnsalir
@@ -1245,6 +1403,8 @@
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // portaladministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1261,6 +1421,7 @@
             this.BarraTitulo.ResumeLayout(false);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
             this.panel16.ResumeLayout(false);
@@ -1274,6 +1435,8 @@
 =======
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
@@ -1285,6 +1448,9 @@
             this.submenu2.ResumeLayout(false);
             this.SubmenuReportes.ResumeLayout(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -1346,6 +1512,7 @@
         private System.Windows.Forms.Button button13;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 }
 
@@ -1353,11 +1520,16 @@
 =======
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
         private System.Windows.Forms.Label label1;
     }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

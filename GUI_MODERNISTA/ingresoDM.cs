@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
@@ -455,8 +458,11 @@ namespace GUI_MODERNISTA
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
         private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
@@ -593,6 +599,9 @@ namespace GUI_MODERNISTA
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -741,11 +750,14 @@ namespace GUI_MODERNISTA
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
     }
 }
 >>>>>>> parent of 96aa6a1... cambios
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
         private void matriculainmobiliaria_TextChanged(object sender, EventArgs e)
@@ -755,6 +767,9 @@ namespace GUI_MODERNISTA
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
