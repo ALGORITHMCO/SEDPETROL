@@ -107,12 +107,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(195, 97);
+            this.label1.Location = new System.Drawing.Point(528, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 31);
+            this.label1.Size = new System.Drawing.Size(636, 46);
             this.label1.TabIndex = 16;
             this.label1.Text = "INGRESO DATOS PROPIETARIO";
             // 
@@ -365,7 +365,6 @@
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(336, 24);
             this.estado.TabIndex = 84;
-            this.estado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.estado_KeyPress);
             // 
             // idpropietario1
             // 

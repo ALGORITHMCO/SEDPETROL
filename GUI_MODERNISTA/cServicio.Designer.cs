@@ -627,7 +627,6 @@
             this.diametromedsugerido.Name = "diametromedsugerido";
             this.diametromedsugerido.Size = new System.Drawing.Size(226, 24);
             this.diametromedsugerido.TabIndex = 101;
-            this.diametromedsugerido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.diametromedsugerido_KeyPress);
             // 
             // hconsumo1
             // 

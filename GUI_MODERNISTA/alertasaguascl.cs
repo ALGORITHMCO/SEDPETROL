@@ -456,46 +456,5 @@ namespace GUI_MODERNISTA
         {
 
         }
-
-        private void comboBox7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                alertasaguacl datos = new alertasaguacl();
-                datos.ID_MEDIDOR = medidor;
-                datos.FECHAINGRESO = label12.Text;
-                datos.HORAINGRESO = label13.Text;
-                datos.VOLUMENINGRESADO = fraudefluido.Text;
-                datos.SUMATORIACONSUMOLEGAL = cortes.Text;
-                datos.DIFERENCIA = Diferencia.Text;
-                datos.PERDIDASTECNICAS = comboBox2.Text;
-                datos.PERDIDASCOMERCIALES = comboBox3.Text;
-                datos.ACCIONESFRAUDULENTAS = comboBox4.Text;
-                datos.MEDIDORESMANIPULADOS = comboBox5.Text;
-                datos.MICROMEDICION = comboBox6.Text;
-                datos.CLASE_DE_USO = comboBox7.Text;
-                datos.CAMPO1 = campo1.Text;
-                datos.CAMPO2 = campo2.Text;
-                datos.CAMPO3 = campo3.Text;
-                datos.CAMPO4 = campo4.Text;
-                datos.CAMPO5 = campo5.Text;
-
-
-                int resul = Registroo.agregaralertasaguas(datos);
-
-                if (resul == 1)
-                {
-                    ////hola
-                    MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                else
-                {
-                    MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-
-                IDANC.Text = Registroo.vaconsultaIDANC();
-            }
-        }
     }
 }

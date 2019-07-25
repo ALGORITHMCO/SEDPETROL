@@ -101,7 +101,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(973, 585);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(269, 43);
             this.button1.TabIndex = 183;
@@ -113,19 +113,18 @@
             // 
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(979, 329);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(261, 24);
             this.comboBox7.TabIndex = 182;
             this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
-            this.comboBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox7_KeyPress);
             // 
             // comboBox6
             // 
             this.comboBox6.Enabled = false;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(980, 292);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(261, 24);
             this.comboBox6.TabIndex = 181;
@@ -135,7 +134,7 @@
             this.comboBox5.Enabled = false;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(980, 256);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(261, 24);
             this.comboBox5.TabIndex = 180;
@@ -144,7 +143,7 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(979, 188);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(261, 24);
             this.comboBox3.TabIndex = 179;
@@ -155,7 +154,7 @@
             this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(980, 223);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(261, 24);
             this.comboBox4.TabIndex = 178;
@@ -165,7 +164,7 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(979, 150);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(261, 24);
             this.comboBox2.TabIndex = 177;
@@ -262,7 +261,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(383, 251);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(261, 24);
             this.comboBox1.TabIndex = 168;
@@ -282,7 +281,7 @@
             // campo5
             // 
             this.campo5.Location = new System.Drawing.Point(979, 521);
-            this.campo5.Margin = new System.Windows.Forms.Padding(4);
+            this.campo5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campo5.Name = "campo5";
             this.campo5.Size = new System.Drawing.Size(261, 22);
             this.campo5.TabIndex = 166;
@@ -301,7 +300,7 @@
             // campo4
             // 
             this.campo4.Location = new System.Drawing.Point(979, 486);
-            this.campo4.Margin = new System.Windows.Forms.Padding(4);
+            this.campo4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campo4.Name = "campo4";
             this.campo4.Size = new System.Drawing.Size(261, 22);
             this.campo4.TabIndex = 164;
@@ -320,7 +319,7 @@
             // campo3
             // 
             this.campo3.Location = new System.Drawing.Point(979, 452);
-            this.campo3.Margin = new System.Windows.Forms.Padding(4);
+            this.campo3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(261, 22);
             this.campo3.TabIndex = 162;
@@ -339,7 +338,7 @@
             // campo2
             // 
             this.campo2.Location = new System.Drawing.Point(979, 417);
-            this.campo2.Margin = new System.Windows.Forms.Padding(4);
+            this.campo2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campo2.Name = "campo2";
             this.campo2.Size = new System.Drawing.Size(261, 22);
             this.campo2.TabIndex = 160;
@@ -358,7 +357,7 @@
             // campo1
             // 
             this.campo1.Location = new System.Drawing.Point(979, 383);
-            this.campo1.Margin = new System.Windows.Forms.Padding(4);
+            this.campo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campo1.Name = "campo1";
             this.campo1.Size = new System.Drawing.Size(261, 22);
             this.campo1.TabIndex = 158;
@@ -378,7 +377,7 @@
             // 
             this.Diferencia.Enabled = false;
             this.Diferencia.Location = new System.Drawing.Point(383, 542);
-            this.Diferencia.Margin = new System.Windows.Forms.Padding(4);
+            this.Diferencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Diferencia.Name = "Diferencia";
             this.Diferencia.Size = new System.Drawing.Size(261, 22);
             this.Diferencia.TabIndex = 156;
@@ -397,7 +396,7 @@
             // cortes
             // 
             this.cortes.Location = new System.Drawing.Point(383, 507);
-            this.cortes.Margin = new System.Windows.Forms.Padding(4);
+            this.cortes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cortes.Name = "cortes";
             this.cortes.Size = new System.Drawing.Size(261, 22);
             this.cortes.TabIndex = 154;
@@ -418,7 +417,7 @@
             // fraudefluido
             // 
             this.fraudefluido.Location = new System.Drawing.Point(383, 473);
-            this.fraudefluido.Margin = new System.Windows.Forms.Padding(4);
+            this.fraudefluido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fraudefluido.Name = "fraudefluido";
             this.fraudefluido.Size = new System.Drawing.Size(261, 22);
             this.fraudefluido.TabIndex = 152;
@@ -439,7 +438,7 @@
             // barrio
             // 
             this.barrio.Location = new System.Drawing.Point(383, 418);
-            this.barrio.Margin = new System.Windows.Forms.Padding(4);
+            this.barrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.barrio.Name = "barrio";
             this.barrio.Size = new System.Drawing.Size(261, 22);
             this.barrio.TabIndex = 150;
@@ -458,7 +457,7 @@
             // localidad
             // 
             this.localidad.Location = new System.Drawing.Point(383, 386);
-            this.localidad.Margin = new System.Windows.Forms.Padding(4);
+            this.localidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.localidad.Name = "localidad";
             this.localidad.Size = new System.Drawing.Size(261, 22);
             this.localidad.TabIndex = 148;
@@ -477,7 +476,7 @@
             // zona
             // 
             this.zona.Location = new System.Drawing.Point(383, 354);
-            this.zona.Margin = new System.Windows.Forms.Padding(4);
+            this.zona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zona.Name = "zona";
             this.zona.Size = new System.Drawing.Size(261, 22);
             this.zona.TabIndex = 146;
@@ -496,7 +495,7 @@
             // ciudad
             // 
             this.ciudad.Location = new System.Drawing.Point(383, 321);
-            this.ciudad.Margin = new System.Windows.Forms.Padding(4);
+            this.ciudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ciudad.Name = "ciudad";
             this.ciudad.Size = new System.Drawing.Size(261, 22);
             this.ciudad.TabIndex = 144;
@@ -515,7 +514,7 @@
             // departamento
             // 
             this.departamento.Location = new System.Drawing.Point(383, 287);
-            this.departamento.Margin = new System.Windows.Forms.Padding(4);
+            this.departamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.departamento.Name = "departamento";
             this.departamento.Size = new System.Drawing.Size(261, 22);
             this.departamento.TabIndex = 142;
@@ -578,7 +577,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(47, 638);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 187;
@@ -643,7 +642,7 @@
             this.Controls.Add(this.lhoraingreso);
             this.Controls.Add(this.lfechaingreso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "alertasaguasno";
             this.Text = "inicio";
             this.Load += new System.EventHandler(this.Registro_Load);

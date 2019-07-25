@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+﻿
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿namespace GUI_MODERNISTA
 {
     partial class portaladministrador
@@ -30,16 +42,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(portaladministrador));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.MenuVertical = new System.Windows.Forms.Panel();
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+            this.label1 = new System.Windows.Forms.Label();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnsalir = new System.Windows.Forms.PictureBox();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
@@ -77,21 +108,72 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnproductos = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.btnsalir = new System.Windows.Forms.PictureBox();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
+            this.MenuVertical.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.submenu2.SuspendLayout();
+            this.SubmenuReportes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
+=======
+            this.BarraTitulo.SuspendLayout();
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BarraTitulo.SuspendLayout();
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BarraTitulo.SuspendLayout();
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             this.panel16.SuspendLayout();
             this.submenu2.SuspendLayout();
             this.SubmenuReportes.SuspendLayout();
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.SuspendLayout();
             // 
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.BarraTitulo.Controls.Add(this.label1);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BarraTitulo.Controls.Add(this.label1);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BarraTitulo.Controls.Add(this.label1);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
@@ -103,6 +185,38 @@
             this.BarraTitulo.Size = new System.Drawing.Size(1387, 47);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            // MenuVertical
+            // 
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.panel20);
+            this.MenuVertical.Controls.Add(this.btnsalir);
+            this.MenuVertical.Controls.Add(this.button13);
+            this.MenuVertical.Controls.Add(this.panel16);
+            this.MenuVertical.Controls.Add(this.panel15);
+            this.MenuVertical.Controls.Add(this.panel8);
+            this.MenuVertical.Controls.Add(this.button9);
+            this.MenuVertical.Controls.Add(this.submenu2);
+            this.MenuVertical.Controls.Add(this.button8);
+            this.MenuVertical.Controls.Add(this.label2);
+            this.MenuVertical.Controls.Add(this.SubmenuReportes);
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(492, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(331, 38);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Menu Administrador";
             // 
             // btnRestaurar
             // 
@@ -164,17 +278,24 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.SubmenuReportes);
+            this.MenuVertical.Controls.Add(this.panel16);
+            this.MenuVertical.Controls.Add(this.submenu2);
             this.MenuVertical.Controls.Add(this.btnsalir);
             this.MenuVertical.Controls.Add(this.panel20);
             this.MenuVertical.Controls.Add(this.button13);
-            this.MenuVertical.Controls.Add(this.panel16);
             this.MenuVertical.Controls.Add(this.panel15);
             this.MenuVertical.Controls.Add(this.panel8);
             this.MenuVertical.Controls.Add(this.button9);
-            this.MenuVertical.Controls.Add(this.submenu2);
             this.MenuVertical.Controls.Add(this.button8);
             this.MenuVertical.Controls.Add(this.label2);
-            this.MenuVertical.Controls.Add(this.SubmenuReportes);
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.panel7);
             this.MenuVertical.Controls.Add(this.btnReportes);
@@ -196,11 +317,28 @@
             this.MenuVertical.Size = new System.Drawing.Size(293, 741);
             this.MenuVertical.TabIndex = 1;
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel20.Location = new System.Drawing.Point(4, 529);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(7, 49);
+            this.panel20.TabIndex = 16;
+            // 
             // btnsalir
             // 
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.Image = ((System.Drawing.Image)(resources.GetObject("btnsalir.Image")));
-            this.btnsalir.Location = new System.Drawing.Point(7, 660);
+            this.btnsalir.Location = new System.Drawing.Point(7, 654);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(73, 74);
@@ -208,15 +346,6 @@
             this.btnsalir.TabIndex = 16;
             this.btnsalir.TabStop = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel20.Location = new System.Drawing.Point(0, 541);
-            this.panel20.Margin = new System.Windows.Forms.Padding(4);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(7, 49);
-            this.panel20.TabIndex = 16;
             // 
             // button13
             // 
@@ -227,7 +356,7 @@
             this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(3, 541);
+            this.button13.Location = new System.Drawing.Point(7, 529);
             this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(289, 49);
@@ -236,18 +365,48 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // panel16
             // 
+            this.panel16.Controls.Add(this.panel17);
             this.panel16.Controls.Add(this.panel18);
+            this.panel16.Controls.Add(this.button10);
             this.panel16.Controls.Add(this.button11);
             this.panel16.Controls.Add(this.panel19);
             this.panel16.Controls.Add(this.button12);
-            this.panel16.Location = new System.Drawing.Point(37, 410);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel16.Location = new System.Drawing.Point(37, 492);
+=======
+            this.panel16.Location = new System.Drawing.Point(16, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel16.Location = new System.Drawing.Point(16, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel16.Location = new System.Drawing.Point(16, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel16.Margin = new System.Windows.Forms.Padding(4);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(273, 80);
+            this.panel16.Size = new System.Drawing.Size(273, 123);
             this.panel16.TabIndex = 17;
             this.panel16.Visible = false;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel17.Location = new System.Drawing.Point(0, 84);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(7, 34);
+            this.panel17.TabIndex = 19;
             // 
             // panel18
             // 
@@ -257,6 +416,23 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(7, 34);
             this.panel18.TabIndex = 19;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(4, 84);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(254, 34);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "Reporte por Año";
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
@@ -294,7 +470,19 @@
             this.button12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.button12.Location = new System.Drawing.Point(0, 4);
+=======
+            this.button12.Location = new System.Drawing.Point(11, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button12.Location = new System.Drawing.Point(11, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button12.Location = new System.Drawing.Point(11, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(258, 34);
@@ -306,7 +494,19 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel15.Location = new System.Drawing.Point(0, 366);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel15.Location = new System.Drawing.Point(0, 448);
+=======
+            this.panel15.Location = new System.Drawing.Point(4, 354);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel15.Location = new System.Drawing.Point(4, 354);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel15.Location = new System.Drawing.Point(4, 354);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(7, 49);
@@ -315,7 +515,19 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel8.Location = new System.Drawing.Point(0, 309);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel8.Location = new System.Drawing.Point(0, 391);
+=======
+            this.panel8.Location = new System.Drawing.Point(4, 297);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel8.Location = new System.Drawing.Point(4, 297);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel8.Location = new System.Drawing.Point(4, 297);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(7, 49);
@@ -330,7 +542,19 @@
             this.button9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(4, 366);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.button9.Location = new System.Drawing.Point(4, 448);
+=======
+            this.button9.Location = new System.Drawing.Point(11, 358);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button9.Location = new System.Drawing.Point(11, 358);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button9.Location = new System.Drawing.Point(11, 358);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(289, 49);
@@ -342,12 +566,33 @@
             // submenu2
             // 
             this.submenu2.Controls.Add(this.panel12);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.submenu2.Controls.Add(this.panel13);
             this.submenu2.Controls.Add(this.button1);
             this.submenu2.Controls.Add(this.button2);
             this.submenu2.Controls.Add(this.panel14);
             this.submenu2.Controls.Add(this.button7);
-            this.submenu2.Location = new System.Drawing.Point(55, 181);
+            this.submenu2.Location = new System.Drawing.Point(55, 263);
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+            this.submenu2.Controls.Add(this.button1);
+            this.submenu2.Controls.Add(this.button7);
+            this.submenu2.Controls.Add(this.button2);
+            this.submenu2.Controls.Add(this.panel13);
+            this.submenu2.Controls.Add(this.panel14);
+            this.submenu2.Location = new System.Drawing.Point(37, 201);
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.submenu2.Margin = new System.Windows.Forms.Padding(4);
             this.submenu2.Name = "submenu2";
             this.submenu2.Size = new System.Drawing.Size(239, 123);
@@ -381,7 +626,19 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(4, 84);
+=======
+            this.button1.Location = new System.Drawing.Point(4, 85);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button1.Location = new System.Drawing.Point(4, 85);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button1.Location = new System.Drawing.Point(4, 85);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 34);
@@ -426,7 +683,19 @@
             this.button7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.button7.Location = new System.Drawing.Point(0, 4);
+=======
+            this.button7.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button7.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button7.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(235, 34);
@@ -444,7 +713,19 @@
             this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(4, 309);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.button8.Location = new System.Drawing.Point(4, 391);
+=======
+            this.button8.Location = new System.Drawing.Point(7, 305);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button8.Location = new System.Drawing.Point(7, 305);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button8.Location = new System.Drawing.Point(7, 305);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(289, 49);
@@ -467,13 +748,35 @@
             // 
             // SubmenuReportes
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.SubmenuReportes.Controls.Add(this.panel11);
             this.SubmenuReportes.Controls.Add(this.panel10);
             this.SubmenuReportes.Controls.Add(this.btnrptpagos);
             this.SubmenuReportes.Controls.Add(this.btnrptcompra);
             this.SubmenuReportes.Controls.Add(this.panel9);
             this.SubmenuReportes.Controls.Add(this.btnrptventa);
-            this.SubmenuReportes.Location = new System.Drawing.Point(55, 140);
+            this.SubmenuReportes.Location = new System.Drawing.Point(55, 222);
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+            this.SubmenuReportes.Controls.Add(this.panel10);
+            this.SubmenuReportes.Controls.Add(this.btnrptventa);
+            this.SubmenuReportes.Controls.Add(this.btnrptcompra);
+            this.SubmenuReportes.Controls.Add(this.panel11);
+            this.SubmenuReportes.Controls.Add(this.btnrptpagos);
+            this.SubmenuReportes.Controls.Add(this.panel9);
+            this.SubmenuReportes.Location = new System.Drawing.Point(37, 128);
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.SubmenuReportes.Margin = new System.Windows.Forms.Padding(4);
             this.SubmenuReportes.Name = "SubmenuReportes";
             this.SubmenuReportes.Size = new System.Drawing.Size(239, 123);
@@ -492,7 +795,19 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.panel10.Location = new System.Drawing.Point(0, 42);
+=======
+            this.panel10.Location = new System.Drawing.Point(0, 45);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel10.Location = new System.Drawing.Point(0, 45);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel10.Location = new System.Drawing.Point(0, 45);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(7, 34);
@@ -525,7 +840,19 @@
             this.btnrptcompra.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptcompra.ForeColor = System.Drawing.Color.White;
             this.btnrptcompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.btnrptcompra.Location = new System.Drawing.Point(4, 42);
+=======
+            this.btnrptcompra.Location = new System.Drawing.Point(4, 46);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnrptcompra.Location = new System.Drawing.Point(4, 46);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnrptcompra.Location = new System.Drawing.Point(4, 46);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.btnrptcompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnrptcompra.Name = "btnrptcompra";
             this.btnrptcompra.Size = new System.Drawing.Size(235, 34);
@@ -537,7 +864,19 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.panel9.Location = new System.Drawing.Point(0, 0);
+=======
+            this.panel9.Location = new System.Drawing.Point(0, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel9.Location = new System.Drawing.Point(0, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel9.Location = new System.Drawing.Point(0, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(7, 34);
@@ -552,7 +891,19 @@
             this.btnrptventa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptventa.ForeColor = System.Drawing.Color.White;
             this.btnrptventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.btnrptventa.Location = new System.Drawing.Point(4, 0);
+=======
+            this.btnrptventa.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnrptventa.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnrptventa.Location = new System.Drawing.Point(4, 4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.btnrptventa.Margin = new System.Windows.Forms.Padding(4);
             this.btnrptventa.Name = "btnrptventa";
             this.btnrptventa.Size = new System.Drawing.Size(235, 34);
@@ -564,7 +915,19 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 428);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel2.Location = new System.Drawing.Point(0, 510);
+=======
+            this.panel2.Location = new System.Drawing.Point(4, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel2.Location = new System.Drawing.Point(4, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel2.Location = new System.Drawing.Point(4, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(7, 49);
@@ -573,7 +936,19 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(0, 602);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel7.Location = new System.Drawing.Point(0, 684);
+=======
+            this.panel7.Location = new System.Drawing.Point(4, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel7.Location = new System.Drawing.Point(4, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel7.Location = new System.Drawing.Point(4, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(7, 49);
@@ -588,19 +963,43 @@
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(7, 484);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.btnReportes.Location = new System.Drawing.Point(7, 566);
+=======
+            this.btnReportes.Location = new System.Drawing.Point(13, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnReportes.Location = new System.Drawing.Point(13, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnReportes.Location = new System.Drawing.Point(13, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(303, 49);
             this.btnReportes.TabIndex = 13;
-            this.btnReportes.Text = "Alertas Aguas ";
+            this.btnReportes.Text = "Alertas aguas ";
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel6.Location = new System.Drawing.Point(0, 484);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel6.Location = new System.Drawing.Point(0, 566);
+=======
+            this.panel6.Location = new System.Drawing.Point(4, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel6.Location = new System.Drawing.Point(4, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel6.Location = new System.Drawing.Point(4, 472);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(7, 49);
@@ -608,14 +1007,44 @@
             // 
             // button6
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+=======
+            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 602);
+            this.button6.Location = new System.Drawing.Point(3, 684);
+=======
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(7, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(7, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(7, 590);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(289, 49);
@@ -627,7 +1056,19 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(0, 253);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel5.Location = new System.Drawing.Point(0, 335);
+=======
+            this.panel5.Location = new System.Drawing.Point(4, 241);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel5.Location = new System.Drawing.Point(4, 241);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel5.Location = new System.Drawing.Point(4, 241);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(7, 49);
@@ -642,7 +1083,19 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 428);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.button5.Location = new System.Drawing.Point(3, 510);
+=======
+            this.button5.Location = new System.Drawing.Point(7, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button5.Location = new System.Drawing.Point(7, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button5.Location = new System.Drawing.Point(7, 416);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(289, 49);
@@ -654,7 +1107,19 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(0, 196);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel4.Location = new System.Drawing.Point(0, 278);
+=======
+            this.panel4.Location = new System.Drawing.Point(4, 184);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel4.Location = new System.Drawing.Point(4, 184);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel4.Location = new System.Drawing.Point(4, 184);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(7, 49);
@@ -669,7 +1134,19 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(4, 253);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.button4.Location = new System.Drawing.Point(4, 335);
+=======
+            this.button4.Location = new System.Drawing.Point(8, 188);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button4.Location = new System.Drawing.Point(8, 188);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button4.Location = new System.Drawing.Point(8, 188);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(289, 49);
@@ -681,7 +1158,19 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(0, 140);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel3.Location = new System.Drawing.Point(0, 222);
+=======
+            this.panel3.Location = new System.Drawing.Point(4, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel3.Location = new System.Drawing.Point(4, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel3.Location = new System.Drawing.Point(4, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(7, 49);
@@ -696,7 +1185,19 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(4, 196);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.button3.Location = new System.Drawing.Point(4, 278);
+=======
+            this.button3.Location = new System.Drawing.Point(11, 249);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button3.Location = new System.Drawing.Point(11, 249);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.button3.Location = new System.Drawing.Point(11, 249);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(289, 49);
@@ -714,19 +1215,43 @@
             this.BTNventas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNventas.ForeColor = System.Drawing.Color.White;
             this.BTNventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNventas.Location = new System.Drawing.Point(4, 140);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.BTNventas.Location = new System.Drawing.Point(4, 222);
+=======
+            this.BTNventas.Location = new System.Drawing.Point(8, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BTNventas.Location = new System.Drawing.Point(8, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.BTNventas.Location = new System.Drawing.Point(8, 128);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.BTNventas.Margin = new System.Windows.Forms.Padding(4);
             this.BTNventas.Name = "BTNventas";
             this.BTNventas.Size = new System.Drawing.Size(289, 49);
             this.BTNventas.TabIndex = 3;
-            this.BTNventas.Text = "Reportes y Análisis zona";
+            this.BTNventas.Text = "Reportes y analisis zona";
             this.BTNventas.UseVisualStyleBackColor = false;
             this.BTNventas.Click += new System.EventHandler(this.BTNventas_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(0, 83);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.panel1.Location = new System.Drawing.Point(0, 165);
+=======
+            this.panel1.Location = new System.Drawing.Point(4, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel1.Location = new System.Drawing.Point(4, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.panel1.Location = new System.Drawing.Point(4, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(7, 49);
@@ -742,12 +1267,24 @@
             this.btnproductos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproductos.ForeColor = System.Drawing.Color.White;
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnproductos.Location = new System.Drawing.Point(4, 83);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.btnproductos.Location = new System.Drawing.Point(4, 165);
+=======
+            this.btnproductos.Location = new System.Drawing.Point(8, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnproductos.Location = new System.Drawing.Point(8, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+            this.btnproductos.Location = new System.Drawing.Point(8, 71);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.btnproductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnproductos.Name = "btnproductos";
             this.btnproductos.Size = new System.Drawing.Size(289, 49);
             this.btnproductos.TabIndex = 1;
-            this.btnproductos.Text = "Reportes y Análisis Predio";
+            this.btnproductos.Text = "Reportes y analisis predio";
             this.btnproductos.UseVisualStyleBackColor = false;
             this.btnproductos.Click += new System.EventHandler(this.btnproductos_Click);
             // 
@@ -762,6 +1299,112 @@
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            // btnsalir
+            // 
+            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.Image = ((System.Drawing.Image)(resources.GetObject("btnsalir.Image")));
+            this.btnsalir.Location = new System.Drawing.Point(188, 83);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(73, 74);
+            this.btnsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnsalir.TabIndex = 16;
+            this.btnsalir.TabStop = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(1281, 7);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(1227, 7);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(1281, 7);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1336, 7);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(33, 31);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel20.Location = new System.Drawing.Point(0, 623);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(7, 49);
+            this.panel20.TabIndex = 16;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(3, 623);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(289, 49);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Comportamiento Servicio";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // portaladministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -776,6 +1419,24 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.BarraTitulo.ResumeLayout(false);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.MenuVertical.ResumeLayout(false);
+            this.MenuVertical.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.submenu2.ResumeLayout(false);
+            this.SubmenuReportes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
@@ -786,6 +1447,13 @@
             this.panel16.ResumeLayout(false);
             this.submenu2.ResumeLayout(false);
             this.SubmenuReportes.ResumeLayout(false);
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.ResumeLayout(false);
 
         }
@@ -834,12 +1502,34 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button button13;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     }
 }
 
+>>>>>>> parent of 96aa6a1... cambios
+=======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+        private System.Windows.Forms.Label label1;
+    }
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
