@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿using System;
@@ -106,7 +109,10 @@ namespace GUI_MODERNISTA
           
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
         private void panelContenedor_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyValue == (char)Keys.Enter) {
                 if (TextBox1.Text != "admi1" && TextBox2.Text != "admi1")
@@ -123,6 +129,9 @@ namespace GUI_MODERNISTA
                 }// muestra la forma2
             }
         }
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 
        
@@ -143,10 +152,13 @@ namespace GUI_MODERNISTA
             }// muestra la forma2
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 }
 >>>>>>> parent of 96aa6a1... cambios
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
@@ -154,4 +166,7 @@ namespace GUI_MODERNISTA
         }
     }
 }
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 ﻿namespace GUI_MODERNISTA
@@ -50,7 +53,11 @@
             this.button2.Image = global::GUI_MODERNISTA.Properties.Resources.botoninicio;
             this.button2.Location = new System.Drawing.Point(847, 570);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.button2.Margin = new System.Windows.Forms.Padding(4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -66,16 +73,22 @@
             this.alphaBlendTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.alphaBlendTextBox1.Location = new System.Drawing.Point(643, 487);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.alphaBlendTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
             this.alphaBlendTextBox1.Size = new System.Drawing.Size(299, 22);
             this.alphaBlendTextBox1.TabIndex = 24;
 =======
+=======
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             this.alphaBlendTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
             this.alphaBlendTextBox1.Size = new System.Drawing.Size(299, 22);
             this.alphaBlendTextBox1.TabIndex = 24;
             this.alphaBlendTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+<<<<<<< HEAD
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
+=======
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
             // 
             // alphaBlendTextBox2
@@ -84,7 +97,11 @@
             this.alphaBlendTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.alphaBlendTextBox2.Location = new System.Drawing.Point(643, 533);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.alphaBlendTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.alphaBlendTextBox2.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.alphaBlendTextBox2.Margin = new System.Windows.Forms.Padding(4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -93,6 +110,10 @@
             this.alphaBlendTextBox2.Size = new System.Drawing.Size(299, 22);
             this.alphaBlendTextBox2.TabIndex = 25;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.alphaBlendTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.alphaBlendTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -109,7 +130,11 @@
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
             this.Margin = new System.Windows.Forms.Padding(4);
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
@@ -128,8 +153,12 @@
         private ZBobb.AlphaBlendTextBox alphaBlendTextBox2;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> parent of 96aa6a1... cambios
+=======
+}
+>>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
 =======
 }
 >>>>>>> parent of 01c744a... Merge branch 'master' of https://github.com/ALGORITHMCO/SEDPETROL
