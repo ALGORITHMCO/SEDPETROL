@@ -54,14 +54,22 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8707080">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aquasoft.exe" size="8697352">
+>>>>>>> parent of 96aa6a1... cambios
       <assemblyIdentity name="Aquasoft" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>A9uO/9Y+1CTsHC1IXbH3rtFhiQvI+o4Eoy6FPNuoT+Q=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>C37/5hsF+A+Aufaz8c+nuSWZKSw8J/BMVFm8mGlOZmg=</dsig:DigestValue>
+>>>>>>> parent of 96aa6a1... cambios
       </hash>
     </dependentAssembly>
   </dependency>

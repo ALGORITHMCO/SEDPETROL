@@ -166,7 +166,6 @@
             this.lecturaanterior.Name = "lecturaanterior";
             this.lecturaanterior.Size = new System.Drawing.Size(336, 22);
             this.lecturaanterior.TabIndex = 35;
-            this.lecturaanterior.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // llocalidad
             // 
@@ -185,7 +184,6 @@
             this.ultimalectura.Name = "ultimalectura";
             this.ultimalectura.Size = new System.Drawing.Size(336, 22);
             this.ultimalectura.TabIndex = 33;
-            this.ultimalectura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lzona
             // 
@@ -214,7 +212,6 @@
             this.cuentacontrato.Name = "cuentacontrato";
             this.cuentacontrato.Size = new System.Drawing.Size(336, 22);
             this.cuentacontrato.TabIndex = 29;
-            this.cuentacontrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ldepartamento
             // 
@@ -233,7 +230,6 @@
             this.numeromedidor.Name = "numeromedidor";
             this.numeromedidor.Size = new System.Drawing.Size(336, 22);
             this.numeromedidor.TabIndex = 27;
-            this.numeromedidor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo5
             // 
@@ -252,7 +248,6 @@
             this.campo5.Name = "campo5";
             this.campo5.Size = new System.Drawing.Size(335, 22);
             this.campo5.TabIndex = 67;
-            this.campo5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo4
             // 
@@ -271,7 +266,6 @@
             this.campo4.Name = "campo4";
             this.campo4.Size = new System.Drawing.Size(335, 22);
             this.campo4.TabIndex = 65;
-            this.campo4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo3
             // 
@@ -290,7 +284,6 @@
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(335, 22);
             this.campo3.TabIndex = 63;
-            this.campo3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo2
             // 
@@ -309,7 +302,6 @@
             this.campo2.Name = "campo2";
             this.campo2.Size = new System.Drawing.Size(335, 22);
             this.campo2.TabIndex = 61;
-            this.campo2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // lcampo1
             // 
@@ -328,7 +320,6 @@
             this.campo1.Name = "campo1";
             this.campo1.Size = new System.Drawing.Size(335, 22);
             this.campo1.TabIndex = 59;
-            this.campo1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // alertadesv
             // 
@@ -346,7 +337,6 @@
             this.marca.Name = "marca";
             this.marca.Size = new System.Drawing.Size(336, 24);
             this.marca.TabIndex = 75;
-            this.marca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // fingnovedad
             // 
@@ -375,7 +365,6 @@
             this.consumom3.Name = "consumom3";
             this.consumom3.Size = new System.Drawing.Size(335, 22);
             this.consumom3.TabIndex = 78;
-            this.consumom3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // tipo
             // 
@@ -385,7 +374,6 @@
             this.tipo.Name = "tipo";
             this.tipo.Size = new System.Drawing.Size(336, 24);
             this.tipo.TabIndex = 80;
-            this.tipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // diametro
             // 
@@ -395,7 +383,6 @@
             this.diametro.Name = "diametro";
             this.diametro.Size = new System.Drawing.Size(335, 24);
             this.diametro.TabIndex = 81;
-            this.diametro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // ingresoDMC
             // 

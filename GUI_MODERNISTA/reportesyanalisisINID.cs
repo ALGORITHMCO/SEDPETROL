@@ -58,55 +58,6 @@ namespace GUI_MODERNISTA
             comboBox2.DataSource = Registroo.vaconsultaNUIDMEDIDOR(); ;
 
         }
-        private void panelContenedor_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == (char)Keys.Enter)
-            {
-                if (comboBox2.Text == "" || comboBox1.Text == "" || textfechainicio.Text == "" || textfechafin.Text == "")
-                {
-                    MessageBox.Show("INGRESE TODOS LOS DATOS", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                else
-                {
-
-                    variable = comboBox1.Text;
-                    fechainicio = textfechainicio.Text;
-                    fechafin = textfechafin.Text;
-                    idmedido = comboBox2.Text;
-
-                    ConsultareportesyanalisisIN dd = new ConsultareportesyanalisisIN();
-                    graficaanalisisyreportes reportes1 = new graficaanalisisyreportes();
-
-                    dd.fechainicio = textfechainicio.Text;
-                    dd.fechafin = textfechafin.Text;
-                    dd.variable = comboBox1.Text;
-                    dd.idmedidor = comboBox2.Text;
-
-                    panel2.Controls.Clear();
-                    panel2.Controls.Add(dd);
-
-
-                    reportes1.fechainicio = textfechainicio.Text;
-                    reportes1.fechafin = textfechafin.Text;
-                    reportes1.variable = comboBox1.Text;
-                    reportes1.idmedidor = comboBox2.Text;
-
-
-                    panel3.Controls.Clear();
-                    panel3.Controls.Add(reportes1);
-
-                    mapa reportes2 = new mapa();
-                    reportes2.fechainicio = textfechainicio.Text;
-                    reportes2.fechafin = textfechafin.Text;
-                    reportes2.variable = comboBox1.Text;
-                    reportes2.idmedidor = comboBox2.Text;
-
-                    panel4.Controls.Clear();
-                    panel4.Controls.Add(reportes2);
-                }
-            }
-        }
 
         private void button1_ClickAsync(object sender, EventArgs e)
         {

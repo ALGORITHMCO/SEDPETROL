@@ -14,7 +14,11 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>XzhGXAi1hF3HPPo97VZdq1n6YSu6qqzjyuhc70f8l+w=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>UTU/XUFfuwO4IgkRw0Pmmlsblko/rSyB5aYCa06opss=</dsig:DigestValue>
+>>>>>>> parent of 96aa6a1... cambios
       </hash>
     </dependentAssembly>
   </dependency>

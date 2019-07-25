@@ -55,7 +55,6 @@
             this.contrato.Name = "contrato";
             this.contrato.Size = new System.Drawing.Size(100, 22);
             this.contrato.TabIndex = 1;
-            this.contrato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // button1
             // 
@@ -66,7 +65,6 @@
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // crystalReportViewer1
             // 
@@ -84,7 +82,6 @@
             this.year.Name = "year";
             this.year.Size = new System.Drawing.Size(100, 22);
             this.year.TabIndex = 4;
-            this.year.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // monthEnd
             // 
@@ -92,7 +89,6 @@
             this.monthEnd.Name = "monthEnd";
             this.monthEnd.Size = new System.Drawing.Size(100, 22);
             this.monthEnd.TabIndex = 5;
-            this.monthEnd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // monthStart
             // 
@@ -100,7 +96,6 @@
             this.monthStart.Name = "monthStart";
             this.monthStart.Size = new System.Drawing.Size(100, 22);
             this.monthStart.TabIndex = 6;
-            this.monthStart.KeyDown += new System.Windows.Forms.KeyEventHandler(this.panelContenedor_KeyDown);
             // 
             // Año
             // 

@@ -141,10 +141,5 @@ namespace GUI_MODERNISTA
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
