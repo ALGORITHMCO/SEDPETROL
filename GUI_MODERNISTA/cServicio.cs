@@ -541,104 +541,11 @@ namespace GUI_MODERNISTA
             }
         }
 
-        private void diametromedsugerido_KeyPress(object sender, KeyPressEventArgs e)
-        {
+       
 
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
+       
 
-                ComportamientoServicio comportamiento = new ComportamientoServicio();
-
-                comportamiento.fechaingreso = fingnovedad.Text;
-                comportamiento.horaingreso = horaingnov.Text;
-                comportamiento.idcomportamiento = icomportamiento.Text;
-                comportamiento.idmedidor = idmedido;
-                comportamiento.tiposalarmas = tiposdealarmas.Text;
-                comportamiento.saldo = saldo.Text;
-                comportamiento.solicitudac = saperturacierre.Text;
-                comportamiento.claseuso = claseuso.Text;
-                comportamiento.patronparametrosconsumos = ppconsumospre.Text;
-                comportamiento.promedioflujomedidor = promflujomedidor.Text;
-                comportamiento.diferenciaconsumopatron = difconsumo.Text;
-                comportamiento.alertadesvsignificativas = alertadesvsignificativas.Text;
-                comportamiento.maximasparamedidores = maxmedidorvelocidad.Text;
-                comportamiento.resultadorequerimiento = resultadorequerimiento.Text;
-                comportamiento.diametrosugeridomedidor = diametromedsugerido.Text;
-                comportamiento.resultadorequerimiento = resultadorequerimiento.Text;
-                comportamiento.campo1 = campo1.Text;
-                comportamiento.campo2 = campo2.Text;
-                comportamiento.campo3 = campo3.Text;
-                comportamiento.campo4 = campo4.Text;
-                comportamiento.campo5 = campo5.Text;
-
-
-                //if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(tiposdealarmas.Text) && !String.IsNullOrEmpty(saldo.Text) &&  !String.IsNullOrEmpty(saperturacierre.Text) && !String.IsNullOrEmpty(claseuso.Text) && !String.IsNullOrEmpty(ppconsumospre.Text) && !String.IsNullOrEmpty(promflujomedidor.Text) && !String.IsNullOrEmpty(difconsumo.Text) && !String.IsNullOrEmpty(maxmedidorvelocidad.Text) && !String.IsNullOrEmpty(alertadesv.Text))
-                if (!String.IsNullOrEmpty(nmedidor.Text) && !String.IsNullOrEmpty(tiposdealarmas.Text) && !String.IsNullOrEmpty(saldo.Text) && !String.IsNullOrEmpty(saperturacierre.Text) && !String.IsNullOrEmpty(claseuso.Text) && !String.IsNullOrEmpty(ppconsumospre.Text) && !String.IsNullOrEmpty(promflujomedidor.Text) && !String.IsNullOrEmpty(difconsumo.Text) && !String.IsNullOrEmpty(alertadesvsignificativas.Text) && !String.IsNullOrEmpty(maxmedidorvelocidad.Text) && !String.IsNullOrEmpty(resultadorequerimiento.Text) && !String.IsNullOrEmpty(diametromedidor.Text))
-                // && !String.IsNullOrEmpty(saperturacierre.Text) && !String.IsNullOrEmpty(claseuso.Text) && !String.IsNullOrEmpty(ppconsumospre.Text) && !String.IsNullOrEmpty(promflujomedidor.Text) && !String.IsNullOrEmpty(difconsumo.Text) && !String.IsNullOrEmpty(alertadesv.Text) && !String.IsNullOrEmpty(maxmedidorvelocidad.Text) && !String.IsNullOrEmpty(resultadorequerimiento.Text) && !String.IsNullOrEmpty(diametromedsugerido.Text))
-
-                {
-                    int resul = Registroo.ingresarCS(comportamiento);
-                    if (resul == 1)
-                    {
-                        MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-                        nmedidor.Text = "";
-                        departamento.Text = "";
-                        ciudad.Text = "";
-                        localidad.Text = "";
-                        zona.Text = "";
-                        barrio.Text = "";
-                        tiposdealarmas.Text = "";
-                        saldo.Text = "";
-                        saperturacierre.Text = "";
-                        claseuso.Text = "";
-                        ppconsumospre.Text = "";
-                        promflujomedidor.Text = "";
-                        difconsumo.Text = "";
-                        alertadesvsignificativas.Text = "";
-                        maxmedidorvelocidad.Text = "";
-                        resultadorequerimiento.Text = "";
-                        mamedidor.Text = "";
-                        tipomedidor.Text = "";
-                        diametromedidor.Text = "";
-                        campo1.Text = "";
-                        campo2.Text = "";
-                        campo3.Text = "";
-                        campo4.Text = "";
-                        campo5.Text = "";
-                        hconsumo1.Text = "";
-                        hconsumo2.Text = "";
-                        hconsumo3.Text = "";
-                        hconsumo4.Text = "";
-                        hconsumo5.Text = "";
-                        hconsumo6.Text = "";
-                        diametromedsugerido.Text = "";
-                        valorpp.Text = "";
-                    }
-                    else
-                    {
-                        if (resul == -1)
-                        {
-                            MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        }
-                    }
-
-
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Debe llenar todos los campos", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }
-        }
+      
 
         private void reclamacionescb_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -172,61 +172,6 @@ namespace GUI_MODERNISTA
             
         }
 
-        private void estado_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                IngresoDatosPropietario propietario = new IngresoDatosPropietario();
-
-                propietario.idpropietario = idpropietario1.Text;
-                propietario.tipoidentificacion = tipoIdentificacion.Text;
-                propietario.numeroidentificacion = numeroIdentificacion.Text;
-                propietario.nombrepropietario = nombrePropietario.Text;
-                propietario.porcentajepropiedad = porcentajePropiedad.Text;
-                propietario.calidadpropietario = calidadPropietario.Text;
-                propietario.cuentacontrato = cuentaContrato.Text;
-                propietario.estado = estado.Text;
-                propietario.campo1 = campo1.Text;
-                propietario.campo2 = campo2.Text;
-                propietario.campo3 = campo3.Text;
-                propietario.campo4 = campo4.Text;
-                propietario.campo5 = campo5.Text;
-
-                //if (!String.IsNullOrEmpty(tipoIdentificacion.Text) && !String.IsNullOrEmpty(numeroIdentificacion.Text) && !String.IsNullOrEmpty(nombrePropietario.Text) && !String.IsNullOrEmpty(porcentajePropiedad.Text) && !String.IsNullOrEmpty(calidadPropietario.Text) && !String.IsNullOrEmpty(cuentaContrato.Text))
-                //{ 
-                int resul = Registroo.ingresarPropietario(propietario);
-
-                if (resul == 1)
-                {
-                    MessageBox.Show("Datos guardados Correctamente", "Datos guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    tipoIdentificacion.Text = "";
-                    numeroIdentificacion.Text = "";
-                    nombrePropietario.Text = "";
-                    porcentajePropiedad.Text = "";
-                    calidadPropietario.Text = "";
-                    cuentaContrato.Text = "";
-                    estado.Text = "";
-                    campo1.Text = "";
-                    campo2.Text = "";
-                    campo3.Text = "";
-                    campo4.Text = "";
-                    campo5.Text = "";
-
-                }
-                else
-                {
-                    if (resul == -1)
-                    {
-                        MessageBox.Show("Datos ya estan registrados", "Vuelva a intentar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error conexion", "ERROR AL GUARDAR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                }
-            }
-        }
+        
     }
 }
